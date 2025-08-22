@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class RequestValidatorService | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class RequestValidatorService | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Biz.Commons.RequestValidatorService">
+
+
+
+  <h1 id="Storm_Biz_Commons_RequestValidatorService" data-uid="Storm.Biz.Commons.RequestValidatorService" class="text-break">Class RequestValidatorService</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">RequestValidatorService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Storm.Biz.Commons.IRequestValidatorService.html">IRequestValidatorService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Biz.html">Biz</a>.<a class="xref" href="Storm.Biz.Commons.html">Commons</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Biz.dll</h6>
+  <h5 id="Storm_Biz_Commons_RequestValidatorService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RequestValidatorService : IRequestValidatorService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService__ctor_Storm_Biz_Commons_ISharedUserService_Storm_Biz_Commons_ISharedUserOcService_Storm_Biz_Companies_ISharedCompanyService_Storm_Biz_Commons_ICommonValidator_Storm_Biz_Commons_ICommonFunctions_Microsoft_Extensions_Logging_ILogger_Storm_Biz_Commons_RequestValidatorService__.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService.%23ctor(Storm.Biz.Commons.ISharedUserService%2CStorm.Biz.Commons.ISharedUserOcService%2CStorm.Biz.Companies.ISharedCompanyService%2CStorm.Biz.Commons.ICommonValidator%2CStorm.Biz.Commons.ICommonFunctions%2CMicrosoft.Extensions.Logging.ILogger%7BStorm.Biz.Commons.RequestValidatorService%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L21">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_RequestValidatorService__ctor_" data-uid="Storm.Biz.Commons.RequestValidatorService.#ctor*"></a>
+  <h4 id="Storm_Biz_Commons_RequestValidatorService__ctor_Storm_Biz_Commons_ISharedUserService_Storm_Biz_Commons_ISharedUserOcService_Storm_Biz_Companies_ISharedCompanyService_Storm_Biz_Commons_ICommonValidator_Storm_Biz_Commons_ICommonFunctions_Microsoft_Extensions_Logging_ILogger_Storm_Biz_Commons_RequestValidatorService__" data-uid="Storm.Biz.Commons.RequestValidatorService.#ctor(Storm.Biz.Commons.ISharedUserService,Storm.Biz.Commons.ISharedUserOcService,Storm.Biz.Companies.ISharedCompanyService,Storm.Biz.Commons.ICommonValidator,Storm.Biz.Commons.ICommonFunctions,Microsoft.Extensions.Logging.ILogger{Storm.Biz.Commons.RequestValidatorService})">RequestValidatorService(ISharedUserService, ISharedUserOcService, ISharedCompanyService, ICommonValidator, ICommonFunctions, ILogger&lt;RequestValidatorService&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestValidatorService(ISharedUserService sharedUserService, ISharedUserOcService sharedUserOCService, ISharedCompanyService sharedCompanyService, ICommonValidator commonValidator, ICommonFunctions commonFunctions, ILogger&lt;RequestValidatorService&gt; logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ISharedUserService.html">ISharedUserService</a></td>
+        <td><span class="parametername">sharedUserService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ISharedUserOcService.html">ISharedUserOcService</a></td>
+        <td><span class="parametername">sharedUserOCService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Companies.ISharedCompanyService.html">ISharedCompanyService</a></td>
+        <td><span class="parametername">sharedCompanyService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ICommonValidator.html">ICommonValidator</a></td>
+        <td><span class="parametername">commonValidator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ICommonFunctions.html">ICommonFunctions</a></td>
+        <td><span class="parametername">commonFunctions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Storm.Biz.Commons.RequestValidatorService.html">RequestValidatorService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService_CreateErrorLogMessage_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService.CreateErrorLogMessage(System.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L210">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_RequestValidatorService_CreateErrorLogMessage_" data-uid="Storm.Biz.Commons.RequestValidatorService.CreateErrorLogMessage*"></a>
+  <h4 id="Storm_Biz_Commons_RequestValidatorService_CreateErrorLogMessage_System_String_System_String_System_Object_" data-uid="Storm.Biz.Commons.RequestValidatorService.CreateErrorLogMessage(System.String,System.String,System.Object)">CreateErrorLogMessage(string, string, object?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string CreateErrorLogMessage(string methodName, string errorMessage, object? request = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">errorMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService_LogAndCreateErrorResponse_System_String_System_String_Storm_Biz_Commons_Domain_StatusCode_System_Object_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService.LogAndCreateErrorResponse(System.String%2CSystem.String%2CStorm.Biz.Commons.Domain.StatusCode%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L229">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_RequestValidatorService_LogAndCreateErrorResponse_" data-uid="Storm.Biz.Commons.RequestValidatorService.LogAndCreateErrorResponse*"></a>
+  <h4 id="Storm_Biz_Commons_RequestValidatorService_LogAndCreateErrorResponse_System_String_System_String_Storm_Biz_Commons_Domain_StatusCode_System_Object_" data-uid="Storm.Biz.Commons.RequestValidatorService.LogAndCreateErrorResponse(System.String,System.String,Storm.Biz.Commons.Domain.StatusCode,System.Object)">LogAndCreateErrorResponse(string, string, StatusCode, object?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RequestValidatorResponse LogAndCreateErrorResponse(string methodName, string errorMessage, Domain.StatusCode statusCode, object? request = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">errorMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Domain.html">Domain</a>.<a class="xref" href="Storm.Biz.Commons.Domain.StatusCode.html">StatusCode</a></td>
+        <td><span class="parametername">statusCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService_RequestValidatorAsync__1___0_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService.RequestValidatorAsync%60%601(%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L37">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_RequestValidatorService_RequestValidatorAsync_" data-uid="Storm.Biz.Commons.RequestValidatorService.RequestValidatorAsync*"></a>
+  <h4 id="Storm_Biz_Commons_RequestValidatorService_RequestValidatorAsync__1___0_" data-uid="Storm.Biz.Commons.RequestValidatorService.RequestValidatorAsync``1(``0)">RequestValidatorAsync&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RequestValidatorResponse&gt; RequestValidatorAsync&lt;T&gt;(T model) where T : Request</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService_ValidateModelFields__1___0_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService.ValidateModelFields%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L84">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_RequestValidatorService_ValidateModelFields_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateModelFields*"></a>
+  <h4 id="Storm_Biz_Commons_RequestValidatorService_ValidateModelFields__1___0_System_String_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateModelFields``1(``0,System.String)">ValidateModelFields&lt;T&gt;(T, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RequestValidatorResponse ValidateModelFields&lt;T&gt;(T model, string methodName = &quot;&quot;) where T : Request</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService_ValidateMultipleOperatingCompanyAccessAsync_Storm_Biz_Commons_Models_Request_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService.ValidateMultipleOperatingCompanyAccessAsync(Storm.Biz.Commons.Models.Request%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L176">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_RequestValidatorService_ValidateMultipleOperatingCompanyAccessAsync_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateMultipleOperatingCompanyAccessAsync*"></a>
+  <h4 id="Storm_Biz_Commons_RequestValidatorService_ValidateMultipleOperatingCompanyAccessAsync_Storm_Biz_Commons_Models_Request_System_Collections_Generic_IEnumerable_System_String__" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateMultipleOperatingCompanyAccessAsync(Storm.Biz.Commons.Models.Request,System.Collections.Generic.IEnumerable{System.String})">ValidateMultipleOperatingCompanyAccessAsync(Request, IEnumerable&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;RequestValidatorResponse&gt; ValidateMultipleOperatingCompanyAccessAsync(Request request, IEnumerable&lt;string&gt; operatingCompanyIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.Request.html">Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">operatingCompanyIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService_ValidateOperatingCompanyAccessAsync__1___0_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService.ValidateOperatingCompanyAccessAsync%60%601(%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L118">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_RequestValidatorService_ValidateOperatingCompanyAccessAsync_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateOperatingCompanyAccessAsync*"></a>
+  <h4 id="Storm_Biz_Commons_RequestValidatorService_ValidateOperatingCompanyAccessAsync__1___0_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateOperatingCompanyAccessAsync``1(``0)">ValidateOperatingCompanyAccessAsync&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;RequestValidatorResponse&gt; ValidateOperatingCompanyAccessAsync&lt;T&gt;(T model) where T : Request</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService_ValidateRequestAsync__2___0_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService.ValidateRequestAsync%60%602(%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L261">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_RequestValidatorService_ValidateRequestAsync_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateRequestAsync*"></a>
+  <h4 id="Storm_Biz_Commons_RequestValidatorService_ValidateRequestAsync__2___0_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateRequestAsync``2(``0)">ValidateRequestAsync&lt;TRequest, TResult&gt;(TRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&lt;TResult&gt;?&gt; ValidateRequestAsync&lt;TRequest, TResult&gt;(TRequest request) where TRequest : Request</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult-1.html">ExecutionResult</a>&lt;TResult&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRequest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService_ValidateSingleOperatingCompanyAccessAsync_Storm_Biz_Commons_Models_Request_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService.ValidateSingleOperatingCompanyAccessAsync(Storm.Biz.Commons.Models.Request%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L141">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_RequestValidatorService_ValidateSingleOperatingCompanyAccessAsync_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateSingleOperatingCompanyAccessAsync*"></a>
+  <h4 id="Storm_Biz_Commons_RequestValidatorService_ValidateSingleOperatingCompanyAccessAsync_Storm_Biz_Commons_Models_Request_System_String_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateSingleOperatingCompanyAccessAsync(Storm.Biz.Commons.Models.Request,System.String)">ValidateSingleOperatingCompanyAccessAsync(Request, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;RequestValidatorResponse&gt; ValidateSingleOperatingCompanyAccessAsync(Request request, string operatingCompanyId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.Request.html">Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">operatingCompanyId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService_ValidateSiteOperatingCompanyAccessAsync__1___0_Storm_Biz_Commons_Models_GetUserInformationResponse_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService.ValidateSiteOperatingCompanyAccessAsync%60%601(%60%600%2CStorm.Biz.Commons.Models.GetUserInformationResponse)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L295">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_RequestValidatorService_ValidateSiteOperatingCompanyAccessAsync_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateSiteOperatingCompanyAccessAsync*"></a>
+  <h4 id="Storm_Biz_Commons_RequestValidatorService_ValidateSiteOperatingCompanyAccessAsync__1___0_Storm_Biz_Commons_Models_GetUserInformationResponse_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateSiteOperatingCompanyAccessAsync``1(``0,Storm.Biz.Commons.Models.GetUserInformationResponse)">ValidateSiteOperatingCompanyAccessAsync&lt;T&gt;(T, GetUserInformationResponse)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;RequestValidatorResponse&gt; ValidateSiteOperatingCompanyAccessAsync&lt;T&gt;(T model, GetUserInformationResponse userInfo) where T : Request</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.GetUserInformationResponse.html">GetUserInformationResponse</a></td>
+        <td><span class="parametername">userInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService_ValidateUserTokenAsync_Storm_Biz_Commons_Models_Request_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService.ValidateUserTokenAsync(Storm.Biz.Commons.Models.Request)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L95">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_RequestValidatorService_ValidateUserTokenAsync_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateUserTokenAsync*"></a>
+  <h4 id="Storm_Biz_Commons_RequestValidatorService_ValidateUserTokenAsync_Storm_Biz_Commons_Models_Request_" data-uid="Storm.Biz.Commons.RequestValidatorService.ValidateUserTokenAsync(Storm.Biz.Commons.Models.Request)">ValidateUserTokenAsync(Request)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;RequestValidatorResponse&gt; ValidateUserTokenAsync(Request request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.Request.html">Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Storm.Biz.Commons.IRequestValidatorService.html">IRequestValidatorService</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_RequestValidatorService.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.RequestValidatorService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/RequestValidatorService.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

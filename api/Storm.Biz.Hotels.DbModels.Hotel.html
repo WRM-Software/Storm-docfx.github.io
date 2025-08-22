@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Hotel | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Hotel | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Biz.Hotels.DbModels.Hotel">
+
+
+
+  <h1 id="Storm_Biz_Hotels_DbModels_Hotel" data-uid="Storm.Biz.Hotels.DbModels.Hotel" class="text-break">Class Hotel</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">SqlModelBase</span></div>
+    <div class="level2"><span class="xref">Hotel</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IDbModel</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+    <div><span class="xref">IDbModelBase</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">SqlModelBase.Id</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Biz.html">Biz</a>.<a class="xref" href="Storm.Biz.Hotels.html">Hotels</a>.<a class="xref" href="Storm.Biz.Hotels.DbModels.html">DbModels</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Biz.dll</h6>
+  <h5 id="Storm_Biz_Hotels_DbModels_Hotel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Hotel : SqlModelBase, IDbModel&lt;string&gt;, IDbModelBase</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_Address.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.Address%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L12">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_Address_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Address*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_Address" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Address">Address</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Address { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_Code.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.Code%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L8">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_Code_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Code*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_Code" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Code">Code</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Code { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_Coordinate.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.Coordinate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L10">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_Coordinate_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Coordinate*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_Coordinate" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Coordinate">Coordinate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point? Coordinate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_CreatedDateTime.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.CreatedDateTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L25">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_CreatedDateTime_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.CreatedDateTime*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_CreatedDateTime" data-uid="Storm.Biz.Hotels.DbModels.Hotel.CreatedDateTime">CreatedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? CreatedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_CtEmail.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.CtEmail%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L20">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_CtEmail_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.CtEmail*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_CtEmail" data-uid="Storm.Biz.Hotels.DbModels.Hotel.CtEmail">CtEmail</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CtEmail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_CtName.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.CtName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L18">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_CtName_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.CtName*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_CtName" data-uid="Storm.Biz.Hotels.DbModels.Hotel.CtName">CtName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CtName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_CtPhone.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.CtPhone%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L19">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_CtPhone_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.CtPhone*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_CtPhone" data-uid="Storm.Biz.Hotels.DbModels.Hotel.CtPhone">CtPhone</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CtPhone { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_Fax.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.Fax%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L17">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_Fax_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Fax*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_Fax" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Fax">Fax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Fax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_GoogleCoordinate.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.GoogleCoordinate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L31">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_GoogleCoordinate_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.GoogleCoordinate*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_GoogleCoordinate" data-uid="Storm.Biz.Hotels.DbModels.Hotel.GoogleCoordinate">GoogleCoordinate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point? GoogleCoordinate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_GooglePostalCode.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.GooglePostalCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L30">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_GooglePostalCode_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.GooglePostalCode*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_GooglePostalCode" data-uid="Storm.Biz.Hotels.DbModels.Hotel.GooglePostalCode">GooglePostalCode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GooglePostalCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_GoogleStreet.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.GoogleStreet%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L29">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_GoogleStreet_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.GoogleStreet*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_GoogleStreet" data-uid="Storm.Biz.Hotels.DbModels.Hotel.GoogleStreet">GoogleStreet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GoogleStreet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_IsActive.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.IsActive%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L28">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_IsActive_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.IsActive*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_IsActive" data-uid="Storm.Biz.Hotels.DbModels.Hotel.IsActive">IsActive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsActive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_MaxD.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.MaxD%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L15">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_MaxD_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.MaxD*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_MaxD" data-uid="Storm.Biz.Hotels.DbModels.Hotel.MaxD">MaxD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short? MaxD { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_MaxS.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.MaxS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L14">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_MaxS_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.MaxS*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_MaxS" data-uid="Storm.Biz.Hotels.DbModels.Hotel.MaxS">MaxS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short? MaxS { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_Name.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.Name%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L9">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_Name_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Name*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_Name" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_Note.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.Note%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L24">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_Note_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Note*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_Note" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Note">Note</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Note { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_Parking.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.Parking%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L22">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_Parking_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Parking*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_Parking" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Parking">Parking</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Parking { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_PhoneNo.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.PhoneNo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L16">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_PhoneNo_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.PhoneNo*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_PhoneNo" data-uid="Storm.Biz.Hotels.DbModels.Hotel.PhoneNo">PhoneNo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? PhoneNo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_PropertyId.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.PropertyId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L32">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_PropertyId_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.PropertyId*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_PropertyId" data-uid="Storm.Biz.Hotels.DbModels.Hotel.PropertyId">PropertyId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? PropertyId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_Refuel.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.Refuel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L23">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_Refuel_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Refuel*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_Refuel" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Refuel">Refuel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? Refuel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_Restaurant.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.Restaurant%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L21">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_Restaurant_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Restaurant*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_Restaurant" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Restaurant">Restaurant</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? Restaurant { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_StateCityId.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.StateCityId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L11">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_StateCityId_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.StateCityId*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_StateCityId" data-uid="Storm.Biz.Hotels.DbModels.Hotel.StateCityId">StateCityId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? StateCityId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_UpdatedBy.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.UpdatedBy%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L27">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_UpdatedBy_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.UpdatedBy*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_UpdatedBy" data-uid="Storm.Biz.Hotels.DbModels.Hotel.UpdatedBy">UpdatedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? UpdatedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_UpdatedDateTime.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.UpdatedDateTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L26">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_UpdatedDateTime_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.UpdatedDateTime*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_UpdatedDateTime" data-uid="Storm.Biz.Hotels.DbModels.Hotel.UpdatedDateTime">UpdatedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? UpdatedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel_Zip.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel.Zip%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L13">View Source</a>
+  </span>
+  <a id="Storm_Biz_Hotels_DbModels_Hotel_Zip_" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Zip*"></a>
+  <h4 id="Storm_Biz_Hotels_DbModels_Hotel_Zip" data-uid="Storm.Biz.Hotels.DbModels.Hotel.Zip">Zip</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Zip { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Storm.Infrastructure.Models.IDbModel&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Storm.Infrastructure.Models.IDbModelBase</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Hotels_DbModels_Hotel.md&amp;value=---%0Auid%3A%20Storm.Biz.Hotels.DbModels.Hotel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Hotels/DbModels/Hotel.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

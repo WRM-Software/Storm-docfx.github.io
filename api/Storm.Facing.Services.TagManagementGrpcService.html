@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TagManagementGrpcService | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TagManagementGrpcService | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Facing.Services.TagManagementGrpcService">
+
+
+
+  <h1 id="Storm_Facing_Services_TagManagementGrpcService" data-uid="Storm.Facing.Services.TagManagementGrpcService" class="text-break">Class TagManagementGrpcService</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Storm.Facing.Protos.TagManagement.html">TagManagement</a>.<a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html">TagManagementBase</a></div>
+    <div class="level2"><span class="xref">TagManagementGrpcService</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Facing.html">Facing</a>.<a class="xref" href="Storm.Facing.Services.html">Services</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Facing.dll</h6>
+  <h5 id="Storm_Facing_Services_TagManagementGrpcService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Authorize]
+public class TagManagementGrpcService : TagManagement.TagManagementBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService__ctor_Storm_Biz_Tags_ITagService_Microsoft_Extensions_Logging_ILogger_Storm_Facing_Services_TagManagementGrpcService__.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.%23ctor(Storm.Biz.Tags.ITagService%2CMicrosoft.Extensions.Logging.ILogger%7BStorm.Facing.Services.TagManagementGrpcService%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L26">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService__ctor_" data-uid="Storm.Facing.Services.TagManagementGrpcService.#ctor*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService__ctor_Storm_Biz_Tags_ITagService_Microsoft_Extensions_Logging_ILogger_Storm_Facing_Services_TagManagementGrpcService__" data-uid="Storm.Facing.Services.TagManagementGrpcService.#ctor(Storm.Biz.Tags.ITagService,Microsoft.Extensions.Logging.ILogger{Storm.Facing.Services.TagManagementGrpcService})">TagManagementGrpcService(ITagService, ILogger&lt;TagManagementGrpcService&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TagManagementGrpcService(ITagService tagService, ILogger&lt;TagManagementGrpcService&gt; logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Tags.ITagService.html">ITagService</a></td>
+        <td><span class="parametername">tagService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Storm.Facing.Services.TagManagementGrpcService.html">TagManagementGrpcService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService_CheckTagApplicable_Storm_Facing_Protos_CheckTagApplicableRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.CheckTagApplicable(Storm.Facing.Protos.CheckTagApplicableRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L264">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService_CheckTagApplicable_" data-uid="Storm.Facing.Services.TagManagementGrpcService.CheckTagApplicable*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService_CheckTagApplicable_Storm_Facing_Protos_CheckTagApplicableRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TagManagementGrpcService.CheckTagApplicable(Storm.Facing.Protos.CheckTagApplicableRequest,Grpc.Core.ServerCallContext)">CheckTagApplicable(CheckTagApplicableRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;CheckTagApplicableResponse&gt; CheckTagApplicable(CheckTagApplicableRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.CheckTagApplicableRequest.html">CheckTagApplicableRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.CheckTagApplicableResponse.html">CheckTagApplicableResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html#Storm_Facing_Protos_TagManagement_TagManagementBase_CheckTagApplicable_Storm_Facing_Protos_CheckTagApplicableRequest_Grpc_Core_ServerCallContext_">TagManagement.TagManagementBase.CheckTagApplicable(CheckTagApplicableRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService_CheckTagCategoryApplicable_Storm_Facing_Protos_CheckTagCategoryApplicableRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.CheckTagCategoryApplicable(Storm.Facing.Protos.CheckTagCategoryApplicableRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L246">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService_CheckTagCategoryApplicable_" data-uid="Storm.Facing.Services.TagManagementGrpcService.CheckTagCategoryApplicable*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService_CheckTagCategoryApplicable_Storm_Facing_Protos_CheckTagCategoryApplicableRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TagManagementGrpcService.CheckTagCategoryApplicable(Storm.Facing.Protos.CheckTagCategoryApplicableRequest,Grpc.Core.ServerCallContext)">CheckTagCategoryApplicable(CheckTagCategoryApplicableRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;CheckTagCategoryApplicableResponse&gt; CheckTagCategoryApplicable(CheckTagCategoryApplicableRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.CheckTagCategoryApplicableRequest.html">CheckTagCategoryApplicableRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.CheckTagCategoryApplicableResponse.html">CheckTagCategoryApplicableResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html#Storm_Facing_Protos_TagManagement_TagManagementBase_CheckTagCategoryApplicable_Storm_Facing_Protos_CheckTagCategoryApplicableRequest_Grpc_Core_ServerCallContext_">TagManagement.TagManagementBase.CheckTagCategoryApplicable(CheckTagCategoryApplicableRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService_CreateTag_Storm_Facing_Protos_CreateTagRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.CreateTag(Storm.Facing.Protos.CreateTagRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L155">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService_CreateTag_" data-uid="Storm.Facing.Services.TagManagementGrpcService.CreateTag*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService_CreateTag_Storm_Facing_Protos_CreateTagRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TagManagementGrpcService.CreateTag(Storm.Facing.Protos.CreateTagRequest,Grpc.Core.ServerCallContext)">CreateTag(CreateTagRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;ResponseData&gt; CreateTag(CreateTagRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.CreateTagRequest.html">CreateTagRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.ResponseData.html">ResponseData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html#Storm_Facing_Protos_TagManagement_TagManagementBase_CreateTag_Storm_Facing_Protos_CreateTagRequest_Grpc_Core_ServerCallContext_">TagManagement.TagManagementBase.CreateTag(CreateTagRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService_CreateTagCategory_Storm_Facing_Protos_CreateTagCategoryRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.CreateTagCategory(Storm.Facing.Protos.CreateTagCategoryRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L69">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService_CreateTagCategory_" data-uid="Storm.Facing.Services.TagManagementGrpcService.CreateTagCategory*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService_CreateTagCategory_Storm_Facing_Protos_CreateTagCategoryRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TagManagementGrpcService.CreateTagCategory(Storm.Facing.Protos.CreateTagCategoryRequest,Grpc.Core.ServerCallContext)">CreateTagCategory(CreateTagCategoryRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;CreateTagCategoryResponse&gt; CreateTagCategory(CreateTagCategoryRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.CreateTagCategoryRequest.html">CreateTagCategoryRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.CreateTagCategoryResponse.html">CreateTagCategoryResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html#Storm_Facing_Protos_TagManagement_TagManagementBase_CreateTagCategory_Storm_Facing_Protos_CreateTagCategoryRequest_Grpc_Core_ServerCallContext_">TagManagement.TagManagementBase.CreateTagCategory(CreateTagCategoryRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService_GetTagCategories_Storm_Facing_Protos_GetTagCategoriesRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.GetTagCategories(Storm.Facing.Protos.GetTagCategoriesRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L33">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService_GetTagCategories_" data-uid="Storm.Facing.Services.TagManagementGrpcService.GetTagCategories*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService_GetTagCategories_Storm_Facing_Protos_GetTagCategoriesRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TagManagementGrpcService.GetTagCategories(Storm.Facing.Protos.GetTagCategoriesRequest,Grpc.Core.ServerCallContext)">GetTagCategories(GetTagCategoriesRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetTagCategoriesResponse&gt; GetTagCategories(GetTagCategoriesRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetTagCategoriesRequest.html">GetTagCategoriesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetTagCategoriesResponse.html">GetTagCategoriesResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html#Storm_Facing_Protos_TagManagement_TagManagementBase_GetTagCategories_Storm_Facing_Protos_GetTagCategoriesRequest_Grpc_Core_ServerCallContext_">TagManagement.TagManagementBase.GetTagCategories(GetTagCategoriesRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService_GetTags_Storm_Facing_Protos_GetTagsRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.GetTags(Storm.Facing.Protos.GetTagsRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L125">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService_GetTags_" data-uid="Storm.Facing.Services.TagManagementGrpcService.GetTags*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService_GetTags_Storm_Facing_Protos_GetTagsRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TagManagementGrpcService.GetTags(Storm.Facing.Protos.GetTagsRequest,Grpc.Core.ServerCallContext)">GetTags(GetTagsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetTagsResponse&gt; GetTags(GetTagsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetTagsRequest.html">GetTagsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetTagsResponse.html">GetTagsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html#Storm_Facing_Protos_TagManagement_TagManagementBase_GetTags_Storm_Facing_Protos_GetTagsRequest_Grpc_Core_ServerCallContext_">TagManagement.TagManagementBase.GetTags(GetTagsRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService_GetTagsGroupedByCategories_Storm_Facing_Protos_GetTagsGroupedByCategoriesRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.GetTagsGroupedByCategories(Storm.Facing.Protos.GetTagsGroupedByCategoriesRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L206">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService_GetTagsGroupedByCategories_" data-uid="Storm.Facing.Services.TagManagementGrpcService.GetTagsGroupedByCategories*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService_GetTagsGroupedByCategories_Storm_Facing_Protos_GetTagsGroupedByCategoriesRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TagManagementGrpcService.GetTagsGroupedByCategories(Storm.Facing.Protos.GetTagsGroupedByCategoriesRequest,Grpc.Core.ServerCallContext)">GetTagsGroupedByCategories(GetTagsGroupedByCategoriesRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetTagsGroupedByCategoriesResponse&gt; GetTagsGroupedByCategories(GetTagsGroupedByCategoriesRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetTagsGroupedByCategoriesRequest.html">GetTagsGroupedByCategoriesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetTagsGroupedByCategoriesResponse.html">GetTagsGroupedByCategoriesResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html#Storm_Facing_Protos_TagManagement_TagManagementBase_GetTagsGroupedByCategories_Storm_Facing_Protos_GetTagsGroupedByCategoriesRequest_Grpc_Core_ServerCallContext_">TagManagement.TagManagementBase.GetTagsGroupedByCategories(GetTagsGroupedByCategoriesRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService_InactiveTag_Storm_Facing_Protos_InactiveTagRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.InactiveTag(Storm.Facing.Protos.InactiveTagRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L192">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService_InactiveTag_" data-uid="Storm.Facing.Services.TagManagementGrpcService.InactiveTag*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService_InactiveTag_Storm_Facing_Protos_InactiveTagRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TagManagementGrpcService.InactiveTag(Storm.Facing.Protos.InactiveTagRequest,Grpc.Core.ServerCallContext)">InactiveTag(InactiveTagRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;ResponseData&gt; InactiveTag(InactiveTagRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.InactiveTagRequest.html">InactiveTagRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.ResponseData.html">ResponseData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html#Storm_Facing_Protos_TagManagement_TagManagementBase_InactiveTag_Storm_Facing_Protos_InactiveTagRequest_Grpc_Core_ServerCallContext_">TagManagement.TagManagementBase.InactiveTag(InactiveTagRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService_InactiveTagCategory_Storm_Facing_Protos_InactiveTagCategoryRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.InactiveTagCategory(Storm.Facing.Protos.InactiveTagCategoryRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L112">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService_InactiveTagCategory_" data-uid="Storm.Facing.Services.TagManagementGrpcService.InactiveTagCategory*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService_InactiveTagCategory_Storm_Facing_Protos_InactiveTagCategoryRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TagManagementGrpcService.InactiveTagCategory(Storm.Facing.Protos.InactiveTagCategoryRequest,Grpc.Core.ServerCallContext)">InactiveTagCategory(InactiveTagCategoryRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;ResponseData&gt; InactiveTagCategory(InactiveTagCategoryRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.InactiveTagCategoryRequest.html">InactiveTagCategoryRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.ResponseData.html">ResponseData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html#Storm_Facing_Protos_TagManagement_TagManagementBase_InactiveTagCategory_Storm_Facing_Protos_InactiveTagCategoryRequest_Grpc_Core_ServerCallContext_">TagManagement.TagManagementBase.InactiveTagCategory(InactiveTagCategoryRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService_UpdateTag_Storm_Facing_Protos_UpdateTagRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.UpdateTag(Storm.Facing.Protos.UpdateTagRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L173">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService_UpdateTag_" data-uid="Storm.Facing.Services.TagManagementGrpcService.UpdateTag*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService_UpdateTag_Storm_Facing_Protos_UpdateTagRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TagManagementGrpcService.UpdateTag(Storm.Facing.Protos.UpdateTagRequest,Grpc.Core.ServerCallContext)">UpdateTag(UpdateTagRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;ResponseData&gt; UpdateTag(UpdateTagRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.UpdateTagRequest.html">UpdateTagRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.ResponseData.html">ResponseData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html#Storm_Facing_Protos_TagManagement_TagManagementBase_UpdateTag_Storm_Facing_Protos_UpdateTagRequest_Grpc_Core_ServerCallContext_">TagManagement.TagManagementBase.UpdateTag(UpdateTagRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService_UpdateTagCategory_Storm_Facing_Protos_UpdateTagCategoryRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService.UpdateTagCategory(Storm.Facing.Protos.UpdateTagCategoryRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L93">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TagManagementGrpcService_UpdateTagCategory_" data-uid="Storm.Facing.Services.TagManagementGrpcService.UpdateTagCategory*"></a>
+  <h4 id="Storm_Facing_Services_TagManagementGrpcService_UpdateTagCategory_Storm_Facing_Protos_UpdateTagCategoryRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TagManagementGrpcService.UpdateTagCategory(Storm.Facing.Protos.UpdateTagCategoryRequest,Grpc.Core.ServerCallContext)">UpdateTagCategory(UpdateTagCategoryRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;ResponseData&gt; UpdateTagCategory(UpdateTagCategoryRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.UpdateTagCategoryRequest.html">UpdateTagCategoryRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.ResponseData.html">ResponseData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TagManagement.TagManagementBase.html#Storm_Facing_Protos_TagManagement_TagManagementBase_UpdateTagCategory_Storm_Facing_Protos_UpdateTagCategoryRequest_Grpc_Core_ServerCallContext_">TagManagement.TagManagementBase.UpdateTagCategory(UpdateTagCategoryRequest, ServerCallContext)</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TagManagementGrpcService.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TagManagementGrpcService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TagManagementGrpcService.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

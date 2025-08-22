@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ViewQueryService | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ViewQueryService | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Biz.Commons.ViewQueryService">
+
+
+
+  <h1 id="Storm_Biz_Commons_ViewQueryService" data-uid="Storm.Biz.Commons.ViewQueryService" class="text-break">Class ViewQueryService</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ViewQueryService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Storm.Biz.Commons.IViewQueryService.html">IViewQueryService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Biz.html">Biz</a>.<a class="xref" href="Storm.Biz.Commons.html">Commons</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Biz.dll</h6>
+  <h5 id="Storm_Biz_Commons_ViewQueryService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ViewQueryService : IViewQueryService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_ViewQueryService__ctor_Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_Classification__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_Company__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_CompanyType__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_ContractorDiscipline__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_Discipline__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_HotelAssignments_DbModels_LodgingTypeCrewSheet__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_HotelAssignments_DbModels_LodgingTypeCrewSheetResource__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Hotels_DbModels_Hotel__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Hotels_DbModels_HotelAssignment__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Hotels_DbModels_HotelAssignmentDetail__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Hotels_DbModels_HotelAssignmentSupervisor__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Hotels_DbModels_HotelCompanyView__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_ManageDiscipline__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_Region__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_StandardClassification__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_BillingSchedules_DbModels_Union__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_User__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_UserOc__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_Event__Storm_Biz_Commons_ICommonFunctions_Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_DwManageSecureWorkforce__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_ReleasedLog__.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.ViewQueryService.%23ctor(Storm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Disciplines.DbModels.Classification%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Companies.DbModels.Company%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Companies.DbModels.CompanyType%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Companies.DbModels.ContractorDiscipline%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Disciplines.DbModels.Discipline%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.HotelAssignments.DbModels.LodgingTypeCrewSheet%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.HotelAssignments.DbModels.LodgingTypeCrewSheetResource%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Hotels.DbModels.Hotel%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Hotels.DbModels.HotelAssignment%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Hotels.DbModels.HotelAssignmentDetail%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Hotels.DbModels.HotelAssignmentSupervisor%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Hotels.DbModels.HotelCompanyView%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Disciplines.DbModels.ManageDiscipline%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.ManageSecureWorkforces.DbModels.Region%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Disciplines.DbModels.StandardClassification%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.BillingSchedules.DbModels.Union%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Commons.DbModels.User%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Commons.DbModels.UserOc%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Events.DbModels.Event%7D%2CStorm.Biz.Commons.ICommonFunctions%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.ManageSecureWorkforces.DbModels.DwManageSecureWorkforce%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.ManageSecureWorkforces.DbModels.ReleasedLog%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/ViewQueryService.cs/#L43">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_ViewQueryService__ctor_" data-uid="Storm.Biz.Commons.ViewQueryService.#ctor*"></a>
+  <h4 id="Storm_Biz_Commons_ViewQueryService__ctor_Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_Classification__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_Company__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_CompanyType__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_ContractorDiscipline__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_Discipline__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_HotelAssignments_DbModels_LodgingTypeCrewSheet__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_HotelAssignments_DbModels_LodgingTypeCrewSheetResource__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Hotels_DbModels_Hotel__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Hotels_DbModels_HotelAssignment__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Hotels_DbModels_HotelAssignmentDetail__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Hotels_DbModels_HotelAssignmentSupervisor__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Hotels_DbModels_HotelCompanyView__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_ManageDiscipline__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_Region__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_StandardClassification__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_BillingSchedules_DbModels_Union__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_User__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_UserOc__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_Event__Storm_Biz_Commons_ICommonFunctions_Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_DwManageSecureWorkforce__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_ReleasedLog__" data-uid="Storm.Biz.Commons.ViewQueryService.#ctor(Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Disciplines.DbModels.Classification},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Companies.DbModels.Company},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Companies.DbModels.CompanyType},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Companies.DbModels.ContractorDiscipline},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Disciplines.DbModels.Discipline},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.HotelAssignments.DbModels.LodgingTypeCrewSheet},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.HotelAssignments.DbModels.LodgingTypeCrewSheetResource},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Hotels.DbModels.Hotel},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Hotels.DbModels.HotelAssignment},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Hotels.DbModels.HotelAssignmentDetail},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Hotels.DbModels.HotelAssignmentSupervisor},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Hotels.DbModels.HotelCompanyView},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Disciplines.DbModels.ManageDiscipline},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.ManageSecureWorkforces.DbModels.Region},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Disciplines.DbModels.StandardClassification},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.BillingSchedules.DbModels.Union},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Commons.DbModels.User},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Commons.DbModels.UserOc},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Events.DbModels.Event},Storm.Biz.Commons.ICommonFunctions,Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.ManageSecureWorkforces.DbModels.DwManageSecureWorkforce},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.ManageSecureWorkforces.DbModels.ReleasedLog})">ViewQueryService(ISqlRepository&lt;Classification&gt;, ISqlRepository&lt;Company&gt;, ISqlRepository&lt;CompanyType&gt;, ISqlRepository&lt;ContractorDiscipline&gt;, ISqlRepository&lt;Discipline&gt;, ISqlRepository&lt;LodgingTypeCrewSheet&gt;, ISqlRepository&lt;LodgingTypeCrewSheetResource&gt;, ISqlRepository&lt;Hotel&gt;, ISqlRepository&lt;HotelAssignment&gt;, ISqlRepository&lt;HotelAssignmentDetail&gt;, ISqlRepository&lt;HotelAssignmentSupervisor&gt;, ISqlRepository&lt;HotelCompanyView&gt;, ISqlRepository&lt;ManageDiscipline&gt;, ISqlRepository&lt;Region&gt;, ISqlRepository&lt;StandardClassification&gt;, ISqlRepository&lt;Union&gt;, ISqlRepository&lt;User&gt;, ISqlRepository&lt;UserOc&gt;, ISqlRepository&lt;Event&gt;, ICommonFunctions, ISqlRepository&lt;DwManageSecureWorkforce&gt;, ISqlRepository&lt;ReleasedLog&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewQueryService(ISqlRepository&lt;Classification&gt; classificationRepository, ISqlRepository&lt;Company&gt; companyRepository, ISqlRepository&lt;CompanyType&gt; companyTypeRepository, ISqlRepository&lt;ContractorDiscipline&gt; contractorDisciplineRepository, ISqlRepository&lt;Discipline&gt; disciplineRepository, ISqlRepository&lt;LodgingTypeCrewSheet&gt; lodgingTypeCrewSheetRepository, ISqlRepository&lt;LodgingTypeCrewSheetResource&gt; lodgingTypeCrewSheetResourceRepository, ISqlRepository&lt;Hotel&gt; hotelRepository, ISqlRepository&lt;HotelAssignment&gt; hotelAssignmentRepository, ISqlRepository&lt;HotelAssignmentDetail&gt; hotelAssignmentDetailRepository, ISqlRepository&lt;HotelAssignmentSupervisor&gt; hotelAssignmentSupervisorRepository, ISqlRepository&lt;HotelCompanyView&gt; hotelCompanyViewRepository, ISqlRepository&lt;ManageDiscipline&gt; manageDisciplineRepository, ISqlRepository&lt;Region&gt; regionRepository, ISqlRepository&lt;StandardClassification&gt; standardClassificationRepository, ISqlRepository&lt;Union&gt; unionRepository, ISqlRepository&lt;User&gt; userRepository, ISqlRepository&lt;UserOc&gt; userOcRepository, ISqlRepository&lt;Event&gt; eventRepository, ICommonFunctions commonFunctions, ISqlRepository&lt;DwManageSecureWorkforce&gt; dwMswRepository, ISqlRepository&lt;ReleasedLog&gt; releasedLogRepository)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Disciplines.DbModels.Classification.html">Classification</a>&gt;</td>
+        <td><span class="parametername">classificationRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Companies.DbModels.Company.html">Company</a>&gt;</td>
+        <td><span class="parametername">companyRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Companies.DbModels.CompanyType.html">CompanyType</a>&gt;</td>
+        <td><span class="parametername">companyTypeRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Companies.DbModels.ContractorDiscipline.html">ContractorDiscipline</a>&gt;</td>
+        <td><span class="parametername">contractorDisciplineRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Disciplines.DbModels.Discipline.html">Discipline</a>&gt;</td>
+        <td><span class="parametername">disciplineRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.HotelAssignments.DbModels.LodgingTypeCrewSheet.html">LodgingTypeCrewSheet</a>&gt;</td>
+        <td><span class="parametername">lodgingTypeCrewSheetRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.HotelAssignments.DbModels.LodgingTypeCrewSheetResource.html">LodgingTypeCrewSheetResource</a>&gt;</td>
+        <td><span class="parametername">lodgingTypeCrewSheetResourceRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Hotels.DbModels.Hotel.html">Hotel</a>&gt;</td>
+        <td><span class="parametername">hotelRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Hotels.DbModels.HotelAssignment.html">HotelAssignment</a>&gt;</td>
+        <td><span class="parametername">hotelAssignmentRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Hotels.DbModels.HotelAssignmentDetail.html">HotelAssignmentDetail</a>&gt;</td>
+        <td><span class="parametername">hotelAssignmentDetailRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Hotels.DbModels.HotelAssignmentSupervisor.html">HotelAssignmentSupervisor</a>&gt;</td>
+        <td><span class="parametername">hotelAssignmentSupervisorRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Hotels.DbModels.HotelCompanyView.html">HotelCompanyView</a>&gt;</td>
+        <td><span class="parametername">hotelCompanyViewRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Disciplines.DbModels.ManageDiscipline.html">ManageDiscipline</a>&gt;</td>
+        <td><span class="parametername">manageDisciplineRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.ManageSecureWorkforces.DbModels.Region.html">Region</a>&gt;</td>
+        <td><span class="parametername">regionRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Disciplines.DbModels.StandardClassification.html">StandardClassification</a>&gt;</td>
+        <td><span class="parametername">standardClassificationRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.BillingSchedules.DbModels.Union.html">Union</a>&gt;</td>
+        <td><span class="parametername">unionRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td><span class="parametername">userRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.UserOc.html">UserOc</a>&gt;</td>
+        <td><span class="parametername">userOcRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Events.DbModels.Event.html">Event</a>&gt;</td>
+        <td><span class="parametername">eventRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ICommonFunctions.html">ICommonFunctions</a></td>
+        <td><span class="parametername">commonFunctions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.ManageSecureWorkforces.DbModels.DwManageSecureWorkforce.html">DwManageSecureWorkforce</a>&gt;</td>
+        <td><span class="parametername">dwMswRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.ManageSecureWorkforces.DbModels.ReleasedLog.html">ReleasedLog</a>&gt;</td>
+        <td><span class="parametername">releasedLogRepository</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_ViewQueryService_BuildHotelAssignmentQuery_System_Collections_Generic_IEnumerable_System_String__System_DateTime_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.ViewQueryService.BuildHotelAssignmentQuery(System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.DateTime)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/ViewQueryService.cs/#L211">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_ViewQueryService_BuildHotelAssignmentQuery_" data-uid="Storm.Biz.Commons.ViewQueryService.BuildHotelAssignmentQuery*"></a>
+  <h4 id="Storm_Biz_Commons_ViewQueryService_BuildHotelAssignmentQuery_System_Collections_Generic_IEnumerable_System_String__System_DateTime_" data-uid="Storm.Biz.Commons.ViewQueryService.BuildHotelAssignmentQuery(System.Collections.Generic.IEnumerable{System.String},System.DateTime)">BuildHotelAssignmentQuery(IEnumerable&lt;string&gt;, DateTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IQueryable&lt;HotelCompanyAssignmentWithLodgingTypeCrewSheetResources&gt; BuildHotelAssignmentQuery(IEnumerable&lt;string&gt; hotelIds, DateTime checkInDate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">hotelIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">checkInDate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;<a class="xref" href="Storm.Biz.HotelVoucher.Models.HotelCompanyAssignmentWithLodgingTypeCrewSheetResources.html">HotelCompanyAssignmentWithLodgingTypeCrewSheetResources</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_ViewQueryService_BuildHotelCompanyAssignmentReportQuery_System_Collections_Generic_IEnumerable_System_String__System_DateTime_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.ViewQueryService.BuildHotelCompanyAssignmentReportQuery(System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.DateTime)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/ViewQueryService.cs/#L252">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_ViewQueryService_BuildHotelCompanyAssignmentReportQuery_" data-uid="Storm.Biz.Commons.ViewQueryService.BuildHotelCompanyAssignmentReportQuery*"></a>
+  <h4 id="Storm_Biz_Commons_ViewQueryService_BuildHotelCompanyAssignmentReportQuery_System_Collections_Generic_IEnumerable_System_String__System_DateTime_" data-uid="Storm.Biz.Commons.ViewQueryService.BuildHotelCompanyAssignmentReportQuery(System.Collections.Generic.IEnumerable{System.String},System.DateTime)">BuildHotelCompanyAssignmentReportQuery(IEnumerable&lt;string&gt;, DateTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IQueryable&lt;HotelAssignmentGuestDto&gt; BuildHotelCompanyAssignmentReportQuery(IEnumerable&lt;string&gt; hotelIds, DateTime checkInDate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">hotelIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">checkInDate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;<a class="xref" href="Storm.Biz.HotelVoucher.Models.HotelAssignmentGuestDto.html">HotelAssignmentGuestDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_ViewQueryService_GetActiveDisciplinesByCompany_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.ViewQueryService.GetActiveDisciplinesByCompany(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/ViewQueryService.cs/#L98">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_ViewQueryService_GetActiveDisciplinesByCompany_" data-uid="Storm.Biz.Commons.ViewQueryService.GetActiveDisciplinesByCompany*"></a>
+  <h4 id="Storm_Biz_Commons_ViewQueryService_GetActiveDisciplinesByCompany_System_String_" data-uid="Storm.Biz.Commons.ViewQueryService.GetActiveDisciplinesByCompany(System.String)">GetActiveDisciplinesByCompany(string)</h4>
+  <div class="markdown level1 summary"><p>Based query is from vm_company_disciplines, but use inner join instead of left join. Query only active disciplines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;Discipline&gt; GetActiveDisciplinesByCompany(string companyId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;<a class="xref" href="Storm.Biz.Disciplines.DbModels.Discipline.html">Discipline</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_ViewQueryService_GetSearchHotelVoucherByRegionInDateQueryable_System_Collections_Generic_IEnumerable_System_String__System_DateTime_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.ViewQueryService.GetSearchHotelVoucherByRegionInDateQueryable(System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.DateTime)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/ViewQueryService.cs/#L344">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_ViewQueryService_GetSearchHotelVoucherByRegionInDateQueryable_" data-uid="Storm.Biz.Commons.ViewQueryService.GetSearchHotelVoucherByRegionInDateQueryable*"></a>
+  <h4 id="Storm_Biz_Commons_ViewQueryService_GetSearchHotelVoucherByRegionInDateQueryable_System_Collections_Generic_IEnumerable_System_String__System_DateTime_" data-uid="Storm.Biz.Commons.ViewQueryService.GetSearchHotelVoucherByRegionInDateQueryable(System.Collections.Generic.IEnumerable{System.String},System.DateTime)">GetSearchHotelVoucherByRegionInDateQueryable(IEnumerable&lt;string&gt;, DateTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IQueryable&lt;SearchHotelVoucherByRegionInDateQueryable&gt; GetSearchHotelVoucherByRegionInDateQueryable(IEnumerable&lt;string&gt; regionIds, DateTime checkInDate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">regionIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">checkInDate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;<a class="xref" href="Storm.Biz.HotelVoucher.Models.SearchHotelVoucherByRegionInDateQueryable.html">SearchHotelVoucherByRegionInDateQueryable</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_ViewQueryService_GetUserManageDisciplinesQuery.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.ViewQueryService.GetUserManageDisciplinesQuery%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/ViewQueryService.cs/#L112">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_ViewQueryService_GetUserManageDisciplinesQuery_" data-uid="Storm.Biz.Commons.ViewQueryService.GetUserManageDisciplinesQuery*"></a>
+  <h4 id="Storm_Biz_Commons_ViewQueryService_GetUserManageDisciplinesQuery" data-uid="Storm.Biz.Commons.ViewQueryService.GetUserManageDisciplinesQuery">GetUserManageDisciplinesQuery()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;UserManageDisciplines&gt; GetUserManageDisciplinesQuery()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.UserManageDisciplines.html">UserManageDisciplines</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_ViewQueryService_GetUserWorkForOperatingCompaniesQuery.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.ViewQueryService.GetUserWorkForOperatingCompaniesQuery%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/ViewQueryService.cs/#L177">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_ViewQueryService_GetUserWorkForOperatingCompaniesQuery_" data-uid="Storm.Biz.Commons.ViewQueryService.GetUserWorkForOperatingCompaniesQuery*"></a>
+  <h4 id="Storm_Biz_Commons_ViewQueryService_GetUserWorkForOperatingCompaniesQuery" data-uid="Storm.Biz.Commons.ViewQueryService.GetUserWorkForOperatingCompaniesQuery">GetUserWorkForOperatingCompaniesQuery()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;UserWorkForOperatingCompanies&gt; GetUserWorkForOperatingCompaniesQuery()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.UserWorkForOperatingCompanies.html">UserWorkForOperatingCompanies</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_ViewQueryService_GetVMClassificationQuery.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.ViewQueryService.GetVMClassificationQuery%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/ViewQueryService.cs/#L130">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_ViewQueryService_GetVMClassificationQuery_" data-uid="Storm.Biz.Commons.ViewQueryService.GetVMClassificationQuery*"></a>
+  <h4 id="Storm_Biz_Commons_ViewQueryService_GetVMClassificationQuery" data-uid="Storm.Biz.Commons.ViewQueryService.GetVMClassificationQuery">GetVMClassificationQuery()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;VMClassification&gt; GetVMClassificationQuery()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.VMClassification.html">VMClassification</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_ViewQueryService_GetVMClassificationQuery_ForUnitTest.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.ViewQueryService.GetVMClassificationQuery_ForUnitTest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/ViewQueryService.cs/#L140">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_ViewQueryService_GetVMClassificationQuery_ForUnitTest_" data-uid="Storm.Biz.Commons.ViewQueryService.GetVMClassificationQuery_ForUnitTest*"></a>
+  <h4 id="Storm_Biz_Commons_ViewQueryService_GetVMClassificationQuery_ForUnitTest" data-uid="Storm.Biz.Commons.ViewQueryService.GetVMClassificationQuery_ForUnitTest">GetVMClassificationQuery_ForUnitTest()</h4>
+  <div class="markdown level1 summary"><p>This method is used for unit testing.
+Equivalent to GetVMClassificationQuery()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IQueryable&lt;VMClassification&gt; GetVMClassificationQuery_ForUnitTest()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.VMClassification.html">VMClassification</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_ViewQueryService_GetVMCompanyQuery.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.ViewQueryService.GetVMCompanyQuery%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/ViewQueryService.cs/#L192">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_ViewQueryService_GetVMCompanyQuery_" data-uid="Storm.Biz.Commons.ViewQueryService.GetVMCompanyQuery*"></a>
+  <h4 id="Storm_Biz_Commons_ViewQueryService_GetVMCompanyQuery" data-uid="Storm.Biz.Commons.ViewQueryService.GetVMCompanyQuery">GetVMCompanyQuery()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;VMCompany&gt; GetVMCompanyQuery()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.VMCompany.html">VMCompany</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Storm.Biz.Commons.IViewQueryService.html">IViewQueryService</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_ViewQueryService.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.ViewQueryService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/ViewQueryService.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

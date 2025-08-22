@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class RealtimeService | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class RealtimeService | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.RealTimeUpdate.Services.RealtimeService">
+
+
+
+  <h1 id="Storm_RealTimeUpdate_Services_RealtimeService" data-uid="Storm.RealTimeUpdate.Services.RealtimeService" class="text-break">Class RealtimeService</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">RealtimeService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Storm.RealTimeUpdate.Services.IRealtimeService.html">IRealtimeService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.RealTimeUpdate.html">RealTimeUpdate</a>.<a class="xref" href="Storm.RealTimeUpdate.Services.html">Services</a></h6>
+  <h6><strong>Assembly</strong>: Storm.RealTimeUpdate.dll</h6>
+  <h5 id="Storm_RealTimeUpdate_Services_RealtimeService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RealtimeService : IRealtimeService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_RealTimeUpdate_Services_RealtimeService__ctor_Microsoft_Extensions_Logging_ILogger_Storm_RealTimeUpdate_Services_RealtimeService__Storm_Infrastructure_Services_IDateTimeService_Storm_Infrastructure_Data_Redis_IRedisCache_Storm_RealTimeUpdate_Common_Caching_RealtimeUserCache__StackExchange_Redis_IDatabase_Storm_RealTimeUpdate_Common_Services_IHashingService_Microsoft_Extensions_Configuration_IConfiguration_.md&amp;value=---%0Auid%3A%20Storm.RealTimeUpdate.Services.RealtimeService.%23ctor(Microsoft.Extensions.Logging.ILogger%7BStorm.RealTimeUpdate.Services.RealtimeService%7D%2CStorm.Infrastructure.Services.IDateTimeService%2CStorm.Infrastructure.Data.Redis.IRedisCache%7BStorm.RealTimeUpdate.Common.Caching.RealtimeUserCache%7D%2CStackExchange.Redis.IDatabase%2CStorm.RealTimeUpdate.Common.Services.IHashingService%2CMicrosoft.Extensions.Configuration.IConfiguration)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.RealTimeUpdate/Services/RealtimeService.cs/#L30">View Source</a>
+  </span>
+  <a id="Storm_RealTimeUpdate_Services_RealtimeService__ctor_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.#ctor*"></a>
+  <h4 id="Storm_RealTimeUpdate_Services_RealtimeService__ctor_Microsoft_Extensions_Logging_ILogger_Storm_RealTimeUpdate_Services_RealtimeService__Storm_Infrastructure_Services_IDateTimeService_Storm_Infrastructure_Data_Redis_IRedisCache_Storm_RealTimeUpdate_Common_Caching_RealtimeUserCache__StackExchange_Redis_IDatabase_Storm_RealTimeUpdate_Common_Services_IHashingService_Microsoft_Extensions_Configuration_IConfiguration_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.#ctor(Microsoft.Extensions.Logging.ILogger{Storm.RealTimeUpdate.Services.RealtimeService},Storm.Infrastructure.Services.IDateTimeService,Storm.Infrastructure.Data.Redis.IRedisCache{Storm.RealTimeUpdate.Common.Caching.RealtimeUserCache},StackExchange.Redis.IDatabase,Storm.RealTimeUpdate.Common.Services.IHashingService,Microsoft.Extensions.Configuration.IConfiguration)">RealtimeService(ILogger&lt;RealtimeService&gt;, IDateTimeService, IRedisCache&lt;RealtimeUserCache&gt;, IDatabase, IHashingService, IConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RealtimeService(ILogger&lt;RealtimeService&gt; logger, IDateTimeService dateTimeService, IRedisCache&lt;RealtimeUserCache&gt; realtimeUserCache, IDatabase redisDatabase, IHashingService hashingService, IConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Storm.RealTimeUpdate.Services.RealtimeService.html">RealtimeService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDateTimeService</span></td>
+        <td><span class="parametername">dateTimeService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IRedisCache</span>&lt;<a class="xref" href="Storm.RealTimeUpdate.Common.Caching.RealtimeUserCache.html">RealtimeUserCache</a>&gt;</td>
+        <td><span class="parametername">realtimeUserCache</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDatabase</span></td>
+        <td><span class="parametername">redisDatabase</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.RealTimeUpdate.Common.Services.IHashingService.html">IHashingService</a></td>
+        <td><span class="parametername">hashingService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_RealTimeUpdate_Services_RealtimeService_RequiredHeader.md&amp;value=---%0Auid%3A%20Storm.RealTimeUpdate.Services.RealtimeService.RequiredHeader%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.RealTimeUpdate/Services/RealtimeService.cs/#L21">View Source</a>
+  </span>
+  <h4 id="Storm_RealTimeUpdate_Services_RealtimeService_RequiredHeader" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.RequiredHeader">RequiredHeader</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string RequiredHeader</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_RealTimeUpdate_Services_RealtimeService_CreateClientSignatureAsync_Microsoft_Azure_Functions_Worker_SignalRInvocationContext_.md&amp;value=---%0Auid%3A%20Storm.RealTimeUpdate.Services.RealtimeService.CreateClientSignatureAsync(Microsoft.Azure.Functions.Worker.SignalRInvocationContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.RealTimeUpdate/Services/RealtimeService.cs/#L73">View Source</a>
+  </span>
+  <a id="Storm_RealTimeUpdate_Services_RealtimeService_CreateClientSignatureAsync_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.CreateClientSignatureAsync*"></a>
+  <h4 id="Storm_RealTimeUpdate_Services_RealtimeService_CreateClientSignatureAsync_Microsoft_Azure_Functions_Worker_SignalRInvocationContext_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.CreateClientSignatureAsync(Microsoft.Azure.Functions.Worker.SignalRInvocationContext)">CreateClientSignatureAsync(SignalRInvocationContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SignalRMessageAction&gt; CreateClientSignatureAsync(SignalRInvocationContext invocationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SignalRInvocationContext</span></td>
+        <td><span class="parametername">invocationContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">SignalRMessageAction</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_RealTimeUpdate_Services_RealtimeService_CreateNegotiationAsync_Microsoft_Azure_Functions_Worker_Http_HttpRequestData_Storm_RealTimeUpdate_Common_Models_NegotiationResponse_.md&amp;value=---%0Auid%3A%20Storm.RealTimeUpdate.Services.RealtimeService.CreateNegotiationAsync(Microsoft.Azure.Functions.Worker.Http.HttpRequestData%2CStorm.RealTimeUpdate.Common.Models.NegotiationResponse)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.RealTimeUpdate/Services/RealtimeService.cs/#L47">View Source</a>
+  </span>
+  <a id="Storm_RealTimeUpdate_Services_RealtimeService_CreateNegotiationAsync_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.CreateNegotiationAsync*"></a>
+  <h4 id="Storm_RealTimeUpdate_Services_RealtimeService_CreateNegotiationAsync_Microsoft_Azure_Functions_Worker_Http_HttpRequestData_Storm_RealTimeUpdate_Common_Models_NegotiationResponse_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.CreateNegotiationAsync(Microsoft.Azure.Functions.Worker.Http.HttpRequestData,Storm.RealTimeUpdate.Common.Models.NegotiationResponse)">CreateNegotiationAsync(HttpRequestData, NegotiationResponse?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NegotiationResponse&gt; CreateNegotiationAsync(HttpRequestData request, NegotiationResponse? negotiation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.azure.functions.worker.http.httprequestdata">HttpRequestData</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.RealTimeUpdate.Common.Models.NegotiationResponse.html">NegotiationResponse</a></td>
+        <td><span class="parametername">negotiation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.RealTimeUpdate.Common.Models.NegotiationResponse.html">NegotiationResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_RealTimeUpdate_Services_RealtimeService_CreateSignatureProcessAsync_Storm_RealTimeUpdate_Common_Models_RealtimeDistributorRequest_.md&amp;value=---%0Auid%3A%20Storm.RealTimeUpdate.Services.RealtimeService.CreateSignatureProcessAsync(Storm.RealTimeUpdate.Common.Models.RealtimeDistributorRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.RealTimeUpdate/Services/RealtimeService.cs/#L89">View Source</a>
+  </span>
+  <a id="Storm_RealTimeUpdate_Services_RealtimeService_CreateSignatureProcessAsync_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.CreateSignatureProcessAsync*"></a>
+  <h4 id="Storm_RealTimeUpdate_Services_RealtimeService_CreateSignatureProcessAsync_Storm_RealTimeUpdate_Common_Models_RealtimeDistributorRequest_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.CreateSignatureProcessAsync(Storm.RealTimeUpdate.Common.Models.RealtimeDistributorRequest)">CreateSignatureProcessAsync(RealtimeDistributorRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ClientInformation&gt; CreateSignatureProcessAsync(RealtimeDistributorRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.RealTimeUpdate.Common.Models.RealtimeDistributorRequest.html">RealtimeDistributorRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.RealTimeUpdate.Common.Models.ClientInformation.html">ClientInformation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_RealTimeUpdate_Services_RealtimeService_DeleteClientSignatureAsync_Microsoft_Azure_Functions_Worker_SignalRInvocationContext_.md&amp;value=---%0Auid%3A%20Storm.RealTimeUpdate.Services.RealtimeService.DeleteClientSignatureAsync(Microsoft.Azure.Functions.Worker.SignalRInvocationContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.RealTimeUpdate/Services/RealtimeService.cs/#L113">View Source</a>
+  </span>
+  <a id="Storm_RealTimeUpdate_Services_RealtimeService_DeleteClientSignatureAsync_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.DeleteClientSignatureAsync*"></a>
+  <h4 id="Storm_RealTimeUpdate_Services_RealtimeService_DeleteClientSignatureAsync_Microsoft_Azure_Functions_Worker_SignalRInvocationContext_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.DeleteClientSignatureAsync(Microsoft.Azure.Functions.Worker.SignalRInvocationContext)">DeleteClientSignatureAsync(SignalRInvocationContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteClientSignatureAsync(SignalRInvocationContext invocationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SignalRInvocationContext</span></td>
+        <td><span class="parametername">invocationContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_RealTimeUpdate_Services_RealtimeService_DeleteSignatureProcessAsync_Storm_RealTimeUpdate_Common_Models_RealtimeDistributorRequest_.md&amp;value=---%0Auid%3A%20Storm.RealTimeUpdate.Services.RealtimeService.DeleteSignatureProcessAsync(Storm.RealTimeUpdate.Common.Models.RealtimeDistributorRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.RealTimeUpdate/Services/RealtimeService.cs/#L122">View Source</a>
+  </span>
+  <a id="Storm_RealTimeUpdate_Services_RealtimeService_DeleteSignatureProcessAsync_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.DeleteSignatureProcessAsync*"></a>
+  <h4 id="Storm_RealTimeUpdate_Services_RealtimeService_DeleteSignatureProcessAsync_Storm_RealTimeUpdate_Common_Models_RealtimeDistributorRequest_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.DeleteSignatureProcessAsync(Storm.RealTimeUpdate.Common.Models.RealtimeDistributorRequest)">DeleteSignatureProcessAsync(RealtimeDistributorRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ClientInformation&gt; DeleteSignatureProcessAsync(RealtimeDistributorRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.RealTimeUpdate.Common.Models.RealtimeDistributorRequest.html">RealtimeDistributorRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.RealTimeUpdate.Common.Models.ClientInformation.html">ClientInformation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_RealTimeUpdate_Services_RealtimeService_PublishNotificationAsync_System_Collections_Generic_IEnumerable_Storm_RealTimeUpdate_Common_Models_PublishNotificationRequest__.md&amp;value=---%0Auid%3A%20Storm.RealTimeUpdate.Services.RealtimeService.PublishNotificationAsync(System.Collections.Generic.IEnumerable%7BStorm.RealTimeUpdate.Common.Models.PublishNotificationRequest%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.RealTimeUpdate/Services/RealtimeService.cs/#L142">View Source</a>
+  </span>
+  <a id="Storm_RealTimeUpdate_Services_RealtimeService_PublishNotificationAsync_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.PublishNotificationAsync*"></a>
+  <h4 id="Storm_RealTimeUpdate_Services_RealtimeService_PublishNotificationAsync_System_Collections_Generic_IEnumerable_Storm_RealTimeUpdate_Common_Models_PublishNotificationRequest__" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.PublishNotificationAsync(System.Collections.Generic.IEnumerable{Storm.RealTimeUpdate.Common.Models.PublishNotificationRequest})">PublishNotificationAsync(IEnumerable&lt;PublishNotificationRequest&gt;?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SignalRMessageAction&gt; PublishNotificationAsync(IEnumerable&lt;PublishNotificationRequest&gt;? requests)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Storm.RealTimeUpdate.Common.Models.PublishNotificationRequest.html">PublishNotificationRequest</a>&gt;</td>
+        <td><span class="parametername">requests</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">SignalRMessageAction</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_RealTimeUpdate_Services_RealtimeService_PublishRealtimeUpdateAsync_System_Collections_Generic_IEnumerable_Storm_RealTimeUpdate_Common_Models_PublishRealtimeUpdateRequest__.md&amp;value=---%0Auid%3A%20Storm.RealTimeUpdate.Services.RealtimeService.PublishRealtimeUpdateAsync(System.Collections.Generic.IEnumerable%7BStorm.RealTimeUpdate.Common.Models.PublishRealtimeUpdateRequest%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.RealTimeUpdate/Services/RealtimeService.cs/#L155">View Source</a>
+  </span>
+  <a id="Storm_RealTimeUpdate_Services_RealtimeService_PublishRealtimeUpdateAsync_" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.PublishRealtimeUpdateAsync*"></a>
+  <h4 id="Storm_RealTimeUpdate_Services_RealtimeService_PublishRealtimeUpdateAsync_System_Collections_Generic_IEnumerable_Storm_RealTimeUpdate_Common_Models_PublishRealtimeUpdateRequest__" data-uid="Storm.RealTimeUpdate.Services.RealtimeService.PublishRealtimeUpdateAsync(System.Collections.Generic.IEnumerable{Storm.RealTimeUpdate.Common.Models.PublishRealtimeUpdateRequest})">PublishRealtimeUpdateAsync(IEnumerable&lt;PublishRealtimeUpdateRequest&gt;?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SignalRMessageAction&gt; PublishRealtimeUpdateAsync(IEnumerable&lt;PublishRealtimeUpdateRequest&gt;? requests)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Storm.RealTimeUpdate.Common.Models.PublishRealtimeUpdateRequest.html">PublishRealtimeUpdateRequest</a>&gt;</td>
+        <td><span class="parametername">requests</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">SignalRMessageAction</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Storm.RealTimeUpdate.Services.IRealtimeService.html">IRealtimeService</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_RealTimeUpdate_Services_RealtimeService.md&amp;value=---%0Auid%3A%20Storm.RealTimeUpdate.Services.RealtimeService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.RealTimeUpdate/Services/RealtimeService.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

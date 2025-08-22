@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TodoListGrpcService | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TodoListGrpcService | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Facing.Services.TodoListGrpcService">
+
+
+
+  <h1 id="Storm_Facing_Services_TodoListGrpcService" data-uid="Storm.Facing.Services.TodoListGrpcService" class="text-break">Class TodoListGrpcService</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Storm.Facing.Protos.TodoList.html">TodoList</a>.<a class="xref" href="Storm.Facing.Protos.TodoList.TodoListBase.html">TodoListBase</a></div>
+    <div class="level2"><span class="xref">TodoListGrpcService</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Facing.html">Facing</a>.<a class="xref" href="Storm.Facing.Services.html">Services</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Facing.dll</h6>
+  <h5 id="Storm_Facing_Services_TodoListGrpcService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Authorize]
+public class TodoListGrpcService : TodoList.TodoListBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TodoListGrpcService__ctor_Storm_Biz_TodoList_ITodoListService_Microsoft_Extensions_Logging_ILogger_Storm_Facing_Services_TodoListGrpcService__.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TodoListGrpcService.%23ctor(Storm.Biz.TodoList.ITodoListService%2CMicrosoft.Extensions.Logging.ILogger%7BStorm.Facing.Services.TodoListGrpcService%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TodoListGrpcService.cs/#L16">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TodoListGrpcService__ctor_" data-uid="Storm.Facing.Services.TodoListGrpcService.#ctor*"></a>
+  <h4 id="Storm_Facing_Services_TodoListGrpcService__ctor_Storm_Biz_TodoList_ITodoListService_Microsoft_Extensions_Logging_ILogger_Storm_Facing_Services_TodoListGrpcService__" data-uid="Storm.Facing.Services.TodoListGrpcService.#ctor(Storm.Biz.TodoList.ITodoListService,Microsoft.Extensions.Logging.ILogger{Storm.Facing.Services.TodoListGrpcService})">TodoListGrpcService(ITodoListService, ILogger&lt;TodoListGrpcService&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodoListGrpcService(ITodoListService todoListService, ILogger&lt;TodoListGrpcService&gt; logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.TodoList.ITodoListService.html">ITodoListService</a></td>
+        <td><span class="parametername">todoListService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Storm.Facing.Services.TodoListGrpcService.html">TodoListGrpcService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TodoListGrpcService_Create_Storm_Facing_Protos_CreateRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TodoListGrpcService.Create(Storm.Facing.Protos.CreateRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TodoListGrpcService.cs/#L39">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TodoListGrpcService_Create_" data-uid="Storm.Facing.Services.TodoListGrpcService.Create*"></a>
+  <h4 id="Storm_Facing_Services_TodoListGrpcService_Create_Storm_Facing_Protos_CreateRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TodoListGrpcService.Create(Storm.Facing.Protos.CreateRequest,Grpc.Core.ServerCallContext)">Create(CreateRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Response&gt; Create(CreateRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.CreateRequest.html">CreateRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TodoList.TodoListBase.html#Storm_Facing_Protos_TodoList_TodoListBase_Create_Storm_Facing_Protos_CreateRequest_Grpc_Core_ServerCallContext_">TodoList.TodoListBase.Create(CreateRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TodoListGrpcService_CreateTodoNote_Storm_Facing_Protos_CreateTodoNoteRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TodoListGrpcService.CreateTodoNote(Storm.Facing.Protos.CreateTodoNoteRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TodoListGrpcService.cs/#L81">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TodoListGrpcService_CreateTodoNote_" data-uid="Storm.Facing.Services.TodoListGrpcService.CreateTodoNote*"></a>
+  <h4 id="Storm_Facing_Services_TodoListGrpcService_CreateTodoNote_Storm_Facing_Protos_CreateTodoNoteRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TodoListGrpcService.CreateTodoNote(Storm.Facing.Protos.CreateTodoNoteRequest,Grpc.Core.ServerCallContext)">CreateTodoNote(CreateTodoNoteRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Response&gt; CreateTodoNote(CreateTodoNoteRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.CreateTodoNoteRequest.html">CreateTodoNoteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TodoList.TodoListBase.html#Storm_Facing_Protos_TodoList_TodoListBase_CreateTodoNote_Storm_Facing_Protos_CreateTodoNoteRequest_Grpc_Core_ServerCallContext_">TodoList.TodoListBase.CreateTodoNote(CreateTodoNoteRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TodoListGrpcService_Delete_Storm_Facing_Protos_DeleteRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TodoListGrpcService.Delete(Storm.Facing.Protos.DeleteRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TodoListGrpcService.cs/#L59">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TodoListGrpcService_Delete_" data-uid="Storm.Facing.Services.TodoListGrpcService.Delete*"></a>
+  <h4 id="Storm_Facing_Services_TodoListGrpcService_Delete_Storm_Facing_Protos_DeleteRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TodoListGrpcService.Delete(Storm.Facing.Protos.DeleteRequest,Grpc.Core.ServerCallContext)">Delete(DeleteRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Response&gt; Delete(DeleteRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.DeleteRequest.html">DeleteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TodoList.TodoListBase.html#Storm_Facing_Protos_TodoList_TodoListBase_Delete_Storm_Facing_Protos_DeleteRequest_Grpc_Core_ServerCallContext_">TodoList.TodoListBase.Delete(DeleteRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TodoListGrpcService_Get_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TodoListGrpcService.Get(Google.Protobuf.WellKnownTypes.Empty%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TodoListGrpcService.cs/#L23">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TodoListGrpcService_Get_" data-uid="Storm.Facing.Services.TodoListGrpcService.Get*"></a>
+  <h4 id="Storm_Facing_Services_TodoListGrpcService_Get_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TodoListGrpcService.Get(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">Get(Empty, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetResponse&gt; Get(Empty request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Empty</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetResponse.html">GetResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TodoList.TodoListBase.html#Storm_Facing_Protos_TodoList_TodoListBase_Get_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_">TodoList.TodoListBase.Get(Empty, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TodoListGrpcService_GetTodoNote_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TodoListGrpcService.GetTodoNote(Google.Protobuf.WellKnownTypes.Empty%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TodoListGrpcService.cs/#L66">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TodoListGrpcService_GetTodoNote_" data-uid="Storm.Facing.Services.TodoListGrpcService.GetTodoNote*"></a>
+  <h4 id="Storm_Facing_Services_TodoListGrpcService_GetTodoNote_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TodoListGrpcService.GetTodoNote(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">GetTodoNote(Empty, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetTodoNoteResponse&gt; GetTodoNote(Empty request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Empty</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetTodoNoteResponse.html">GetTodoNoteResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TodoList.TodoListBase.html#Storm_Facing_Protos_TodoList_TodoListBase_GetTodoNote_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_">TodoList.TodoListBase.GetTodoNote(Empty, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TodoListGrpcService_Update_Storm_Facing_Protos_UpdateRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TodoListGrpcService.Update(Storm.Facing.Protos.UpdateRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TodoListGrpcService.cs/#L46">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_TodoListGrpcService_Update_" data-uid="Storm.Facing.Services.TodoListGrpcService.Update*"></a>
+  <h4 id="Storm_Facing_Services_TodoListGrpcService_Update_Storm_Facing_Protos_UpdateRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.TodoListGrpcService.Update(Storm.Facing.Protos.UpdateRequest,Grpc.Core.ServerCallContext)">Update(UpdateRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Response&gt; Update(UpdateRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.UpdateRequest.html">UpdateRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.TodoList.TodoListBase.html#Storm_Facing_Protos_TodoList_TodoListBase_Update_Storm_Facing_Protos_UpdateRequest_Grpc_Core_ServerCallContext_">TodoList.TodoListBase.Update(UpdateRequest, ServerCallContext)</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_TodoListGrpcService.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.TodoListGrpcService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/TodoListGrpcService.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

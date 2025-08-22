@@ -1,0 +1,2469 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Timesheet | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Timesheet | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet">
+
+
+
+  <h1 id="Storm_Biz_Timesheets_DbModels_Timesheet" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet" class="text-break">Class Timesheet</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">SqlModelBase</span></div>
+    <div class="level2"><span class="xref">Timesheet</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IDbModel</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+    <div><span class="xref">IDbModelBase</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">SqlModelBase.Id</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Biz.html">Biz</a>.<a class="xref" href="Storm.Biz.Timesheets.html">Timesheets</a>.<a class="xref" href="Storm.Biz.Timesheets.DbModels.html">DbModels</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Biz.dll</h6>
+  <h5 id="Storm_Biz_Timesheets_DbModels_Timesheet_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Timesheet : SqlModelBase, IDbModel&lt;string&gt;, IDbModelBase</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_ApproverFirstName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.ApproverFirstName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L48">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_ApproverFirstName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ApproverFirstName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_ApproverFirstName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ApproverFirstName">ApproverFirstName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ApproverFirstName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_ApproverId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.ApproverId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L25">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_ApproverId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ApproverId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_ApproverId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ApproverId">ApproverId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ApproverId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_ApproverLastName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.ApproverLastName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L49">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_ApproverLastName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ApproverLastName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_ApproverLastName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ApproverLastName">ApproverLastName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ApproverLastName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_ApproverNote.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.ApproverNote%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L26">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_ApproverNote_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ApproverNote*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_ApproverNote" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ApproverNote">ApproverNote</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ApproverNote { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L63">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelId">AssignedLocationHotelId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationHotelId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L64">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelName">AssignedLocationHotelName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationHotelName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelRegionId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelRegionId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L65">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelRegionId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelRegionId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelRegionId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelRegionId">AssignedLocationHotelRegionId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationHotelRegionId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelRegionName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelRegionName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L66">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelRegionName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelRegionName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationHotelRegionName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationHotelRegionName">AssignedLocationHotelRegionName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationHotelRegionName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationRegionId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationRegionId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L67">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationRegionId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationRegionId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationRegionId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationRegionId">AssignedLocationRegionId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationRegionId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationRegionName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationRegionName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L68">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationRegionName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationRegionName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationRegionName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationRegionName">AssignedLocationRegionName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationRegionName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingRegionId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingRegionId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L61">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingRegionId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingRegionId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingRegionId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingRegionId">AssignedLocationStagingRegionId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationStagingRegionId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingRegionName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingRegionName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L62">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingRegionName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingRegionName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingRegionName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingRegionName">AssignedLocationStagingRegionName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationStagingRegionName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingSiteId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingSiteId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L59">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingSiteId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingSiteId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingSiteId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingSiteId">AssignedLocationStagingSiteId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationStagingSiteId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingSiteName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingSiteName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L60">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingSiteName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingSiteName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStagingSiteName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStagingSiteName">AssignedLocationStagingSiteName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationStagingSiteName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStateCityId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStateCityId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L56">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStateCityId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStateCityId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStateCityId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStateCityId">AssignedLocationStateCityId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? AssignedLocationStateCityId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStateCityLocationName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStateCityLocationName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L58">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStateCityLocationName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStateCityLocationName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStateCityLocationName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStateCityLocationName">AssignedLocationStateCityLocationName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationStateCityLocationName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStateCityStateName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStateCityStateName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L57">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStateCityStateName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStateCityStateName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_AssignedLocationStateCityStateName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.AssignedLocationStateCityStateName">AssignedLocationStateCityStateName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? AssignedLocationStateCityStateName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CautiousDetail.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CautiousDetail%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L28">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CautiousDetail_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CautiousDetail*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CautiousDetail" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CautiousDetail">CautiousDetail</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CautiousDetail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_ChargedLocationCoordinate.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.ChargedLocationCoordinate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L33">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_ChargedLocationCoordinate_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ChargedLocationCoordinate*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_ChargedLocationCoordinate" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ChargedLocationCoordinate">ChargedLocationCoordinate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point? ChargedLocationCoordinate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_ChargedLocationId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.ChargedLocationId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L20">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_ChargedLocationId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ChargedLocationId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_ChargedLocationId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ChargedLocationId">ChargedLocationId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ChargedLocationId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_ChargedLocationName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.ChargedLocationName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L53">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_ChargedLocationName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ChargedLocationName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_ChargedLocationName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ChargedLocationName">ChargedLocationName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ChargedLocationName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CompanyCode.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CompanyCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L37">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CompanyCode_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CompanyCode*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CompanyCode" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CompanyCode">CompanyCode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CompanyCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CompanyId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CompanyId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L9">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CompanyId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CompanyId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CompanyId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CompanyId">CompanyId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CompanyId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CompanyName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CompanyName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L38">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CompanyName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CompanyName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CompanyName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CompanyName">CompanyName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CompanyName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CreatedDateTime.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CreatedDateTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L79">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CreatedDateTime_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CreatedDateTime*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CreatedDateTime" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CreatedDateTime">CreatedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? CreatedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CreatorFirstName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CreatorFirstName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L46">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CreatorFirstName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CreatorFirstName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CreatorFirstName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CreatorFirstName">CreatorFirstName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CreatorFirstName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CreatorId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CreatorId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L23">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CreatorId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CreatorId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CreatorId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CreatorId">CreatorId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CreatorId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CreatorLastName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CreatorLastName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L47">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CreatorLastName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CreatorLastName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CreatorLastName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CreatorLastName">CreatorLastName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CreatorLastName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_Crewsheet.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.Crewsheet%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L35">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_Crewsheet_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.Crewsheet*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_Crewsheet" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.Crewsheet">Crewsheet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Crewsheet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L15">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetId">CrewsheetId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CrewsheetId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L44">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetName">CrewsheetName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CrewsheetName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetSubmitToId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetSubmitToId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L16">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetSubmitToId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetSubmitToId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetSubmitToId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetSubmitToId">CrewsheetSubmitToId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CrewsheetSubmitToId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetSubmitToName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetSubmitToName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L52">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetSubmitToName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetSubmitToName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetSubmitToName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetSubmitToName">CrewsheetSubmitToName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CrewsheetSubmitToName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetTimesheetLastSubmitterFirstName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetTimesheetLastSubmitterFirstName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L50">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetTimesheetLastSubmitterFirstName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetTimesheetLastSubmitterFirstName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetTimesheetLastSubmitterFirstName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetTimesheetLastSubmitterFirstName">CrewsheetTimesheetLastSubmitterFirstName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CrewsheetTimesheetLastSubmitterFirstName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetTimesheetLastSubmitterId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetTimesheetLastSubmitterId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L17">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetTimesheetLastSubmitterId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetTimesheetLastSubmitterId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetTimesheetLastSubmitterId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetTimesheetLastSubmitterId">CrewsheetTimesheetLastSubmitterId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CrewsheetTimesheetLastSubmitterId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetTimesheetLastSubmitterLastName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetTimesheetLastSubmitterLastName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L51">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetTimesheetLastSubmitterLastName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetTimesheetLastSubmitterLastName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CrewsheetTimesheetLastSubmitterLastName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CrewsheetTimesheetLastSubmitterLastName">CrewsheetTimesheetLastSubmitterLastName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CrewsheetTimesheetLastSubmitterLastName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CurrentLocationStateCityId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CurrentLocationStateCityId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L71">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CurrentLocationStateCityId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CurrentLocationStateCityId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CurrentLocationStateCityId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CurrentLocationStateCityId">CurrentLocationStateCityId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? CurrentLocationStateCityId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CurrentLocationStateCityLocationName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CurrentLocationStateCityLocationName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L73">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CurrentLocationStateCityLocationName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CurrentLocationStateCityLocationName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CurrentLocationStateCityLocationName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CurrentLocationStateCityLocationName">CurrentLocationStateCityLocationName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CurrentLocationStateCityLocationName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CurrentLocationStateCityStateName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CurrentLocationStateCityStateName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L72">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CurrentLocationStateCityStateName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CurrentLocationStateCityStateName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CurrentLocationStateCityStateName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CurrentLocationStateCityStateName">CurrentLocationStateCityStateName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CurrentLocationStateCityStateName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CurrentWorkStatus.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CurrentWorkStatus%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L70">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CurrentWorkStatus_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CurrentWorkStatus*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CurrentWorkStatus" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CurrentWorkStatus">CurrentWorkStatus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CurrentWorkStatus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_CurrentWorkStatusId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.CurrentWorkStatusId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L69">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_CurrentWorkStatusId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CurrentWorkStatusId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_CurrentWorkStatusId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.CurrentWorkStatusId">CurrentWorkStatusId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? CurrentWorkStatusId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_Description.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.Description%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L22">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_Description_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.Description*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_Description" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.Description">Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_DisciplineId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.DisciplineId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L13">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_DisciplineId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.DisciplineId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_DisciplineId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.DisciplineId">DisciplineId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DisciplineId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_DisciplineName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.DisciplineName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L42">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_DisciplineName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.DisciplineName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_DisciplineName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.DisciplineName">DisciplineName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DisciplineName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_EeventStatusId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.EeventStatusId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L41">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_EeventStatusId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.EeventStatusId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_EeventStatusId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.EeventStatusId">EeventStatusId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? EeventStatusId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_EventCode.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.EventCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L39">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_EventCode_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.EventCode*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_EventCode" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.EventCode">EventCode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? EventCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_EventId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.EventId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L12">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_EventId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.EventId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_EventId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.EventId">EventId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? EventId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_EventName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.EventName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L40">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_EventName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.EventName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_EventName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.EventName">EventName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? EventName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_FlagId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.FlagId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L74">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_FlagId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.FlagId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_FlagId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.FlagId">FlagId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? FlagId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_IsActive.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.IsActive%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L32">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_IsActive_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsActive*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_IsActive" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsActive">IsActive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsActive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_IsCautious.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.IsCautious%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L27">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_IsCautious_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsCautious*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_IsCautious" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsCautious">IsCautious</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsCautious { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_IsGenInvoice.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.IsGenInvoice%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L34">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_IsGenInvoice_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsGenInvoice*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_IsGenInvoice" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsGenInvoice">IsGenInvoice</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsGenInvoice { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_IsMealNotProvideBreakfast.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.IsMealNotProvideBreakfast%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L29">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_IsMealNotProvideBreakfast_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsMealNotProvideBreakfast*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_IsMealNotProvideBreakfast" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsMealNotProvideBreakfast">IsMealNotProvideBreakfast</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsMealNotProvideBreakfast { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_IsMealNotProvideDinner.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.IsMealNotProvideDinner%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L31">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_IsMealNotProvideDinner_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsMealNotProvideDinner*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_IsMealNotProvideDinner" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsMealNotProvideDinner">IsMealNotProvideDinner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsMealNotProvideDinner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_IsMealNotProvideLunch.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.IsMealNotProvideLunch%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L30">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_IsMealNotProvideLunch_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsMealNotProvideLunch*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_IsMealNotProvideLunch" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.IsMealNotProvideLunch">IsMealNotProvideLunch</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsMealNotProvideLunch { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_Leader.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.Leader%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L54">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_Leader_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.Leader*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_Leader" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.Leader">Leader</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Leader { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_LeaderCellPhone.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.LeaderCellPhone%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L55">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_LeaderCellPhone_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.LeaderCellPhone*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_LeaderCellPhone" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.LeaderCellPhone">LeaderCellPhone</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? LeaderCellPhone { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_LoggedOn.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.LoggedOn%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L14">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_LoggedOn_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.LoggedOn*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_LoggedOn" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.LoggedOn">LoggedOn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? LoggedOn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_MobileCreated.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.MobileCreated%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L78">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_MobileCreated_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.MobileCreated*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_MobileCreated" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.MobileCreated">MobileCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? MobileCreated { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_Name.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.Name%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L8">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_Name_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.Name*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_Name" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_NextSubmittersId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.NextSubmittersId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L75">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_NextSubmittersId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.NextSubmittersId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_NextSubmittersId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.NextSubmittersId">NextSubmittersId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? NextSubmittersId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolInternal.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolInternal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L36">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolInternal_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolInternal*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolInternal" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolInternal">ResourcePoolInternal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ResourcePoolInternal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolInternalId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolInternalId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L18">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolInternalId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolInternalId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolInternalId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolInternalId">ResourcePoolInternalId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ResourcePoolInternalId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L45">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolName">ResourcePoolName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ResourcePoolName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolTypeId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolTypeId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L19">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolTypeId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolTypeId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_ResourcePoolTypeId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.ResourcePoolTypeId">ResourcePoolTypeId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ResourcePoolTypeId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_Sites.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.Sites%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L83">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_Sites_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.Sites*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_Sites" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.Sites">Sites</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Sites { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_StatusId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.StatusId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L11">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_StatusId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.StatusId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_StatusId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.StatusId">StatusId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? StatusId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_SubmitEndDate.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.SubmitEndDate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L76">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_SubmitEndDate_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.SubmitEndDate*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_SubmitEndDate" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.SubmitEndDate">SubmitEndDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? SubmitEndDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_SubmitStartDate.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.SubmitStartDate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L77">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_SubmitStartDate_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.SubmitStartDate*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_SubmitStartDate" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.SubmitStartDate">SubmitStartDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? SubmitStartDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_SubmitterId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.SubmitterId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L24">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_SubmitterId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.SubmitterId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_SubmitterId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.SubmitterId">SubmitterId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? SubmitterId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_TemplateId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.TemplateId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L10">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_TemplateId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.TemplateId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_TemplateId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.TemplateId">TemplateId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? TemplateId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_UnionId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.UnionId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L21">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_UnionId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.UnionId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_UnionId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.UnionId">UnionId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? UnionId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_UnionName.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.UnionName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L43">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_UnionName_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.UnionName*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_UnionName" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.UnionName">UnionName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? UnionName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_UpdatedBy.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.UpdatedBy%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L81">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_UpdatedBy_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.UpdatedBy*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_UpdatedBy" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.UpdatedBy">UpdatedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? UpdatedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_UpdatedDateTime.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.UpdatedDateTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L80">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_UpdatedDateTime_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.UpdatedDateTime*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_UpdatedDateTime" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.UpdatedDateTime">UpdatedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? UpdatedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet_VendorId.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet.VendorId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L82">View Source</a>
+  </span>
+  <a id="Storm_Biz_Timesheets_DbModels_Timesheet_VendorId_" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.VendorId*"></a>
+  <h4 id="Storm_Biz_Timesheets_DbModels_Timesheet_VendorId" data-uid="Storm.Biz.Timesheets.DbModels.Timesheet.VendorId">VendorId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? VendorId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Storm.Infrastructure.Models.IDbModel&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Storm.Infrastructure.Models.IDbModelBase</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Timesheets_DbModels_Timesheet.md&amp;value=---%0Auid%3A%20Storm.Biz.Timesheets.DbModels.Timesheet%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Timesheets/DbModels/Timesheet.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

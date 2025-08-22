@@ -1,0 +1,2510 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class SiteService | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class SiteService | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Biz.Sites.SiteService">
+
+
+
+  <h1 id="Storm_Biz_Sites_SiteService" data-uid="Storm.Biz.Sites.SiteService" class="text-break">Class SiteService</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">SiteService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Storm.Biz.Sites.ISiteService.html">ISiteService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Biz.html">Biz</a>.<a class="xref" href="Storm.Biz.Sites.html">Sites</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Biz.dll</h6>
+  <h5 id="Storm_Biz_Sites_SiteService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SiteService : ISiteService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService__ctor_Storm_Infrastructure_Services_IDateTimeService_Microsoft_Extensions_Logging_ILogger_Storm_Biz_Sites_SiteService__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_Address__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Sites_DbModels_AddressTypeOc__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_SiteTypes_DbModels_SiteType__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Sites_DbModels_AdditionalSitesRegion__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_Region__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_StateCities_DbModels_StateCity__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Assignments_DbModels_BucketCrewSheetSiteAssignment__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_Company__Storm_Biz_SiteTypes_ISiteTypeService_Storm_Biz_Commons_ITenantConfigurationService_Storm_Biz_Commons_IUserService_Storm_Biz_Commons_IRequestValidatorService_Storm_Biz_Commons_ICommonValidator_Storm_Biz_Commons_ILoggerService_Storm_Biz_ManageSecureWorkforces_Repositories_IRecalculateByBucketDbContext_Storm_Biz_ManageSecureWorkforces_Repositories_IRecalculateByCrewsheetDbContext_Storm_Biz_Commons_ISharedUserService_Storm_Biz_Commons_IMswValidatorService_Storm_Biz_ManageSecureWorkforces_ISharedMswService_Microsoft_Extensions_Options_IOptions_Storm_Biz_Commons_Options_RealtimeUpdateOptions__Storm_Biz_Assignments_IAssignmentService_Storm_RealTimeTunnel_Services_IHotelAssignmentRealtimeService_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.%23ctor(Storm.Infrastructure.Services.IDateTimeService%2CMicrosoft.Extensions.Logging.ILogger%7BStorm.Biz.Sites.SiteService%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.ManageSecureWorkforces.DbModels.Address%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Sites.DbModels.AddressTypeOc%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.SiteTypes.DbModels.SiteType%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Sites.DbModels.AdditionalSitesRegion%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.ManageSecureWorkforces.DbModels.Region%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.StateCities.DbModels.StateCity%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Assignments.DbModels.BucketCrewSheetSiteAssignment%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Companies.DbModels.Company%7D%2CStorm.Biz.SiteTypes.ISiteTypeService%2CStorm.Biz.Commons.ITenantConfigurationService%2CStorm.Biz.Commons.IUserService%2CStorm.Biz.Commons.IRequestValidatorService%2CStorm.Biz.Commons.ICommonValidator%2CStorm.Biz.Commons.ILoggerService%2CStorm.Biz.ManageSecureWorkforces.Repositories.IRecalculateByBucketDbContext%2CStorm.Biz.ManageSecureWorkforces.Repositories.IRecalculateByCrewsheetDbContext%2CStorm.Biz.Commons.ISharedUserService%2CStorm.Biz.Commons.IMswValidatorService%2CStorm.Biz.ManageSecureWorkforces.ISharedMswService%2CMicrosoft.Extensions.Options.IOptions%7BStorm.Biz.Commons.Options.RealtimeUpdateOptions%7D%2CStorm.Biz.Assignments.IAssignmentService%2CStorm.RealTimeTunnel.Services.IHotelAssignmentRealtimeService)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L62">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService__ctor_" data-uid="Storm.Biz.Sites.SiteService.#ctor*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService__ctor_Storm_Infrastructure_Services_IDateTimeService_Microsoft_Extensions_Logging_ILogger_Storm_Biz_Sites_SiteService__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_Address__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Sites_DbModels_AddressTypeOc__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_SiteTypes_DbModels_SiteType__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Sites_DbModels_AdditionalSitesRegion__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_Region__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_StateCities_DbModels_StateCity__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Assignments_DbModels_BucketCrewSheetSiteAssignment__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_Company__Storm_Biz_SiteTypes_ISiteTypeService_Storm_Biz_Commons_ITenantConfigurationService_Storm_Biz_Commons_IUserService_Storm_Biz_Commons_IRequestValidatorService_Storm_Biz_Commons_ICommonValidator_Storm_Biz_Commons_ILoggerService_Storm_Biz_ManageSecureWorkforces_Repositories_IRecalculateByBucketDbContext_Storm_Biz_ManageSecureWorkforces_Repositories_IRecalculateByCrewsheetDbContext_Storm_Biz_Commons_ISharedUserService_Storm_Biz_Commons_IMswValidatorService_Storm_Biz_ManageSecureWorkforces_ISharedMswService_Microsoft_Extensions_Options_IOptions_Storm_Biz_Commons_Options_RealtimeUpdateOptions__Storm_Biz_Assignments_IAssignmentService_Storm_RealTimeTunnel_Services_IHotelAssignmentRealtimeService_" data-uid="Storm.Biz.Sites.SiteService.#ctor(Storm.Infrastructure.Services.IDateTimeService,Microsoft.Extensions.Logging.ILogger{Storm.Biz.Sites.SiteService},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.ManageSecureWorkforces.DbModels.Address},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Sites.DbModels.AddressTypeOc},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.SiteTypes.DbModels.SiteType},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Sites.DbModels.AdditionalSitesRegion},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.ManageSecureWorkforces.DbModels.Region},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.StateCities.DbModels.StateCity},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Assignments.DbModels.BucketCrewSheetSiteAssignment},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Companies.DbModels.Company},Storm.Biz.SiteTypes.ISiteTypeService,Storm.Biz.Commons.ITenantConfigurationService,Storm.Biz.Commons.IUserService,Storm.Biz.Commons.IRequestValidatorService,Storm.Biz.Commons.ICommonValidator,Storm.Biz.Commons.ILoggerService,Storm.Biz.ManageSecureWorkforces.Repositories.IRecalculateByBucketDbContext,Storm.Biz.ManageSecureWorkforces.Repositories.IRecalculateByCrewsheetDbContext,Storm.Biz.Commons.ISharedUserService,Storm.Biz.Commons.IMswValidatorService,Storm.Biz.ManageSecureWorkforces.ISharedMswService,Microsoft.Extensions.Options.IOptions{Storm.Biz.Commons.Options.RealtimeUpdateOptions},Storm.Biz.Assignments.IAssignmentService,Storm.RealTimeTunnel.Services.IHotelAssignmentRealtimeService)">SiteService(IDateTimeService, ILogger&lt;SiteService&gt;, ISqlRepository&lt;Address&gt;, ISqlRepository&lt;AddressTypeOc&gt;, ISqlRepository&lt;SiteType&gt;, ISqlRepository&lt;AdditionalSitesRegion&gt;, ISqlRepository&lt;Region&gt;, ISqlRepository&lt;StateCity&gt;, ISqlRepository&lt;BucketCrewSheetSiteAssignment&gt;, ISqlRepository&lt;Company&gt;, ISiteTypeService, ITenantConfigurationService, IUserService, IRequestValidatorService, ICommonValidator, ILoggerService, IRecalculateByBucketDbContext, IRecalculateByCrewsheetDbContext, ISharedUserService, IMswValidatorService, ISharedMswService, IOptions&lt;RealtimeUpdateOptions&gt;, IAssignmentService, IHotelAssignmentRealtimeService)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SiteService(IDateTimeService dateTimeService, ILogger&lt;SiteService&gt; logger, ISqlRepository&lt;Address&gt; addressRepository, ISqlRepository&lt;AddressTypeOc&gt; addressTypeOcRepository, ISqlRepository&lt;SiteType&gt; siteTypeRepository, ISqlRepository&lt;AdditionalSitesRegion&gt; additionalSitesRegionRepository, ISqlRepository&lt;Region&gt; regionRepository, ISqlRepository&lt;StateCity&gt; stateCityRepository, ISqlRepository&lt;BucketCrewSheetSiteAssignment&gt; bucketCrewSheetSiteAssignmentRepository, ISqlRepository&lt;Company&gt; companyRepository, ISiteTypeService siteTypeService, ITenantConfigurationService tenantConfigurationService, IUserService userService, IRequestValidatorService requestValidatorService, ICommonValidator commonValidator, ILoggerService loggerService, IRecalculateByBucketDbContext recalculateByBucketDbContext, IRecalculateByCrewsheetDbContext recalculateByCrewsheetDbContext, ISharedUserService sharedUserService, IMswValidatorService mswValidatorService, ISharedMswService sharedMswService, IOptions&lt;RealtimeUpdateOptions&gt; realtimeOptions, IAssignmentService assignmentService, IHotelAssignmentRealtimeService hotelAssignmentRealtimeService)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDateTimeService</span></td>
+        <td><span class="parametername">dateTimeService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Storm.Biz.Sites.SiteService.html">SiteService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.ManageSecureWorkforces.DbModels.Address.html">Address</a>&gt;</td>
+        <td><span class="parametername">addressRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Sites.DbModels.AddressTypeOc.html">AddressTypeOc</a>&gt;</td>
+        <td><span class="parametername">addressTypeOcRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.SiteTypes.DbModels.SiteType.html">SiteType</a>&gt;</td>
+        <td><span class="parametername">siteTypeRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Sites.DbModels.AdditionalSitesRegion.html">AdditionalSitesRegion</a>&gt;</td>
+        <td><span class="parametername">additionalSitesRegionRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.ManageSecureWorkforces.DbModels.Region.html">Region</a>&gt;</td>
+        <td><span class="parametername">regionRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.StateCities.DbModels.StateCity.html">StateCity</a>&gt;</td>
+        <td><span class="parametername">stateCityRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Assignments.DbModels.BucketCrewSheetSiteAssignment.html">BucketCrewSheetSiteAssignment</a>&gt;</td>
+        <td><span class="parametername">bucketCrewSheetSiteAssignmentRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Companies.DbModels.Company.html">Company</a>&gt;</td>
+        <td><span class="parametername">companyRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.SiteTypes.ISiteTypeService.html">ISiteTypeService</a></td>
+        <td><span class="parametername">siteTypeService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ITenantConfigurationService.html">ITenantConfigurationService</a></td>
+        <td><span class="parametername">tenantConfigurationService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.IUserService.html">IUserService</a></td>
+        <td><span class="parametername">userService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.IRequestValidatorService.html">IRequestValidatorService</a></td>
+        <td><span class="parametername">requestValidatorService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ICommonValidator.html">ICommonValidator</a></td>
+        <td><span class="parametername">commonValidator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ILoggerService.html">ILoggerService</a></td>
+        <td><span class="parametername">loggerService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.ManageSecureWorkforces.Repositories.IRecalculateByBucketDbContext.html">IRecalculateByBucketDbContext</a></td>
+        <td><span class="parametername">recalculateByBucketDbContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.ManageSecureWorkforces.Repositories.IRecalculateByCrewsheetDbContext.html">IRecalculateByCrewsheetDbContext</a></td>
+        <td><span class="parametername">recalculateByCrewsheetDbContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ISharedUserService.html">ISharedUserService</a></td>
+        <td><span class="parametername">sharedUserService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.IMswValidatorService.html">IMswValidatorService</a></td>
+        <td><span class="parametername">mswValidatorService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.ManageSecureWorkforces.ISharedMswService.html">ISharedMswService</a></td>
+        <td><span class="parametername">sharedMswService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="Storm.Biz.Commons.Options.RealtimeUpdateOptions.html">RealtimeUpdateOptions</a>&gt;</td>
+        <td><span class="parametername">realtimeOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Assignments.IAssignmentService.html">IAssignmentService</a></td>
+        <td><span class="parametername">assignmentService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.RealTimeTunnel.Services.IHotelAssignmentRealtimeService.html">IHotelAssignmentRealtimeService</a></td>
+        <td><span class="parametername">hotelAssignmentRealtimeService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_ActivityLogSiteAsync_Storm_Biz_Commons_Models_ActivityLogInputSite_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.ActivityLogSiteAsync(Storm.Biz.Commons.Models.ActivityLogInputSite)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1045">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_ActivityLogSiteAsync_" data-uid="Storm.Biz.Sites.SiteService.ActivityLogSiteAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_ActivityLogSiteAsync_Storm_Biz_Commons_Models_ActivityLogInputSite_" data-uid="Storm.Biz.Sites.SiteService.ActivityLogSiteAsync(Storm.Biz.Commons.Models.ActivityLogInputSite)">ActivityLogSiteAsync(ActivityLogInputSite)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task ActivityLogSiteAsync(ActivityLogInputSite input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.ActivityLogInputSite.html">ActivityLogInputSite</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_AssignSitesAsync_Storm_Biz_Sites_Models_AssignSitesRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.AssignSitesAsync(Storm.Biz.Sites.Models.AssignSitesRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L510">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_AssignSitesAsync_" data-uid="Storm.Biz.Sites.SiteService.AssignSitesAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_AssignSitesAsync_Storm_Biz_Sites_Models_AssignSitesRequest_" data-uid="Storm.Biz.Sites.SiteService.AssignSitesAsync(Storm.Biz.Sites.Models.AssignSitesRequest)">AssignSitesAsync(AssignSitesRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&gt; AssignSitesAsync(AssignSitesRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.AssignSitesRequest.html">AssignSitesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult.html">ExecutionResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_AssignSitesToBucketAsync_Storm_Biz_Sites_Models_AssignSites_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.AssignSitesToBucketAsync(Storm.Biz.Sites.Models.AssignSites)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L652">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_AssignSitesToBucketAsync_" data-uid="Storm.Biz.Sites.SiteService.AssignSitesToBucketAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_AssignSitesToBucketAsync_Storm_Biz_Sites_Models_AssignSites_" data-uid="Storm.Biz.Sites.SiteService.AssignSitesToBucketAsync(Storm.Biz.Sites.Models.AssignSites)">AssignSitesToBucketAsync(AssignSites)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task AssignSitesToBucketAsync(AssignSites request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.AssignSites.html">AssignSites</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_AssignSitesToCrewSheetAsync_Storm_Biz_Sites_Models_AssignSites_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.AssignSitesToCrewSheetAsync(Storm.Biz.Sites.Models.AssignSites)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L725">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_AssignSitesToCrewSheetAsync_" data-uid="Storm.Biz.Sites.SiteService.AssignSitesToCrewSheetAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_AssignSitesToCrewSheetAsync_Storm_Biz_Sites_Models_AssignSites_" data-uid="Storm.Biz.Sites.SiteService.AssignSitesToCrewSheetAsync(Storm.Biz.Sites.Models.AssignSites)">AssignSitesToCrewSheetAsync(AssignSites)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task AssignSitesToCrewSheetAsync(AssignSites request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.AssignSites.html">AssignSites</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_CheckIsCrewsheetByMetaData_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.CheckIsCrewsheetByMetaData(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1130">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_CheckIsCrewsheetByMetaData_" data-uid="Storm.Biz.Sites.SiteService.CheckIsCrewsheetByMetaData*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_CheckIsCrewsheetByMetaData_System_String_" data-uid="Storm.Biz.Sites.SiteService.CheckIsCrewsheetByMetaData(System.String)">CheckIsCrewsheetByMetaData(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool CheckIsCrewsheetByMetaData(string rowType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">rowType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_CheckSiteIsNotAssign_Storm_Biz_Sites_Models_CheckSiteIsNotAssignRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.CheckSiteIsNotAssign(Storm.Biz.Sites.Models.CheckSiteIsNotAssignRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L777">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_CheckSiteIsNotAssign_" data-uid="Storm.Biz.Sites.SiteService.CheckSiteIsNotAssign*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_CheckSiteIsNotAssign_Storm_Biz_Sites_Models_CheckSiteIsNotAssignRequest_" data-uid="Storm.Biz.Sites.SiteService.CheckSiteIsNotAssign(Storm.Biz.Sites.Models.CheckSiteIsNotAssignRequest)">CheckSiteIsNotAssign(CheckSiteIsNotAssignRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual List&lt;SelectedSite&gt; CheckSiteIsNotAssign(CheckSiteIsNotAssignRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.CheckSiteIsNotAssignRequest.html">CheckSiteIsNotAssignRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Sites.Models.SelectedSite.html">SelectedSite</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_CreateActivityLogInfoProcess_Storm_Biz_Sites_Models_AssignSitesActivityLogProcessRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.CreateActivityLogInfoProcess(Storm.Biz.Sites.Models.AssignSitesActivityLogProcessRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1068">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_CreateActivityLogInfoProcess_" data-uid="Storm.Biz.Sites.SiteService.CreateActivityLogInfoProcess*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_CreateActivityLogInfoProcess_Storm_Biz_Sites_Models_AssignSitesActivityLogProcessRequest_" data-uid="Storm.Biz.Sites.SiteService.CreateActivityLogInfoProcess(Storm.Biz.Sites.Models.AssignSitesActivityLogProcessRequest)">CreateActivityLogInfoProcess(AssignSitesActivityLogProcessRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;AppendActivityLogInfo&gt; CreateActivityLogInfoProcess(AssignSitesActivityLogProcessRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.AssignSitesActivityLogProcessRequest.html">AssignSitesActivityLogProcessRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.AppendActivityLogInfo.html">AppendActivityLogInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_CreateAddressFromRequest_Storm_Biz_Sites_Models_CreateSiteRequest_System_Guid_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.CreateAddressFromRequest(Storm.Biz.Sites.Models.CreateSiteRequest%2CSystem.Guid)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L299">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_CreateAddressFromRequest_" data-uid="Storm.Biz.Sites.SiteService.CreateAddressFromRequest*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_CreateAddressFromRequest_Storm_Biz_Sites_Models_CreateSiteRequest_System_Guid_" data-uid="Storm.Biz.Sites.SiteService.CreateAddressFromRequest(Storm.Biz.Sites.Models.CreateSiteRequest,System.Guid)">CreateAddressFromRequest(CreateSiteRequest, Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Address CreateAddressFromRequest(CreateSiteRequest request, Guid siteId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.CreateSiteRequest.html">CreateSiteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">siteId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.ManageSecureWorkforces.DbModels.Address.html">Address</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_CreateSiteAsync_Storm_Biz_Sites_Models_CreateSiteRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.CreateSiteAsync(Storm.Biz.Sites.Models.CreateSiteRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L166">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_CreateSiteAsync_" data-uid="Storm.Biz.Sites.SiteService.CreateSiteAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_CreateSiteAsync_Storm_Biz_Sites_Models_CreateSiteRequest_" data-uid="Storm.Biz.Sites.SiteService.CreateSiteAsync(Storm.Biz.Sites.Models.CreateSiteRequest)">CreateSiteAsync(CreateSiteRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&lt;string?&gt;&gt; CreateSiteAsync(CreateSiteRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.CreateSiteRequest.html">CreateSiteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult-1.html">ExecutionResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_CreateSiteTypeAssignmentsAsync_System_Collections_Generic_IEnumerable_System_String__System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.CreateSiteTypeAssignmentsAsync(System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L335">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_CreateSiteTypeAssignmentsAsync_" data-uid="Storm.Biz.Sites.SiteService.CreateSiteTypeAssignmentsAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_CreateSiteTypeAssignmentsAsync_System_Collections_Generic_IEnumerable_System_String__System_String_System_String_" data-uid="Storm.Biz.Sites.SiteService.CreateSiteTypeAssignmentsAsync(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)">CreateSiteTypeAssignmentsAsync(IEnumerable&lt;string&gt;, string, string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task CreateSiteTypeAssignmentsAsync(IEnumerable&lt;string&gt; siteTypeIds, string siteId, string? userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">siteTypeIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">siteId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_CreateSupportingRegionAssignmentsAsync_System_Collections_Generic_IEnumerable_System_String__System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.CreateSupportingRegionAssignmentsAsync(System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L354">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_CreateSupportingRegionAssignmentsAsync_" data-uid="Storm.Biz.Sites.SiteService.CreateSupportingRegionAssignmentsAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_CreateSupportingRegionAssignmentsAsync_System_Collections_Generic_IEnumerable_System_String__System_String_" data-uid="Storm.Biz.Sites.SiteService.CreateSupportingRegionAssignmentsAsync(System.Collections.Generic.IEnumerable{System.String},System.String)">CreateSupportingRegionAssignmentsAsync(IEnumerable&lt;string&gt;, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task CreateSupportingRegionAssignmentsAsync(IEnumerable&lt;string&gt; regionIds, string siteId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">regionIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">siteId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_DistinctSelectedSiteAsync_System_Collections_Generic_IEnumerable_Storm_Biz_Sites_Models_SelectedSite__.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.DistinctSelectedSiteAsync(System.Collections.Generic.IEnumerable%7BStorm.Biz.Sites.Models.SelectedSite%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L626">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_DistinctSelectedSiteAsync_" data-uid="Storm.Biz.Sites.SiteService.DistinctSelectedSiteAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_DistinctSelectedSiteAsync_System_Collections_Generic_IEnumerable_Storm_Biz_Sites_Models_SelectedSite__" data-uid="Storm.Biz.Sites.SiteService.DistinctSelectedSiteAsync(System.Collections.Generic.IEnumerable{Storm.Biz.Sites.Models.SelectedSite})">DistinctSelectedSiteAsync(IEnumerable&lt;SelectedSite&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;IEnumerable&lt;SelectedSite&gt;&gt; DistinctSelectedSiteAsync(IEnumerable&lt;SelectedSite&gt; selectedSites)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Storm.Biz.Sites.Models.SelectedSite.html">SelectedSite</a>&gt;</td>
+        <td><span class="parametername">selectedSites</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Storm.Biz.Sites.Models.SelectedSite.html">SelectedSite</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetAddressAsync_System_Collections_Generic_List_System_String__System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetAddressAsync(System.Collections.Generic.List%7BSystem.String%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L499">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetAddressAsync_" data-uid="Storm.Biz.Sites.SiteService.GetAddressAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetAddressAsync_System_Collections_Generic_List_System_String__System_String_" data-uid="Storm.Biz.Sites.SiteService.GetAddressAsync(System.Collections.Generic.List{System.String},System.String)">GetAddressAsync(List&lt;string&gt;, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;List&lt;Address&gt;&gt; GetAddressAsync(List&lt;string&gt; addressIds, string companyId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">addressIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.ManageSecureWorkforces.DbModels.Address.html">Address</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetAddressInRegion_System_Collections_Generic_List_System_String__System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetAddressInRegion(System.Collections.Generic.List%7BSystem.String%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L475">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetAddressInRegion_" data-uid="Storm.Biz.Sites.SiteService.GetAddressInRegion*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetAddressInRegion_System_Collections_Generic_List_System_String__System_String_" data-uid="Storm.Biz.Sites.SiteService.GetAddressInRegion(System.Collections.Generic.List{System.String},System.String)">GetAddressInRegion(List&lt;string&gt;, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;List&lt;string&gt;&gt; GetAddressInRegion(List&lt;string&gt; addressIds, string regionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">addressIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">regionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetAddressTypeOcBySiteTypeIdAsync_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetAddressTypeOcBySiteTypeIdAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L466">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetAddressTypeOcBySiteTypeIdAsync_" data-uid="Storm.Biz.Sites.SiteService.GetAddressTypeOcBySiteTypeIdAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetAddressTypeOcBySiteTypeIdAsync_System_String_" data-uid="Storm.Biz.Sites.SiteService.GetAddressTypeOcBySiteTypeIdAsync(System.String)">GetAddressTypeOcBySiteTypeIdAsync(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;List&lt;AddressTypeOc&gt;&gt; GetAddressTypeOcBySiteTypeIdAsync(string siteTypeId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">siteTypeId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Sites.DbModels.AddressTypeOc.html">AddressTypeOc</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetBucketSiteAssignment_System_Collections_Generic_List_Storm_Biz_Commons_Models_RowSelect__.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetBucketSiteAssignment(System.Collections.Generic.List%7BStorm.Biz.Commons.Models.RowSelect%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L694">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetBucketSiteAssignment_" data-uid="Storm.Biz.Sites.SiteService.GetBucketSiteAssignment*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetBucketSiteAssignment_System_Collections_Generic_List_Storm_Biz_Commons_Models_RowSelect__" data-uid="Storm.Biz.Sites.SiteService.GetBucketSiteAssignment(System.Collections.Generic.List{Storm.Biz.Commons.Models.RowSelect})">GetBucketSiteAssignment(List&lt;RowSelect&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;List&lt;BucketCrewSheetSiteAssignment&gt;&gt; GetBucketSiteAssignment(List&lt;RowSelect&gt; rowSelectsBucket)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RowSelect.html">RowSelect</a>&gt;</td>
+        <td><span class="parametername">rowSelectsBucket</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Assignments.DbModels.BucketCrewSheetSiteAssignment.html">BucketCrewSheetSiteAssignment</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetCrewSheetSiteAssignment_System_Collections_Generic_List_Storm_Biz_Commons_Models_RowSelect__.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetCrewSheetSiteAssignment(System.Collections.Generic.List%7BStorm.Biz.Commons.Models.RowSelect%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L764">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetCrewSheetSiteAssignment_" data-uid="Storm.Biz.Sites.SiteService.GetCrewSheetSiteAssignment*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetCrewSheetSiteAssignment_System_Collections_Generic_List_Storm_Biz_Commons_Models_RowSelect__" data-uid="Storm.Biz.Sites.SiteService.GetCrewSheetSiteAssignment(System.Collections.Generic.List{Storm.Biz.Commons.Models.RowSelect})">GetCrewSheetSiteAssignment(List&lt;RowSelect&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;List&lt;BucketCrewSheetSiteAssignment&gt;&gt; GetCrewSheetSiteAssignment(List&lt;RowSelect&gt; rowSelectsCrewSheet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RowSelect.html">RowSelect</a>&gt;</td>
+        <td><span class="parametername">rowSelectsCrewSheet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Assignments.DbModels.BucketCrewSheetSiteAssignment.html">BucketCrewSheetSiteAssignment</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetRegionInfoAsync_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetRegionInfoAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L271">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetRegionInfoAsync_" data-uid="Storm.Biz.Sites.SiteService.GetRegionInfoAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetRegionInfoAsync_System_String_" data-uid="Storm.Biz.Sites.SiteService.GetRegionInfoAsync(System.String)">GetRegionInfoAsync(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;OptionInfo?&gt; GetRegionInfoAsync(string regionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">regionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.OptionInfo.html">OptionInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetRelatedRecordKeyByMetaData_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetRelatedRecordKeyByMetaData(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1147">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetRelatedRecordKeyByMetaData_" data-uid="Storm.Biz.Sites.SiteService.GetRelatedRecordKeyByMetaData*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetRelatedRecordKeyByMetaData_System_String_" data-uid="Storm.Biz.Sites.SiteService.GetRelatedRecordKeyByMetaData(System.String)">GetRelatedRecordKeyByMetaData(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Domain.RelatedRecordType GetRelatedRecordKeyByMetaData(string rowType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">rowType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Domain.html">Domain</a>.<a class="xref" href="Storm.Biz.Commons.Domain.RelatedRecordType.html">RelatedRecordType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetResourcePoolOrCrewSheetByMetaData_Storm_Biz_Commons_Models_ActivityLogMetadata_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetResourcePoolOrCrewSheetByMetaData(Storm.Biz.Commons.Models.ActivityLogMetadata)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1138">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetResourcePoolOrCrewSheetByMetaData_" data-uid="Storm.Biz.Sites.SiteService.GetResourcePoolOrCrewSheetByMetaData*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetResourcePoolOrCrewSheetByMetaData_Storm_Biz_Commons_Models_ActivityLogMetadata_" data-uid="Storm.Biz.Sites.SiteService.GetResourcePoolOrCrewSheetByMetaData(Storm.Biz.Commons.Models.ActivityLogMetadata)">GetResourcePoolOrCrewSheetByMetaData(ActivityLogMetadata)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetResourcePoolOrCrewSheetByMetaData(ActivityLogMetadata row)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.ActivityLogMetadata.html">ActivityLogMetadata</a></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetRowTypeLabelByMetaData_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetRowTypeLabelByMetaData(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1134">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetRowTypeLabelByMetaData_" data-uid="Storm.Biz.Sites.SiteService.GetRowTypeLabelByMetaData*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetRowTypeLabelByMetaData_System_String_" data-uid="Storm.Biz.Sites.SiteService.GetRowTypeLabelByMetaData(System.String)">GetRowTypeLabelByMetaData(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetRowTypeLabelByMetaData(string rowType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">rowType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetSiteAsync_Storm_Biz_Sites_Models_GetSiteRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetSiteAsync(Storm.Biz.Sites.Models.GetSiteRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L114">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetSiteAsync_" data-uid="Storm.Biz.Sites.SiteService.GetSiteAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetSiteAsync_Storm_Biz_Sites_Models_GetSiteRequest_" data-uid="Storm.Biz.Sites.SiteService.GetSiteAsync(Storm.Biz.Sites.Models.GetSiteRequest)">GetSiteAsync(GetSiteRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&lt;Site?&gt;&gt; GetSiteAsync(GetSiteRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.GetSiteRequest.html">GetSiteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult-1.html">ExecutionResult</a>&lt;<a class="xref" href="Storm.Biz.Sites.Models.Site.html">Site</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetSitesAsync_Storm_Biz_Sites_Models_GetSitesRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetSitesAsync(Storm.Biz.Sites.Models.GetSitesRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L378">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetSitesAsync_" data-uid="Storm.Biz.Sites.SiteService.GetSitesAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetSitesAsync_Storm_Biz_Sites_Models_GetSitesRequest_" data-uid="Storm.Biz.Sites.SiteService.GetSitesAsync(Storm.Biz.Sites.Models.GetSitesRequest)">GetSitesAsync(GetSitesRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&lt;List&lt;GetSitesResponse&gt;?&gt;&gt; GetSitesAsync(GetSitesRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.GetSitesRequest.html">GetSitesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult-1.html">ExecutionResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Sites.Models.GetSitesResponse.html">GetSitesResponse</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetSitesWithSiteTypesAsync_Storm_Biz_Sites_Models_GetSitesWithSiteTypesRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetSitesWithSiteTypesAsync(Storm.Biz.Sites.Models.GetSitesWithSiteTypesRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1184">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetSitesWithSiteTypesAsync_" data-uid="Storm.Biz.Sites.SiteService.GetSitesWithSiteTypesAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetSitesWithSiteTypesAsync_Storm_Biz_Sites_Models_GetSitesWithSiteTypesRequest_" data-uid="Storm.Biz.Sites.SiteService.GetSitesWithSiteTypesAsync(Storm.Biz.Sites.Models.GetSitesWithSiteTypesRequest)">GetSitesWithSiteTypesAsync(GetSitesWithSiteTypesRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&lt;GetSitesWithSiteTypesResponse&gt;&gt; GetSitesWithSiteTypesAsync(GetSitesWithSiteTypesRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.GetSitesWithSiteTypesRequest.html">GetSitesWithSiteTypesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult-1.html">ExecutionResult</a>&lt;<a class="xref" href="Storm.Biz.Sites.Models.GetSitesWithSiteTypesResponse.html">GetSitesWithSiteTypesResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetStateCityInfoAsync_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetStateCityInfoAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L283">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetStateCityInfoAsync_" data-uid="Storm.Biz.Sites.SiteService.GetStateCityInfoAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetStateCityInfoAsync_System_String_" data-uid="Storm.Biz.Sites.SiteService.GetStateCityInfoAsync(System.String)">GetStateCityInfoAsync(string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;OptionInfo?&gt; GetStateCityInfoAsync(string? stateCityId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">stateCityId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.OptionInfo.html">OptionInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetSupportingRegionsAsync_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetSupportingRegionsAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L252">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetSupportingRegionsAsync_" data-uid="Storm.Biz.Sites.SiteService.GetSupportingRegionsAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetSupportingRegionsAsync_System_String_" data-uid="Storm.Biz.Sites.SiteService.GetSupportingRegionsAsync(System.String)">GetSupportingRegionsAsync(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;List&lt;OptionInfo&gt;&gt; GetSupportingRegionsAsync(string siteGuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">siteGuid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.OptionInfo.html">OptionInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_GetrelatedRecordValueByMetaData_Storm_Biz_Commons_Models_ActivityLogMetadata_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.GetrelatedRecordValueByMetaData(Storm.Biz.Commons.Models.ActivityLogMetadata)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1151">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_GetrelatedRecordValueByMetaData_" data-uid="Storm.Biz.Sites.SiteService.GetrelatedRecordValueByMetaData*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_GetrelatedRecordValueByMetaData_Storm_Biz_Commons_Models_ActivityLogMetadata_" data-uid="Storm.Biz.Sites.SiteService.GetrelatedRecordValueByMetaData(Storm.Biz.Commons.Models.ActivityLogMetadata)">GetrelatedRecordValueByMetaData(ActivityLogMetadata)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetrelatedRecordValueByMetaData(ActivityLogMetadata row)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.ActivityLogMetadata.html">ActivityLogMetadata</a></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_PrepareAssignSitesToBucketAsync_Storm_Biz_Sites_Models_AssignSitesRequest_System_Collections_Generic_IEnumerable_Storm_Biz_Sites_Models_SelectedSite__.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.PrepareAssignSitesToBucketAsync(Storm.Biz.Sites.Models.AssignSitesRequest%2CSystem.Collections.Generic.IEnumerable%7BStorm.Biz.Sites.Models.SelectedSite%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L635">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_PrepareAssignSitesToBucketAsync_" data-uid="Storm.Biz.Sites.SiteService.PrepareAssignSitesToBucketAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_PrepareAssignSitesToBucketAsync_Storm_Biz_Sites_Models_AssignSitesRequest_System_Collections_Generic_IEnumerable_Storm_Biz_Sites_Models_SelectedSite__" data-uid="Storm.Biz.Sites.SiteService.PrepareAssignSitesToBucketAsync(Storm.Biz.Sites.Models.AssignSitesRequest,System.Collections.Generic.IEnumerable{Storm.Biz.Sites.Models.SelectedSite})">PrepareAssignSitesToBucketAsync(AssignSitesRequest, IEnumerable&lt;SelectedSite&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task PrepareAssignSitesToBucketAsync(AssignSitesRequest request, IEnumerable&lt;SelectedSite&gt; selectedSites)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.AssignSitesRequest.html">AssignSitesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Storm.Biz.Sites.Models.SelectedSite.html">SelectedSite</a>&gt;</td>
+        <td><span class="parametername">selectedSites</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_PrepareAssignSitesToCrewSheetAsync_Storm_Biz_Sites_Models_AssignSitesRequest_System_Collections_Generic_IEnumerable_Storm_Biz_Sites_Models_SelectedSite__.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.PrepareAssignSitesToCrewSheetAsync(Storm.Biz.Sites.Models.AssignSitesRequest%2CSystem.Collections.Generic.IEnumerable%7BStorm.Biz.Sites.Models.SelectedSite%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L708">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_PrepareAssignSitesToCrewSheetAsync_" data-uid="Storm.Biz.Sites.SiteService.PrepareAssignSitesToCrewSheetAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_PrepareAssignSitesToCrewSheetAsync_Storm_Biz_Sites_Models_AssignSitesRequest_System_Collections_Generic_IEnumerable_Storm_Biz_Sites_Models_SelectedSite__" data-uid="Storm.Biz.Sites.SiteService.PrepareAssignSitesToCrewSheetAsync(Storm.Biz.Sites.Models.AssignSitesRequest,System.Collections.Generic.IEnumerable{Storm.Biz.Sites.Models.SelectedSite})">PrepareAssignSitesToCrewSheetAsync(AssignSitesRequest, IEnumerable&lt;SelectedSite&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task PrepareAssignSitesToCrewSheetAsync(AssignSitesRequest request, IEnumerable&lt;SelectedSite&gt; selectedSites)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.AssignSitesRequest.html">AssignSitesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Storm.Biz.Sites.Models.SelectedSite.html">SelectedSite</a>&gt;</td>
+        <td><span class="parametername">selectedSites</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_RemoveAllAssignedSitesAsync_Storm_Biz_Sites_Models_RemoveAllAssignedSitesRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.RemoveAllAssignedSitesAsync(Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L786">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_RemoveAllAssignedSitesAsync_" data-uid="Storm.Biz.Sites.SiteService.RemoveAllAssignedSitesAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_RemoveAllAssignedSitesAsync_Storm_Biz_Sites_Models_RemoveAllAssignedSitesRequest_" data-uid="Storm.Biz.Sites.SiteService.RemoveAllAssignedSitesAsync(Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest)">RemoveAllAssignedSitesAsync(RemoveAllAssignedSitesRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&gt; RemoveAllAssignedSitesAsync(RemoveAllAssignedSitesRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest.html">RemoveAllAssignedSitesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult.html">ExecutionResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_RemoveAllAssignedSitesRecalculateBucketAsync_Storm_Biz_Sites_Models_RemoveAllAssignedSitesRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.RemoveAllAssignedSitesRecalculateBucketAsync(Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L891">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_RemoveAllAssignedSitesRecalculateBucketAsync_" data-uid="Storm.Biz.Sites.SiteService.RemoveAllAssignedSitesRecalculateBucketAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_RemoveAllAssignedSitesRecalculateBucketAsync_Storm_Biz_Sites_Models_RemoveAllAssignedSitesRequest_" data-uid="Storm.Biz.Sites.SiteService.RemoveAllAssignedSitesRecalculateBucketAsync(Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest)">RemoveAllAssignedSitesRecalculateBucketAsync(RemoveAllAssignedSitesRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task RemoveAllAssignedSitesRecalculateBucketAsync(RemoveAllAssignedSitesRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest.html">RemoveAllAssignedSitesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_RemoveAllAssignedSitesRecalculateCrewSheetAsync_Storm_Biz_Sites_Models_RemoveAllAssignedSitesRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.RemoveAllAssignedSitesRecalculateCrewSheetAsync(Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L876">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_RemoveAllAssignedSitesRecalculateCrewSheetAsync_" data-uid="Storm.Biz.Sites.SiteService.RemoveAllAssignedSitesRecalculateCrewSheetAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_RemoveAllAssignedSitesRecalculateCrewSheetAsync_Storm_Biz_Sites_Models_RemoveAllAssignedSitesRequest_" data-uid="Storm.Biz.Sites.SiteService.RemoveAllAssignedSitesRecalculateCrewSheetAsync(Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest)">RemoveAllAssignedSitesRecalculateCrewSheetAsync(RemoveAllAssignedSitesRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task RemoveAllAssignedSitesRecalculateCrewSheetAsync(RemoveAllAssignedSitesRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest.html">RemoveAllAssignedSitesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_RemoveAssignedSiteAsync_Storm_Biz_Sites_Models_RemoveAssignedSiteRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.RemoveAssignedSiteAsync(Storm.Biz.Sites.Models.RemoveAssignedSiteRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L908">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_RemoveAssignedSiteAsync_" data-uid="Storm.Biz.Sites.SiteService.RemoveAssignedSiteAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_RemoveAssignedSiteAsync_Storm_Biz_Sites_Models_RemoveAssignedSiteRequest_" data-uid="Storm.Biz.Sites.SiteService.RemoveAssignedSiteAsync(Storm.Biz.Sites.Models.RemoveAssignedSiteRequest)">RemoveAssignedSiteAsync(RemoveAssignedSiteRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&gt; RemoveAssignedSiteAsync(RemoveAssignedSiteRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.RemoveAssignedSiteRequest.html">RemoveAssignedSiteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult.html">ExecutionResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_RemoveAssignedSiteBucket_Storm_Biz_Sites_Models_RemoveAssignedSiteRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.RemoveAssignedSiteBucket(Storm.Biz.Sites.Models.RemoveAssignedSiteRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1012">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_RemoveAssignedSiteBucket_" data-uid="Storm.Biz.Sites.SiteService.RemoveAssignedSiteBucket*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_RemoveAssignedSiteBucket_Storm_Biz_Sites_Models_RemoveAssignedSiteRequest_" data-uid="Storm.Biz.Sites.SiteService.RemoveAssignedSiteBucket(Storm.Biz.Sites.Models.RemoveAssignedSiteRequest)">RemoveAssignedSiteBucket(RemoveAssignedSiteRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task RemoveAssignedSiteBucket(RemoveAssignedSiteRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.RemoveAssignedSiteRequest.html">RemoveAssignedSiteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_RemoveAssignedSiteCrewSheet_Storm_Biz_Sites_Models_RemoveAssignedSiteRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.RemoveAssignedSiteCrewSheet(Storm.Biz.Sites.Models.RemoveAssignedSiteRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1029">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_RemoveAssignedSiteCrewSheet_" data-uid="Storm.Biz.Sites.SiteService.RemoveAssignedSiteCrewSheet*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_RemoveAssignedSiteCrewSheet_Storm_Biz_Sites_Models_RemoveAssignedSiteRequest_" data-uid="Storm.Biz.Sites.SiteService.RemoveAssignedSiteCrewSheet(Storm.Biz.Sites.Models.RemoveAssignedSiteRequest)">RemoveAssignedSiteCrewSheet(RemoveAssignedSiteRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task RemoveAssignedSiteCrewSheet(RemoveAssignedSiteRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.RemoveAssignedSiteRequest.html">RemoveAssignedSiteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_RemoveExistingAddressTypeOcAssignmentsAsync_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.RemoveExistingAddressTypeOcAssignmentsAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L368">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_RemoveExistingAddressTypeOcAssignmentsAsync_" data-uid="Storm.Biz.Sites.SiteService.RemoveExistingAddressTypeOcAssignmentsAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_RemoveExistingAddressTypeOcAssignmentsAsync_System_String_" data-uid="Storm.Biz.Sites.SiteService.RemoveExistingAddressTypeOcAssignmentsAsync(System.String)">RemoveExistingAddressTypeOcAssignmentsAsync(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task RemoveExistingAddressTypeOcAssignmentsAsync(string siteId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">siteId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_RemoveExistingRegionAssignmentsAsync_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.RemoveExistingRegionAssignmentsAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L373">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_RemoveExistingRegionAssignmentsAsync_" data-uid="Storm.Biz.Sites.SiteService.RemoveExistingRegionAssignmentsAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_RemoveExistingRegionAssignmentsAsync_System_String_" data-uid="Storm.Biz.Sites.SiteService.RemoveExistingRegionAssignmentsAsync(System.String)">RemoveExistingRegionAssignmentsAsync(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task RemoveExistingRegionAssignmentsAsync(string siteId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">siteId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_TriggerRecalculationBySiteIdAsync_System_String_Storm_Core_Models_TokenDescriptor_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.TriggerRecalculationBySiteIdAsync(System.String%2CStorm.Core.Models.TokenDescriptor)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1161">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_TriggerRecalculationBySiteIdAsync_" data-uid="Storm.Biz.Sites.SiteService.TriggerRecalculationBySiteIdAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_TriggerRecalculationBySiteIdAsync_System_String_Storm_Core_Models_TokenDescriptor_" data-uid="Storm.Biz.Sites.SiteService.TriggerRecalculationBySiteIdAsync(System.String,Storm.Core.Models.TokenDescriptor)">TriggerRecalculationBySiteIdAsync(string, TokenDescriptor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task TriggerRecalculationBySiteIdAsync(string siteId, TokenDescriptor token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">siteId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TokenDescriptor</span></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_UpdateAddressFromRequest_Storm_Biz_ManageSecureWorkforces_DbModels_Address_Storm_Biz_Sites_Models_UpdateSiteRequest_System_Boolean_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.UpdateAddressFromRequest(Storm.Biz.ManageSecureWorkforces.DbModels.Address%2CStorm.Biz.Sites.Models.UpdateSiteRequest%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L317">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_UpdateAddressFromRequest_" data-uid="Storm.Biz.Sites.SiteService.UpdateAddressFromRequest*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_UpdateAddressFromRequest_Storm_Biz_ManageSecureWorkforces_DbModels_Address_Storm_Biz_Sites_Models_UpdateSiteRequest_System_Boolean_" data-uid="Storm.Biz.Sites.SiteService.UpdateAddressFromRequest(Storm.Biz.ManageSecureWorkforces.DbModels.Address,Storm.Biz.Sites.Models.UpdateSiteRequest,System.Boolean)">UpdateAddressFromRequest(Address, UpdateSiteRequest, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateAddressFromRequest(Address existingAddress, UpdateSiteRequest request, bool isContractorTenant = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.ManageSecureWorkforces.DbModels.Address.html">Address</a></td>
+        <td><span class="parametername">existingAddress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.UpdateSiteRequest.html">UpdateSiteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isContractorTenant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_UpdateSiteAsync_Storm_Biz_Sites_Models_UpdateSiteRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.UpdateSiteAsync(Storm.Biz.Sites.Models.UpdateSiteRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L205">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_UpdateSiteAsync_" data-uid="Storm.Biz.Sites.SiteService.UpdateSiteAsync*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_UpdateSiteAsync_Storm_Biz_Sites_Models_UpdateSiteRequest_" data-uid="Storm.Biz.Sites.SiteService.UpdateSiteAsync(Storm.Biz.Sites.Models.UpdateSiteRequest)">UpdateSiteAsync(UpdateSiteRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&lt;string?&gt;&gt; UpdateSiteAsync(UpdateSiteRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.UpdateSiteRequest.html">UpdateSiteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult-1.html">ExecutionResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_ValidateAssignSitesAsyncRequest_Storm_Biz_Sites_Models_AssignSitesRequest_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.ValidateAssignSitesAsyncRequest(Storm.Biz.Sites.Models.AssignSitesRequest%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L575">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_ValidateAssignSitesAsyncRequest_" data-uid="Storm.Biz.Sites.SiteService.ValidateAssignSitesAsyncRequest*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_ValidateAssignSitesAsyncRequest_Storm_Biz_Sites_Models_AssignSitesRequest_System_String_" data-uid="Storm.Biz.Sites.SiteService.ValidateAssignSitesAsyncRequest(Storm.Biz.Sites.Models.AssignSitesRequest,System.String)">ValidateAssignSitesAsyncRequest(AssignSitesRequest, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual (bool, string) ValidateAssignSitesAsyncRequest(AssignSitesRequest request, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.AssignSitesRequest.html">AssignSitesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_ValidateGetSitesAsyncRequest_Storm_Biz_Sites_Models_GetSitesRequest_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.ValidateGetSitesAsyncRequest(Storm.Biz.Sites.Models.GetSitesRequest%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L434">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_ValidateGetSitesAsyncRequest_" data-uid="Storm.Biz.Sites.SiteService.ValidateGetSitesAsyncRequest*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_ValidateGetSitesAsyncRequest_Storm_Biz_Sites_Models_GetSitesRequest_System_String_" data-uid="Storm.Biz.Sites.SiteService.ValidateGetSitesAsyncRequest(Storm.Biz.Sites.Models.GetSitesRequest,System.String)">ValidateGetSitesAsyncRequest(GetSitesRequest, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual (bool, string) ValidateGetSitesAsyncRequest(GetSitesRequest request, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.GetSitesRequest.html">GetSitesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_ValidateGetSitesWithSiteTypesAsyncRequest_Storm_Biz_Sites_Models_GetSitesWithSiteTypesRequest_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.ValidateGetSitesWithSiteTypesAsyncRequest(Storm.Biz.Sites.Models.GetSitesWithSiteTypesRequest%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L1298">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_ValidateGetSitesWithSiteTypesAsyncRequest_" data-uid="Storm.Biz.Sites.SiteService.ValidateGetSitesWithSiteTypesAsyncRequest*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_ValidateGetSitesWithSiteTypesAsyncRequest_Storm_Biz_Sites_Models_GetSitesWithSiteTypesRequest_System_String_" data-uid="Storm.Biz.Sites.SiteService.ValidateGetSitesWithSiteTypesAsyncRequest(Storm.Biz.Sites.Models.GetSitesWithSiteTypesRequest,System.String)">ValidateGetSitesWithSiteTypesAsyncRequest(GetSitesWithSiteTypesRequest, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual (bool, string) ValidateGetSitesWithSiteTypesAsyncRequest(GetSitesWithSiteTypesRequest request, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.GetSitesWithSiteTypesRequest.html">GetSitesWithSiteTypesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_ValidateRemoveAllAssignedSitesAsyncRequest_Storm_Biz_Sites_Models_RemoveAllAssignedSitesRequest_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.ValidateRemoveAllAssignedSitesAsyncRequest(Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L845">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_ValidateRemoveAllAssignedSitesAsyncRequest_" data-uid="Storm.Biz.Sites.SiteService.ValidateRemoveAllAssignedSitesAsyncRequest*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_ValidateRemoveAllAssignedSitesAsyncRequest_Storm_Biz_Sites_Models_RemoveAllAssignedSitesRequest_System_String_" data-uid="Storm.Biz.Sites.SiteService.ValidateRemoveAllAssignedSitesAsyncRequest(Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest,System.String)">ValidateRemoveAllAssignedSitesAsyncRequest(RemoveAllAssignedSitesRequest, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual (bool, string) ValidateRemoveAllAssignedSitesAsyncRequest(RemoveAllAssignedSitesRequest request, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.RemoveAllAssignedSitesRequest.html">RemoveAllAssignedSitesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService_ValidateRemoveAssignedSiteAsyncRequest_Storm_Biz_Sites_Models_RemoveAssignedSiteRequest_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService.ValidateRemoveAssignedSiteAsyncRequest(Storm.Biz.Sites.Models.RemoveAssignedSiteRequest%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L970">View Source</a>
+  </span>
+  <a id="Storm_Biz_Sites_SiteService_ValidateRemoveAssignedSiteAsyncRequest_" data-uid="Storm.Biz.Sites.SiteService.ValidateRemoveAssignedSiteAsyncRequest*"></a>
+  <h4 id="Storm_Biz_Sites_SiteService_ValidateRemoveAssignedSiteAsyncRequest_Storm_Biz_Sites_Models_RemoveAssignedSiteRequest_System_String_" data-uid="Storm.Biz.Sites.SiteService.ValidateRemoveAssignedSiteAsyncRequest(Storm.Biz.Sites.Models.RemoveAssignedSiteRequest,System.String)">ValidateRemoveAssignedSiteAsyncRequest(RemoveAssignedSiteRequest, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual (bool, string) ValidateRemoveAssignedSiteAsyncRequest(RemoveAssignedSiteRequest request, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Sites.Models.RemoveAssignedSiteRequest.html">RemoveAssignedSiteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Storm.Biz.Sites.ISiteService.html">ISiteService</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Sites_SiteService.md&amp;value=---%0Auid%3A%20Storm.Biz.Sites.SiteService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Sites/SiteService.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

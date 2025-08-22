@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class UserGrpcService | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class UserGrpcService | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Facing.Services.UserGrpcService">
+
+
+
+  <h1 id="Storm_Facing_Services_UserGrpcService" data-uid="Storm.Facing.Services.UserGrpcService" class="text-break">Class UserGrpcService</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Storm.Facing.Protos.User.html">User</a>.<a class="xref" href="Storm.Facing.Protos.User.UserBase.html">UserBase</a></div>
+    <div class="level2"><span class="xref">UserGrpcService</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Facing.html">Facing</a>.<a class="xref" href="Storm.Facing.Services.html">Services</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Facing.dll</h6>
+  <h5 id="Storm_Facing_Services_UserGrpcService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Authorize]
+public class UserGrpcService : User.UserBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService__ctor_Storm_Biz_Commons_IUserService_Microsoft_Extensions_Logging_ILogger_Storm_Facing_Services_UserGrpcService__.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.%23ctor(Storm.Biz.Commons.IUserService%2CMicrosoft.Extensions.Logging.ILogger%7BStorm.Facing.Services.UserGrpcService%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L16">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService__ctor_" data-uid="Storm.Facing.Services.UserGrpcService.#ctor*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService__ctor_Storm_Biz_Commons_IUserService_Microsoft_Extensions_Logging_ILogger_Storm_Facing_Services_UserGrpcService__" data-uid="Storm.Facing.Services.UserGrpcService.#ctor(Storm.Biz.Commons.IUserService,Microsoft.Extensions.Logging.ILogger{Storm.Facing.Services.UserGrpcService})">UserGrpcService(IUserService, ILogger&lt;UserGrpcService&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserGrpcService(IUserService userService, ILogger&lt;UserGrpcService&gt; logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.IUserService.html">IUserService</a></td>
+        <td><span class="parametername">userService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Storm.Facing.Services.UserGrpcService.html">UserGrpcService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService_ArchiveUser_Storm_Facing_Protos_ArchiveUserRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.ArchiveUser(Storm.Facing.Protos.ArchiveUserRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L340">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService_ArchiveUser_" data-uid="Storm.Facing.Services.UserGrpcService.ArchiveUser*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService_ArchiveUser_Storm_Facing_Protos_ArchiveUserRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.UserGrpcService.ArchiveUser(Storm.Facing.Protos.ArchiveUserRequest,Grpc.Core.ServerCallContext)">ArchiveUser(ArchiveUserRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Response&gt; ArchiveUser(ArchiveUserRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.ArchiveUserRequest.html">ArchiveUserRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.User.UserBase.html#Storm_Facing_Protos_User_UserBase_ArchiveUser_Storm_Facing_Protos_ArchiveUserRequest_Grpc_Core_ServerCallContext_">User.UserBase.ArchiveUser(ArchiveUserRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService_ArchiveUsers_Storm_Facing_Protos_ArchiveUsersRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.ArchiveUsers(Storm.Facing.Protos.ArchiveUsersRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L353">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService_ArchiveUsers_" data-uid="Storm.Facing.Services.UserGrpcService.ArchiveUsers*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService_ArchiveUsers_Storm_Facing_Protos_ArchiveUsersRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.UserGrpcService.ArchiveUsers(Storm.Facing.Protos.ArchiveUsersRequest,Grpc.Core.ServerCallContext)">ArchiveUsers(ArchiveUsersRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Response&gt; ArchiveUsers(ArchiveUsersRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.ArchiveUsersRequest.html">ArchiveUsersRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.User.UserBase.html#Storm_Facing_Protos_User_UserBase_ArchiveUsers_Storm_Facing_Protos_ArchiveUsersRequest_Grpc_Core_ServerCallContext_">User.UserBase.ArchiveUsers(ArchiveUsersRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService_CreateUser_Storm_Facing_Protos_CreateUserRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.CreateUser(Storm.Facing.Protos.CreateUserRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L266">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService_CreateUser_" data-uid="Storm.Facing.Services.UserGrpcService.CreateUser*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService_CreateUser_Storm_Facing_Protos_CreateUserRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.UserGrpcService.CreateUser(Storm.Facing.Protos.CreateUserRequest,Grpc.Core.ServerCallContext)">CreateUser(CreateUserRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;CreateUserResponse&gt; CreateUser(CreateUserRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.CreateUserResponse.html">CreateUserResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.User.UserBase.html#Storm_Facing_Protos_User_UserBase_CreateUser_Storm_Facing_Protos_CreateUserRequest_Grpc_Core_ServerCallContext_">User.UserBase.CreateUser(CreateUserRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService_GetActiveUsersPaginationBySelectedOperatingCompany_Storm_Facing_Protos_GetActiveUsersPaginationBySelectedOperatingCompanyRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.GetActiveUsersPaginationBySelectedOperatingCompany(Storm.Facing.Protos.GetActiveUsersPaginationBySelectedOperatingCompanyRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L23">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService_GetActiveUsersPaginationBySelectedOperatingCompany_" data-uid="Storm.Facing.Services.UserGrpcService.GetActiveUsersPaginationBySelectedOperatingCompany*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService_GetActiveUsersPaginationBySelectedOperatingCompany_Storm_Facing_Protos_GetActiveUsersPaginationBySelectedOperatingCompanyRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.UserGrpcService.GetActiveUsersPaginationBySelectedOperatingCompany(Storm.Facing.Protos.GetActiveUsersPaginationBySelectedOperatingCompanyRequest,Grpc.Core.ServerCallContext)">GetActiveUsersPaginationBySelectedOperatingCompany(GetActiveUsersPaginationBySelectedOperatingCompanyRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetUsersPaginationResponse&gt; GetActiveUsersPaginationBySelectedOperatingCompany(GetActiveUsersPaginationBySelectedOperatingCompanyRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetActiveUsersPaginationBySelectedOperatingCompanyRequest.html">GetActiveUsersPaginationBySelectedOperatingCompanyRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetUsersPaginationResponse.html">GetUsersPaginationResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.User.UserBase.html#Storm_Facing_Protos_User_UserBase_GetActiveUsersPaginationBySelectedOperatingCompany_Storm_Facing_Protos_GetActiveUsersPaginationBySelectedOperatingCompanyRequest_Grpc_Core_ServerCallContext_">User.UserBase.GetActiveUsersPaginationBySelectedOperatingCompany(GetActiveUsersPaginationBySelectedOperatingCompanyRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService_GetActiveUsersPaginationForUtility_Storm_Facing_Protos_PagingForDropDownListRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.GetActiveUsersPaginationForUtility(Storm.Facing.Protos.PagingForDropDownListRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L49">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService_GetActiveUsersPaginationForUtility_" data-uid="Storm.Facing.Services.UserGrpcService.GetActiveUsersPaginationForUtility*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService_GetActiveUsersPaginationForUtility_Storm_Facing_Protos_PagingForDropDownListRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.UserGrpcService.GetActiveUsersPaginationForUtility(Storm.Facing.Protos.PagingForDropDownListRequest,Grpc.Core.ServerCallContext)">GetActiveUsersPaginationForUtility(PagingForDropDownListRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetUsersPaginationResponse&gt; GetActiveUsersPaginationForUtility(PagingForDropDownListRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.PagingForDropDownListRequest.html">PagingForDropDownListRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetUsersPaginationResponse.html">GetUsersPaginationResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.User.UserBase.html#Storm_Facing_Protos_User_UserBase_GetActiveUsersPaginationForUtility_Storm_Facing_Protos_PagingForDropDownListRequest_Grpc_Core_ServerCallContext_">User.UserBase.GetActiveUsersPaginationForUtility(PagingForDropDownListRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService_GetAssignmentInOrgOrResourcePoolAsync_Storm_Facing_Protos_GetAssignmentInOrgOrResourcePoolRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.GetAssignmentInOrgOrResourcePoolAsync(Storm.Facing.Protos.GetAssignmentInOrgOrResourcePoolRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L377">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService_GetAssignmentInOrgOrResourcePoolAsync_" data-uid="Storm.Facing.Services.UserGrpcService.GetAssignmentInOrgOrResourcePoolAsync*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService_GetAssignmentInOrgOrResourcePoolAsync_Storm_Facing_Protos_GetAssignmentInOrgOrResourcePoolRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.UserGrpcService.GetAssignmentInOrgOrResourcePoolAsync(Storm.Facing.Protos.GetAssignmentInOrgOrResourcePoolRequest,Grpc.Core.ServerCallContext)">GetAssignmentInOrgOrResourcePoolAsync(GetAssignmentInOrgOrResourcePoolRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetAssignmentInOrgOrResourcePoolResponse&gt; GetAssignmentInOrgOrResourcePoolAsync(GetAssignmentInOrgOrResourcePoolRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetAssignmentInOrgOrResourcePoolRequest.html">GetAssignmentInOrgOrResourcePoolRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetAssignmentInOrgOrResourcePoolResponse.html">GetAssignmentInOrgOrResourcePoolResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.User.UserBase.html#Storm_Facing_Protos_User_UserBase_GetAssignmentInOrgOrResourcePoolAsync_Storm_Facing_Protos_GetAssignmentInOrgOrResourcePoolRequest_Grpc_Core_ServerCallContext_">User.UserBase.GetAssignmentInOrgOrResourcePoolAsync(GetAssignmentInOrgOrResourcePoolRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService_GetUser_Storm_Facing_Protos_IdRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.GetUser(Storm.Facing.Protos.IdRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L203">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService_GetUser_" data-uid="Storm.Facing.Services.UserGrpcService.GetUser*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService_GetUser_Storm_Facing_Protos_IdRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.UserGrpcService.GetUser(Storm.Facing.Protos.IdRequest,Grpc.Core.ServerCallContext)">GetUser(IdRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetUserResponse&gt; GetUser(IdRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.IdRequest.html">IdRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetUserResponse.html">GetUserResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.User.UserBase.html#Storm_Facing_Protos_User_UserBase_GetUser_Storm_Facing_Protos_IdRequest_Grpc_Core_ServerCallContext_">User.UserBase.GetUser(IdRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService_SearchUserPaginationAdvanceSearch_Storm_Facing_Protos_SearchUserPaginationAdvanceSearchRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.SearchUserPaginationAdvanceSearch(Storm.Facing.Protos.SearchUserPaginationAdvanceSearchRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L111">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService_SearchUserPaginationAdvanceSearch_" data-uid="Storm.Facing.Services.UserGrpcService.SearchUserPaginationAdvanceSearch*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService_SearchUserPaginationAdvanceSearch_Storm_Facing_Protos_SearchUserPaginationAdvanceSearchRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.UserGrpcService.SearchUserPaginationAdvanceSearch(Storm.Facing.Protos.SearchUserPaginationAdvanceSearchRequest,Grpc.Core.ServerCallContext)">SearchUserPaginationAdvanceSearch(SearchUserPaginationAdvanceSearchRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;SearchUserPaginationResponse&gt; SearchUserPaginationAdvanceSearch(SearchUserPaginationAdvanceSearchRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.SearchUserPaginationAdvanceSearchRequest.html">SearchUserPaginationAdvanceSearchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.SearchUserPaginationResponse.html">SearchUserPaginationResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.User.UserBase.html#Storm_Facing_Protos_User_UserBase_SearchUserPaginationAdvanceSearch_Storm_Facing_Protos_SearchUserPaginationAdvanceSearchRequest_Grpc_Core_ServerCallContext_">User.UserBase.SearchUserPaginationAdvanceSearch(SearchUserPaginationAdvanceSearchRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService_SearchUserPaginationSmartSearch_Storm_Facing_Protos_SearchUserPaginationSmartSearchRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.SearchUserPaginationSmartSearch(Storm.Facing.Protos.SearchUserPaginationSmartSearchRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L74">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService_SearchUserPaginationSmartSearch_" data-uid="Storm.Facing.Services.UserGrpcService.SearchUserPaginationSmartSearch*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService_SearchUserPaginationSmartSearch_Storm_Facing_Protos_SearchUserPaginationSmartSearchRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.UserGrpcService.SearchUserPaginationSmartSearch(Storm.Facing.Protos.SearchUserPaginationSmartSearchRequest,Grpc.Core.ServerCallContext)">SearchUserPaginationSmartSearch(SearchUserPaginationSmartSearchRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;SearchUserPaginationResponse&gt; SearchUserPaginationSmartSearch(SearchUserPaginationSmartSearchRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.SearchUserPaginationSmartSearchRequest.html">SearchUserPaginationSmartSearchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.SearchUserPaginationResponse.html">SearchUserPaginationResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.User.UserBase.html#Storm_Facing_Protos_User_UserBase_SearchUserPaginationSmartSearch_Storm_Facing_Protos_SearchUserPaginationSmartSearchRequest_Grpc_Core_ServerCallContext_">User.UserBase.SearchUserPaginationSmartSearch(SearchUserPaginationSmartSearchRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService_UnarchiveUser_Storm_Facing_Protos_UnarchiveUserRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.UnarchiveUser(Storm.Facing.Protos.UnarchiveUserRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L365">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService_UnarchiveUser_" data-uid="Storm.Facing.Services.UserGrpcService.UnarchiveUser*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService_UnarchiveUser_Storm_Facing_Protos_UnarchiveUserRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.UserGrpcService.UnarchiveUser(Storm.Facing.Protos.UnarchiveUserRequest,Grpc.Core.ServerCallContext)">UnarchiveUser(UnarchiveUserRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Response&gt; UnarchiveUser(UnarchiveUserRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.UnarchiveUserRequest.html">UnarchiveUserRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.User.UserBase.html#Storm_Facing_Protos_User_UserBase_UnarchiveUser_Storm_Facing_Protos_UnarchiveUserRequest_Grpc_Core_ServerCallContext_">User.UserBase.UnarchiveUser(UnarchiveUserRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService_UpdateUser_Storm_Facing_Protos_UpdateUserRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService.UpdateUser(Storm.Facing.Protos.UpdateUserRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L303">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_UserGrpcService_UpdateUser_" data-uid="Storm.Facing.Services.UserGrpcService.UpdateUser*"></a>
+  <h4 id="Storm_Facing_Services_UserGrpcService_UpdateUser_Storm_Facing_Protos_UpdateUserRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.UserGrpcService.UpdateUser(Storm.Facing.Protos.UpdateUserRequest,Grpc.Core.ServerCallContext)">UpdateUser(UpdateUserRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Response&gt; UpdateUser(UpdateUserRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.UpdateUserRequest.html">UpdateUserRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.User.UserBase.html#Storm_Facing_Protos_User_UserBase_UpdateUser_Storm_Facing_Protos_UpdateUserRequest_Grpc_Core_ServerCallContext_">User.UserBase.UpdateUser(UpdateUserRequest, ServerCallContext)</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_UserGrpcService.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.UserGrpcService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/UserGrpcService.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

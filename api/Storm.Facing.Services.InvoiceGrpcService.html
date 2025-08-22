@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class InvoiceGrpcService | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class InvoiceGrpcService | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Facing.Services.InvoiceGrpcService">
+
+
+
+  <h1 id="Storm_Facing_Services_InvoiceGrpcService" data-uid="Storm.Facing.Services.InvoiceGrpcService" class="text-break">Class InvoiceGrpcService</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Storm.Facing.Protos.Invoice.html">Invoice</a>.<a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html">InvoiceBase</a></div>
+    <div class="level2"><span class="xref">InvoiceGrpcService</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Facing.html">Facing</a>.<a class="xref" href="Storm.Facing.Services.html">Services</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Facing.dll</h6>
+  <h5 id="Storm_Facing_Services_InvoiceGrpcService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Authorize]
+public class InvoiceGrpcService : Invoice.InvoiceBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService__ctor_Storm_Biz_Invoices_IInvoiceService_Microsoft_Extensions_Logging_ILogger_Storm_Facing_Services_InvoiceGrpcService__Storm_Biz_Timezone_ITimezoneService_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.%23ctor(Storm.Biz.Invoices.IInvoiceService%2CMicrosoft.Extensions.Logging.ILogger%7BStorm.Facing.Services.InvoiceGrpcService%7D%2CStorm.Biz.Timezone.ITimezoneService)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L22">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService__ctor_" data-uid="Storm.Facing.Services.InvoiceGrpcService.#ctor*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService__ctor_Storm_Biz_Invoices_IInvoiceService_Microsoft_Extensions_Logging_ILogger_Storm_Facing_Services_InvoiceGrpcService__Storm_Biz_Timezone_ITimezoneService_" data-uid="Storm.Facing.Services.InvoiceGrpcService.#ctor(Storm.Biz.Invoices.IInvoiceService,Microsoft.Extensions.Logging.ILogger{Storm.Facing.Services.InvoiceGrpcService},Storm.Biz.Timezone.ITimezoneService)">InvoiceGrpcService(IInvoiceService, ILogger&lt;InvoiceGrpcService&gt;, ITimezoneService)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InvoiceGrpcService(IInvoiceService invoiceService, ILogger&lt;InvoiceGrpcService&gt; logger, ITimezoneService timezoneService)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Invoices.IInvoiceService.html">IInvoiceService</a></td>
+        <td><span class="parametername">invoiceService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Storm.Facing.Services.InvoiceGrpcService.html">InvoiceGrpcService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Timezone.ITimezoneService.html">ITimezoneService</a></td>
+        <td><span class="parametername">timezoneService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_ApproveAllInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.ApproveAllInvoices(Storm.Facing.Protos.InvoicesActionRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L86">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_ApproveAllInvoices_" data-uid="Storm.Facing.Services.InvoiceGrpcService.ApproveAllInvoices*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_ApproveAllInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.ApproveAllInvoices(Storm.Facing.Protos.InvoicesActionRequest,Grpc.Core.ServerCallContext)">ApproveAllInvoices(InvoicesActionRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;InvoiceResponse&gt; ApproveAllInvoices(InvoicesActionRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.InvoicesActionRequest.html">InvoicesActionRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.InvoiceResponse.html">InvoiceResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_ApproveAllInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.ApproveAllInvoices(InvoicesActionRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_ClearAllInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.ClearAllInvoices(Storm.Facing.Protos.InvoicesActionRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L64">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_ClearAllInvoices_" data-uid="Storm.Facing.Services.InvoiceGrpcService.ClearAllInvoices*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_ClearAllInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.ClearAllInvoices(Storm.Facing.Protos.InvoicesActionRequest,Grpc.Core.ServerCallContext)">ClearAllInvoices(InvoicesActionRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;InvoiceResponse&gt; ClearAllInvoices(InvoicesActionRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.InvoicesActionRequest.html">InvoicesActionRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.InvoiceResponse.html">InvoiceResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_ClearAllInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.ClearAllInvoices(InvoicesActionRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GenerateInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GenerateInvoices(Storm.Facing.Protos.InvoicesActionRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L146">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GenerateInvoices_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GenerateInvoices*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GenerateInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GenerateInvoices(Storm.Facing.Protos.InvoicesActionRequest,Grpc.Core.ServerCallContext)">GenerateInvoices(InvoicesActionRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;InvoiceResponse&gt; GenerateInvoices(InvoicesActionRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.InvoicesActionRequest.html">InvoicesActionRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.InvoiceResponse.html">InvoiceResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GenerateInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GenerateInvoices(InvoicesActionRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetChargedLocationsOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetChargedLocationsOption(Storm.Facing.Protos.GetInvoiceOptionRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L477">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetChargedLocationsOption_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetChargedLocationsOption*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetChargedLocationsOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetChargedLocationsOption(Storm.Facing.Protos.GetInvoiceOptionRequest,Grpc.Core.ServerCallContext)">GetChargedLocationsOption(GetInvoiceOptionRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceOptionDisplayResponse&gt; GetChargedLocationsOption(GetInvoiceOptionRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetInvoiceOptionRequest.html">GetInvoiceOptionRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceOptionDisplayResponse.html">GetInvoiceOptionDisplayResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetChargedLocationsOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetChargedLocationsOption(GetInvoiceOptionRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetCompanyWithContractOption_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetCompanyWithContractOption(Google.Protobuf.WellKnownTypes.Empty%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L537">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetCompanyWithContractOption_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetCompanyWithContractOption*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetCompanyWithContractOption_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetCompanyWithContractOption(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">GetCompanyWithContractOption(Empty, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceOptionInfoResponse&gt; GetCompanyWithContractOption(Empty request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Empty</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceOptionInfoResponse.html">GetInvoiceOptionInfoResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetCompanyWithContractOption_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetCompanyWithContractOption(Empty, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetCrewsheetsOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetCrewsheetsOption(Storm.Facing.Protos.GetInvoiceOptionRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L407">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetCrewsheetsOption_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetCrewsheetsOption*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetCrewsheetsOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetCrewsheetsOption(Storm.Facing.Protos.GetInvoiceOptionRequest,Grpc.Core.ServerCallContext)">GetCrewsheetsOption(GetInvoiceOptionRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceOptionInfoResponse&gt; GetCrewsheetsOption(GetInvoiceOptionRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetInvoiceOptionRequest.html">GetInvoiceOptionRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceOptionInfoResponse.html">GetInvoiceOptionInfoResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetCrewsheetsOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetCrewsheetsOption(GetInvoiceOptionRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetEventWithContractOption_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetEventWithContractOption(Google.Protobuf.WellKnownTypes.Empty%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L568">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetEventWithContractOption_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetEventWithContractOption*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetEventWithContractOption_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetEventWithContractOption(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">GetEventWithContractOption(Empty, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceOptionInfoResponse&gt; GetEventWithContractOption(Empty request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Empty</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceOptionInfoResponse.html">GetInvoiceOptionInfoResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetEventWithContractOption_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetEventWithContractOption(Empty, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetEventsOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetEventsOption(Storm.Facing.Protos.GetInvoiceOptionRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L442">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetEventsOption_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetEventsOption*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetEventsOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetEventsOption(Storm.Facing.Protos.GetInvoiceOptionRequest,Grpc.Core.ServerCallContext)">GetEventsOption(GetInvoiceOptionRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceOptionInfoResponse&gt; GetEventsOption(GetInvoiceOptionRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetInvoiceOptionRequest.html">GetInvoiceOptionRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceOptionInfoResponse.html">GetInvoiceOptionInfoResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetEventsOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetEventsOption(GetInvoiceOptionRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetInvoiceCenters_Storm_Facing_Protos_GetInvoiceCentersRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetInvoiceCenters(Storm.Facing.Protos.GetInvoiceCentersRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L108">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceCenters_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceCenters*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceCenters_Storm_Facing_Protos_GetInvoiceCentersRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceCenters(Storm.Facing.Protos.GetInvoiceCentersRequest,Grpc.Core.ServerCallContext)">GetInvoiceCenters(GetInvoiceCentersRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceCentersResponse&gt; GetInvoiceCenters(GetInvoiceCentersRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetInvoiceCentersRequest.html">GetInvoiceCentersRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceCentersResponse.html">GetInvoiceCentersResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetInvoiceCenters_Storm_Facing_Protos_GetInvoiceCentersRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetInvoiceCenters(GetInvoiceCentersRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetInvoiceExpenseAdvanceSearch_Storm_Facing_Protos_GetInvoiceExpenseAdvanceSearchRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetInvoiceExpenseAdvanceSearch(Storm.Facing.Protos.GetInvoiceExpenseAdvanceSearchRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L339">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceExpenseAdvanceSearch_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceExpenseAdvanceSearch*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceExpenseAdvanceSearch_Storm_Facing_Protos_GetInvoiceExpenseAdvanceSearchRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceExpenseAdvanceSearch(Storm.Facing.Protos.GetInvoiceExpenseAdvanceSearchRequest,Grpc.Core.ServerCallContext)">GetInvoiceExpenseAdvanceSearch(GetInvoiceExpenseAdvanceSearchRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceExpenseResponse&gt; GetInvoiceExpenseAdvanceSearch(GetInvoiceExpenseAdvanceSearchRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetInvoiceExpenseAdvanceSearchRequest.html">GetInvoiceExpenseAdvanceSearchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceExpenseResponse.html">GetInvoiceExpenseResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetInvoiceExpenseAdvanceSearch_Storm_Facing_Protos_GetInvoiceExpenseAdvanceSearchRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetInvoiceExpenseAdvanceSearch(GetInvoiceExpenseAdvanceSearchRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetInvoiceExpenseDetails_Storm_Facing_Protos_GetInvoiceDetailsRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetInvoiceExpenseDetails(Storm.Facing.Protos.GetInvoiceDetailsRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L828">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceExpenseDetails_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceExpenseDetails*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceExpenseDetails_Storm_Facing_Protos_GetInvoiceDetailsRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceExpenseDetails(Storm.Facing.Protos.GetInvoiceDetailsRequest,Grpc.Core.ServerCallContext)">GetInvoiceExpenseDetails(GetInvoiceDetailsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceExpenseDetailsResponse&gt; GetInvoiceExpenseDetails(GetInvoiceDetailsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetInvoiceDetailsRequest.html">GetInvoiceDetailsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceExpenseDetailsResponse.html">GetInvoiceExpenseDetailsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetInvoiceExpenseDetails_Storm_Facing_Protos_GetInvoiceDetailsRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetInvoiceExpenseDetails(GetInvoiceDetailsRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetInvoiceExpenseSmartSearch_Storm_Facing_Protos_GetInvoiceListSmartSearchRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetInvoiceExpenseSmartSearch(Storm.Facing.Protos.GetInvoiceListSmartSearchRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L289">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceExpenseSmartSearch_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceExpenseSmartSearch*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceExpenseSmartSearch_Storm_Facing_Protos_GetInvoiceListSmartSearchRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceExpenseSmartSearch(Storm.Facing.Protos.GetInvoiceListSmartSearchRequest,Grpc.Core.ServerCallContext)">GetInvoiceExpenseSmartSearch(GetInvoiceListSmartSearchRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceExpenseResponse&gt; GetInvoiceExpenseSmartSearch(GetInvoiceListSmartSearchRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetInvoiceListSmartSearchRequest.html">GetInvoiceListSmartSearchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceExpenseResponse.html">GetInvoiceExpenseResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetInvoiceExpenseSmartSearch_Storm_Facing_Protos_GetInvoiceListSmartSearchRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetInvoiceExpenseSmartSearch(GetInvoiceListSmartSearchRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetInvoiceGenerator_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetInvoiceGenerator(Google.Protobuf.WellKnownTypes.Empty%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L599">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceGenerator_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceGenerator*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceGenerator_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceGenerator(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">GetInvoiceGenerator(Empty, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceGeneratorResponse&gt; GetInvoiceGenerator(Empty request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Empty</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceGeneratorResponse.html">GetInvoiceGeneratorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetInvoiceGenerator_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetInvoiceGenerator(Empty, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetInvoiceLogs_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetInvoiceLogs(Google.Protobuf.WellKnownTypes.Empty%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L960">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceLogs_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceLogs*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceLogs_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceLogs(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">GetInvoiceLogs(Empty, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceLogsResponse&gt; GetInvoiceLogs(Empty request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Empty</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceLogsResponse.html">GetInvoiceLogsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetInvoiceLogs_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetInvoiceLogs(Empty, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetInvoiceTimesheetAdvanceSearch_Storm_Facing_Protos_GetInvoiceTimesheetAdvanceSearchRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetInvoiceTimesheetAdvanceSearch(Storm.Facing.Protos.GetInvoiceTimesheetAdvanceSearchRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L218">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceTimesheetAdvanceSearch_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceTimesheetAdvanceSearch*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceTimesheetAdvanceSearch_Storm_Facing_Protos_GetInvoiceTimesheetAdvanceSearchRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceTimesheetAdvanceSearch(Storm.Facing.Protos.GetInvoiceTimesheetAdvanceSearchRequest,Grpc.Core.ServerCallContext)">GetInvoiceTimesheetAdvanceSearch(GetInvoiceTimesheetAdvanceSearchRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceTimesheetResponse&gt; GetInvoiceTimesheetAdvanceSearch(GetInvoiceTimesheetAdvanceSearchRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetInvoiceTimesheetAdvanceSearchRequest.html">GetInvoiceTimesheetAdvanceSearchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceTimesheetResponse.html">GetInvoiceTimesheetResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetInvoiceTimesheetAdvanceSearch_Storm_Facing_Protos_GetInvoiceTimesheetAdvanceSearchRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetInvoiceTimesheetAdvanceSearch(GetInvoiceTimesheetAdvanceSearchRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetInvoiceTimesheetDetails_Storm_Facing_Protos_GetInvoiceDetailsRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetInvoiceTimesheetDetails(Storm.Facing.Protos.GetInvoiceDetailsRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L681">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceTimesheetDetails_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceTimesheetDetails*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceTimesheetDetails_Storm_Facing_Protos_GetInvoiceDetailsRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceTimesheetDetails(Storm.Facing.Protos.GetInvoiceDetailsRequest,Grpc.Core.ServerCallContext)">GetInvoiceTimesheetDetails(GetInvoiceDetailsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceTimesheetDetailsResponse&gt; GetInvoiceTimesheetDetails(GetInvoiceDetailsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetInvoiceDetailsRequest.html">GetInvoiceDetailsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceTimesheetDetailsResponse.html">GetInvoiceTimesheetDetailsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetInvoiceTimesheetDetails_Storm_Facing_Protos_GetInvoiceDetailsRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetInvoiceTimesheetDetails(GetInvoiceDetailsRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetInvoiceTimesheetSmartSearch_Storm_Facing_Protos_GetInvoiceListSmartSearchRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetInvoiceTimesheetSmartSearch(Storm.Facing.Protos.GetInvoiceListSmartSearchRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L168">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceTimesheetSmartSearch_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceTimesheetSmartSearch*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetInvoiceTimesheetSmartSearch_Storm_Facing_Protos_GetInvoiceListSmartSearchRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoiceTimesheetSmartSearch(Storm.Facing.Protos.GetInvoiceListSmartSearchRequest,Grpc.Core.ServerCallContext)">GetInvoiceTimesheetSmartSearch(GetInvoiceListSmartSearchRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceTimesheetResponse&gt; GetInvoiceTimesheetSmartSearch(GetInvoiceListSmartSearchRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetInvoiceListSmartSearchRequest.html">GetInvoiceListSmartSearchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceTimesheetResponse.html">GetInvoiceTimesheetResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetInvoiceTimesheetSmartSearch_Storm_Facing_Protos_GetInvoiceListSmartSearchRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetInvoiceTimesheetSmartSearch(GetInvoiceListSmartSearchRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetInvoicesConfirmation_Storm_Facing_Protos_InvoiceRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetInvoicesConfirmation(Storm.Facing.Protos.InvoiceRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L29">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetInvoicesConfirmation_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoicesConfirmation*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetInvoicesConfirmation_Storm_Facing_Protos_InvoiceRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetInvoicesConfirmation(Storm.Facing.Protos.InvoiceRequest,Grpc.Core.ServerCallContext)">GetInvoicesConfirmation(InvoiceRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoicesResponse&gt; GetInvoicesConfirmation(InvoiceRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.InvoiceRequest.html">InvoiceRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoicesResponse.html">GetInvoicesResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetInvoicesConfirmation_Storm_Facing_Protos_InvoiceRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetInvoicesConfirmation(InvoiceRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetUserAllDisciplines_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetUserAllDisciplines(Google.Protobuf.WellKnownTypes.Empty%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L937">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetUserAllDisciplines_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetUserAllDisciplines*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetUserAllDisciplines_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetUserAllDisciplines(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">GetUserAllDisciplines(Empty, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetUserAllDisciplinesResponse&gt; GetUserAllDisciplines(Empty request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Empty</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetUserAllDisciplinesResponse.html">GetUserAllDisciplinesResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetUserAllDisciplines_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetUserAllDisciplines(Empty, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_GetWorkStatusOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.GetWorkStatusOption(Storm.Facing.Protos.GetInvoiceOptionRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L507">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_GetWorkStatusOption_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetWorkStatusOption*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_GetWorkStatusOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.GetWorkStatusOption(Storm.Facing.Protos.GetInvoiceOptionRequest,Grpc.Core.ServerCallContext)">GetWorkStatusOption(GetInvoiceOptionRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetInvoiceOptionDisplayResponse&gt; GetWorkStatusOption(GetInvoiceOptionRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetInvoiceOptionRequest.html">GetInvoiceOptionRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetInvoiceOptionDisplayResponse.html">GetInvoiceOptionDisplayResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_GetWorkStatusOption_Storm_Facing_Protos_GetInvoiceOptionRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.GetWorkStatusOption(GetInvoiceOptionRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService_RegenerateInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService.RegenerateInvoices(Storm.Facing.Protos.InvoicesActionRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L659">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_InvoiceGrpcService_RegenerateInvoices_" data-uid="Storm.Facing.Services.InvoiceGrpcService.RegenerateInvoices*"></a>
+  <h4 id="Storm_Facing_Services_InvoiceGrpcService_RegenerateInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.InvoiceGrpcService.RegenerateInvoices(Storm.Facing.Protos.InvoicesActionRequest,Grpc.Core.ServerCallContext)">RegenerateInvoices(InvoicesActionRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;InvoiceResponse&gt; RegenerateInvoices(InvoicesActionRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.InvoicesActionRequest.html">InvoicesActionRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.InvoiceResponse.html">InvoiceResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Invoice.InvoiceBase.html#Storm_Facing_Protos_Invoice_InvoiceBase_RegenerateInvoices_Storm_Facing_Protos_InvoicesActionRequest_Grpc_Core_ServerCallContext_">Invoice.InvoiceBase.RegenerateInvoices(InvoicesActionRequest, ServerCallContext)</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_InvoiceGrpcService.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.InvoiceGrpcService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/InvoiceGrpcService.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

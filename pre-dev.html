@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Pre-dev analysis | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Pre-dev analysis | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="pre-dev-analysis"><strong>Pre-dev analysis</strong></h1>
+
+<h2 id="1-introduction">1. Introduction</h2>
+<ol>
+<li>List of issues/requirement
+<ol>
+<li>GetMessageByResourceAsync has a bug where incorrect data is retrieved when sender and receiver are the same person</li>
+<li>Message data gets mixed when the same Resource has conversations with multiple people and talks to themselves</li>
+</ol>
+</li>
+<li>List any root causes here
+<ol>
+<li>Current query uses .Where(it =&gt; resourceId == it.SenderId || resourceId == it.ReceiverId) which retrieves all messages where Resource is involved</li>
+<li>Not filtering by callout system business logic that should only show callout-related messages</li>
+<li>Data mixing between different conversations causes users to see irrelevant messages</li>
+</ol>
+</li>
+<li>API Doc / Diagram
+<ol>
+<li><strong><a href="https://app.apidog.com/link/project/887901/apis/api-18930914?branchId=1029969">https://app.apidog.com/link/project/887901/apis/api-18930914?branchId=1029969</a></strong></li>
+</ol>
+</li>
+</ol>
+<h2 id="2-impact-analysis"><strong>2. Impact Analysis</strong></h2>
+<ol>
+<li>Team Impact Detail
+<ul>
+<li>Development team only - minor bug fix</li>
+</ul>
+</li>
+<li>List of pages/features/common functions impacted by this implementation
+<ol>
+<li>CalloutChatService.GetMessageByResourceAsync method</li>
+<li>Any UI components that call this API with pagination</li>
+</ol>
+</li>
+<li>Existing Data Impacted by this implementation
+<ol>
+<li>✅Yes/❌ No</li>
+</ol>
+</li>
+<li>Is any <strong>Infra change</strong>?  (also added name suffix (<strong>Infra Change</strong>))
+<ul>
+<li><p>Read the Checklist Question for Potential Permanent Infra Changes</p>
+<p>If at least one of these questions is true, there is a change of a permanent infrastructure change, which will result in additional tasks for the DevOps team to provide.</p>
+<ul>
+<li><p>[ ]  Is there any discussion about using a service outside of the existing Storm flow?</p>
+<p>For example, normally, the Mobile API service cannot connect to MongoDB, but now we need to connect to MongoDB.</p>
+</li>
+<li><p>[ ]  Is there a new connection to a third-party service, beyond the current ones?</p>
+<p>For example, connecting to Google Sheets.</p>
+</li>
+<li><p>[ ]  Is there a new Storm service beyond the existing ones?</p>
+</li>
+<li><p>[ ]  Is there a new database/storage beyond what is currently available?</p>
+</li>
+<li><p>[ ]  Is there a new password/connection string being added?</p>
+</li>
+<li><p>[ ]  Are new app settings being added that are required for the system to function properly?</p>
+</li>
+</ul>
+<p>(If they are missing, the system will encounter problems.)</p>
+<ul>
+<li><p>[ ]  Are the values of app settings different across environments (Local, Atom, Dev, UAT, Prod)?</p>
+</li>
+<li><p>[ ]  Are there any changes to the project references within Storm?</p>
+<p>For example, if the project does not currently reference StormLibraries but needs to add it as a project reference in the card.</p>
+</li>
+</ul>
+<p><strong>Note:</strong> Any additions, removals, or modifications (CRUD) in any of the above items may potentially result in an infrastructure change.</p>
+</li>
+<li><p>✅Yes/❌ No</p>
+</li>
+</ul>
+</li>
+<li>Infra Change Detail (Write this if Infra Change may happen)
+<ol>
+<li>Read this <a href="https://www.notion.so/All-the-needs-of-Infra-Changes-66b21a67bb5f4e54a5aee48349b667fa?pvs=21">All the needs of  Infra Changes</a></li>
+<li>All question need to be answered
+<ol>
+<li>Which services have had Infra changes?</li>
+<li>What changes have been made to each service, and in which scope or tenant? Specify clearly.</li>
+<li>Are the configurations the same across each Tenant? If not, please explain.</li>
+<li>What the new or old configurations, if missing, would cause the program to crash? Specify any additions or removals.</li>
+<li>Specify the target production deployment date from Project Manager. The DevOps team will estimate whether it can be done by the requested date.</li>
+<li>Additional options in Atom for system testing, such as adding or modifying App Settings (if applicable).</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Will the automation script be impacted</li>
+</ol>
+<ul>
+<li><p><strong>Read</strong> Automation Impact Checklist</p>
+  <aside>
+  ⚠️
+<h2 id="notes">Notes</h2>
+<p><strong>Please check (☑) the box next to each function if there is any change, whether it is added, removed, or modified, including the following UI elements:</strong></p>
+<ul>
+<li>Input fields</li>
+<li>Buttons</li>
+<li>Labels</li>
+<li>Columns</li>
+<li>Element IDs</li>
+</ul>
+  <aside>
+  ⚠️
+<p><strong>If unsure, check with QA Automate</strong>
+<a href="https://www.notion.so/1fce0a8a37b68056a718cf8d0657925a?pvs=21">https://www.notion.so/wrmsoftware/How-about-E2E-Web-1fce0a8a37b68056a718cf8d0657925a?source=copy_link</a></p>
+  </aside>
+  </aside>
+<ul>
+<li><strong>Web</strong>
+<ol>
+<li><strong>Login , Edit Profile , Select OC Event , Tab Discipline</strong>
+<ul>
+<li>[ ]  Login</li>
+<li>[ ]  Reset Password</li>
+<li>[ ]  Access As (Admin Utility)</li>
+<li>[ ]  Edit Profile</li>
+<li>[ ]  Manage Personal Access Token</li>
+<li>[ ]  Select Event</li>
+<li>[ ]  Select Operating Company</li>
+<li>[ ]  Tab Discipline</li>
+</ul>
+</li>
+<li><strong>Procurement</strong>
+<ul>
+<li>[ ]  Crew Availability Request (Utility)</li>
+<li>[ ]  Non-IOU Marketplace (Utility)</li>
+<li>[ ]  Procurement Request (Contractor)</li>
+<li>[ ]  Check Notification Procurement in <strong>Message Center</strong> (Contractor, Utility)</li>
+</ul>
+</li>
+<li><strong>Create Resource Pool</strong> (Contractor)
+<ul>
+<li>[ ]  Internal Workforce</li>
+<li>[ ]  Resource Pool – Overview</li>
+<li>[ ]  Resource Pool – Edit Crew Sheet</li>
+<li>[ ]  Resource Pool - Edit Organization</li>
+</ul>
+</li>
+<li><strong>Manage Secured Workforce</strong> (Validate the success message in the tab and the data in the table after assignment)
+<ul>
+<li>[ ]  Release</li>
+<li>[ ]  Assign Event</li>
+<li>[ ]  Assign Supervisor</li>
+<li>[ ]  Assign Tag</li>
+<li>[ ]  Assign Region</li>
+<li>[ ]  Assign Billing Schedule</li>
+</ul>
+</li>
+<li><strong>Hotel</strong>
+<ul>
+<li>[ ]  Hotel Availability</li>
+<li>[ ]  Hotel Booking</li>
+<li>[ ]  Hotel Assignment</li>
+<li>[ ]  Meal Arrangement</li>
+</ul>
+</li>
+<li><strong>Daily Time Sheet Center</strong> and <strong>Weekly Time Sheet Center</strong>
+<ul>
+<li>[ ]  Create Time Sheet</li>
+<li>[ ]  Submit Time Sheet</li>
+<li>[ ]  Reject Time Sheet</li>
+<li>[ ]  Approve Time Sheet</li>
+<li>[ ]  Delete Time Sheet</li>
+<li>[ ]  Edit Time on Time Sheet</li>
+<li>[ ]  Assign Supervisor</li>
+<li>[ ]  Export (Daily Time Sheet Center and Weekly Time Sheet Center)</li>
+</ul>
+</li>
+<li><strong>Report</strong>
+<ul>
+<li>[ ]  <strong>Customized Report Extract</strong></li>
+<li>[ ]  <strong>Open API</strong></li>
+</ul>
+</li>
+<li><strong>Master Data</strong>
+<ul>
+<li>[ ]  Resource</li>
+<li>[ ]  Equipment</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><strong>Mobile</strong>
+<ul>
+<li>[ ]  Login</li>
+<li>[ ]  Clockin
+<ul>
+<li>[ ]  Change Status</li>
+<li>[ ]  Edit Time</li>
+</ul>
+</li>
+<li>[ ]  Clockout</li>
+<li>[ ]  Submit Time Sheet</li>
+<li>[ ]  Reject Time Sheet</li>
+<li>[ ]  Approve Time Sheet</li>
+<li>[ ]  Check Hotel</li>
+<li>[ ]  Check Meal Arrangement</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-how-to-code"><strong>3. How to code</strong></h2>
+<ol>
+<li>How they are planned to code
+<ol>
+<li>Update query in QueryMessagesByResourceAsync to filter by callout business logic</li>
+<li>Change query from basic SenderId/ReceiverId check to callout-specific flags</li>
+<li>New query: .Where(it =&gt; (resourceId == it.ReceiverId &amp;&amp; (it.IsCalloutSentRequest || it.IsSystemSentRequest)) || (resourceId == it.SenderId &amp;&amp; it.IsResourceCalloutSentResponse))</li>
+<li>Update unit tests to include callout-related flags in test data</li>
+<li>Add comprehensive test cases for filtering logic</li>
+</ol>
+</li>
+<li>Is development relate to these topics?
+<ul>
+<li>[ ]  Relate to Monitoring System, if any (Check Monitoring System on <a href="https://github.com/WRM-Software/Storm-data-monitor/tree/main/libs">https://github.com/WRM-Software/Storm-data-monitor/tree/main/libs</a>
+-</li>
+<li>[ ]  [Mobile API]  Backward Compatibility support for previous Mobile App Version
+-</li>
+<li>[ ]  Service Bus
+-</li>
+<li>[ ]  Hangfire
+-</li>
+<li>[x]  Unit Test
+<ul>
+<li>Updated all existing test data to include IsCalloutSentRequest, IsSystemSentRequest, and IsResourceCalloutSentResponse flags</li>
+<li>Added 4 new test cases for filtering logic validation</li>
+<li>Fixed failing tests due to query changes</li>
+<li>Total 29 tests now pass (increased from 26)</li>
+</ul>
+</li>
+<li>[ ]  Activity Log
+-</li>
+<li>[ ]  Support Script (also added name suffix (Run Script Support))
+-</li>
+</ul>
+</li>
+<li><strong>Test case from developer</strong>
+<ol>
+<li>Test case - how developers plan to test this case to demonstrate the work has been completed
+<ol>
+<li>Test with Resource having mixed conversations (with multiple people and self) - should return only callout-related messages</li>
+<li>Test with only inbound callout messages (IsCalloutSentRequest=true, IsSystemSentRequest=true) - should return correct inbound messages</li>
+<li>Test with only outbound resource responses (IsResourceCalloutSentResponse=true) - should return correct outbound messages</li>
+<li>Test with non-callout messages mixed in - should exclude non-callout messages from results</li>
+<li>Test with self-messaging scenarios - should handle correctly without data mixing</li>
+<li>Verify that filtering logic correctly separates conversations and prevents data leakage</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Can Automated test cover test result?
+<ol>
+<li>✅Yes/❌ No</li>
+<li>Check E2E Workflow
+<ol>
+<li><p><a href="https://www.notion.so/E2E-web-workflow-201e0a8a37b680c6a697f5f6b84f8cee?pvs=21">E2E web workflow</a></p>
+</li>
+<li><p><a href="https://www.notion.so/E2E-mobile-workflow-203e0a8a37b680b2b166e758c527f044?pvs=21">E2E mobile workflow</a></p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Dev Standard Checklist</strong> &gt; <a href="https://www.notion.so/Dev-Standard-1d8e0a8a37b68087a9afc3447b633a69?pvs=21">(9+) Dev Standard</a>
+<ul>
+<li>[ ]  Check all dev standard</li>
+<li>[ ]  Checked code by AI prompt</li>
+</ul>
+</li>
+</ol>
+<h2 id="4-manual-test-result"><strong>4. Manual Test Result</strong></h2>
+<ul>
+<li><strong>Result</strong>
+<ul>
+<li>✅ Query logic successfully updated in CalloutChatService.GetMessageByResourceAsync.cs</li>
+<li>✅ All 29 unit tests pass (4 new tests added, 25 existing tests updated)</li>
+<li>✅ Filtering logic correctly shows only callout-related messages</li>
+<li>✅ Data mixing issue resolved - no cross-conversation contamination</li>
+<li>✅ Self-messaging scenarios handled correctly</li>
+<li>✅ Non-callout messages properly excluded from results</li>
+</ul>
+</li>
+<li><strong>GitHub PR File Checker Result (<a href="https://www.notion.so/GitHub-PR-File-Checker-c0b619cb74fd4d4bb9845b02ff8a7c15?pvs=21">See Detail</a>)</strong>
+<ul>
+<li>Files modified:
+<ul>
+<li>Storm.Biz/Biz/Callouts/CalloutChatService.GetMessageByResourceAsync.cs (query logic update)</li>
+<li>tests/Storm.Biz.Tests/Callouts/CalloutChatServiceTestData.cs (test data update)</li>
+<li>tests/Storm.Biz.Tests/Callouts/CalloutChatServiceTests.GetMessageByResourceAsync.cs (new test cases)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Add code conflict list (if any) at the day of submit task</strong>
+<ul>
+<li>No conflicts detected</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-review-result"><strong>5. Review Result</strong></h2>
+<ul>
+<li><p><strong>Reviewer Checklist</strong></p>
+<ul>
+<li>[ ]  Change status to <code>Reviewing</code></li>
+<li>[ ]  Review the card
+<ul>
+<li>[ ]  Pre-dev</li>
+<li>[ ]  Dev Manual Test - Local</li>
+<li>[ ]  ⚠️ API Dog ⇒ Exclude Real Time</li>
+<li>[ ]  Code Review</li>
+<li>[ ]  Unit Test</li>
+</ul>
+</li>
+<li>[ ]  If not pass, chant status to <code>Reopened</code></li>
+<li>[ ]  Reviewed pass
+<ul>
+<li>[ ]  If main task, change status to <code>Dev Reviewed</code></li>
+<li>[ ]  If subtask, , change status to <code>Dev Code Reviewed</code>
+<ul>
+<li>[ ]  Atom result exists?</li>
+<li>[ ]  status changed to  <code>Dev Test Completed</code></li>
+<li>[ ]  If result pass, change status to <code>Dev Reviewed</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Request to change for review #1</p>
+<h1 id="documentation">Documentation</h1>
+<ul>
+<li>[ ]  #1</li>
+<li>[ ]  #2</li>
+<li>[ ]  #3</li>
+<li>[ ]  #4</li>
+<li>[ ]  #5</li>
+</ul>
+<h1 id="production-code">Production code</h1>
+<ul>
+<li>[ ]  #1</li>
+<li>[ ]  #2</li>
+<li>[ ]  #3</li>
+<li>[ ]  #4</li>
+<li>[ ]  #5</li>
+</ul>
+<h1 id="unit-test">Unit test</h1>
+<ul>
+<li>[ ]  #1</li>
+<li>[ ]  #2</li>
+<li>[ ]  #3</li>
+<li>[ ]  #4</li>
+<li>[ ]  #5</li>
+</ul>
+</li>
+<li><p>Request to change for review #2</p>
+<h1 id="documentation-1">Documentation</h1>
+<ul>
+<li>[ ]  #1</li>
+<li>[ ]  #2</li>
+<li>[ ]  #3</li>
+<li>[ ]  #4</li>
+<li>[ ]  #5</li>
+</ul>
+<h1 id="production-code-1">Production code</h1>
+<ul>
+<li>[ ]  #1</li>
+<li>[ ]  #2</li>
+<li>[ ]  #3</li>
+<li>[ ]  #4</li>
+<li>[ ]  #5</li>
+</ul>
+<h1 id="unit-test-1">Unit test</h1>
+<ul>
+<li>[ ]  #1</li>
+<li>[ ]  #2</li>
+<li>[ ]  #3</li>
+<li>[ ]  #4</li>
+<li>[ ]  #5</li>
+</ul>
+</li>
+<li><p>Request to change for review #3</p>
+<h1 id="documentation-2">Documentation</h1>
+<ul>
+<li>[ ]  #1</li>
+<li>[ ]  #2</li>
+<li>[ ]  #3</li>
+<li>[ ]  #4</li>
+<li>[ ]  #5</li>
+</ul>
+<h1 id="production-code-2">Production code</h1>
+<ul>
+<li>[ ]  #1</li>
+<li>[ ]  #2</li>
+<li>[ ]  #3</li>
+<li>[ ]  #4</li>
+<li>[ ]  #5</li>
+</ul>
+<h1 id="unit-test-2">Unit test</h1>
+<ul>
+<li>[ ]  #1</li>
+<li>[ ]  #2</li>
+<li>[ ]  #3</li>
+<li>[ ]  #4</li>
+<li>[ ]  #5</li>
+</ul>
+</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/pre-dev.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

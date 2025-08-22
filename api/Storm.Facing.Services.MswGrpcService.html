@@ -1,0 +1,2149 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MswGrpcService | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MswGrpcService | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Facing.Services.MswGrpcService">
+
+
+
+  <h1 id="Storm_Facing_Services_MswGrpcService" data-uid="Storm.Facing.Services.MswGrpcService" class="text-break">Class MswGrpcService</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Storm.Facing.Protos.Msw.html">Msw</a>.<a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html">MswBase</a></div>
+    <div class="level2"><span class="xref">MswGrpcService</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Facing.html">Facing</a>.<a class="xref" href="Storm.Facing.Services.html">Services</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Facing.dll</h6>
+  <h5 id="Storm_Facing_Services_MswGrpcService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Authorize]
+public class MswGrpcService : Msw.MswBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService__ctor_Storm_Biz_ManageSecureWorkforces_IMswService_Storm_Biz_Supervisors_ISupervisorService_Storm_Biz_Commons_IUserService_Storm_Biz_Commons_ISourceTypeService_Storm_Biz_AssignLocations_IAssignLocationService_Storm_Biz_BillingSchedules_IBillingScheduleService_Storm_Biz_Companies_ICompanyService_Storm_Biz_Workforces_IWorkforceService_Storm_Biz_Comments_ICommentService_Storm_Biz_Timezone_ITimezoneService_Microsoft_Extensions_Logging_ILogger_Storm_Facing_Services_MswGrpcService__.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.%23ctor(Storm.Biz.ManageSecureWorkforces.IMswService%2CStorm.Biz.Supervisors.ISupervisorService%2CStorm.Biz.Commons.IUserService%2CStorm.Biz.Commons.ISourceTypeService%2CStorm.Biz.AssignLocations.IAssignLocationService%2CStorm.Biz.BillingSchedules.IBillingScheduleService%2CStorm.Biz.Companies.ICompanyService%2CStorm.Biz.Workforces.IWorkforceService%2CStorm.Biz.Comments.ICommentService%2CStorm.Biz.Timezone.ITimezoneService%2CMicrosoft.Extensions.Logging.ILogger%7BStorm.Facing.Services.MswGrpcService%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L48">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService__ctor_" data-uid="Storm.Facing.Services.MswGrpcService.#ctor*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService__ctor_Storm_Biz_ManageSecureWorkforces_IMswService_Storm_Biz_Supervisors_ISupervisorService_Storm_Biz_Commons_IUserService_Storm_Biz_Commons_ISourceTypeService_Storm_Biz_AssignLocations_IAssignLocationService_Storm_Biz_BillingSchedules_IBillingScheduleService_Storm_Biz_Companies_ICompanyService_Storm_Biz_Workforces_IWorkforceService_Storm_Biz_Comments_ICommentService_Storm_Biz_Timezone_ITimezoneService_Microsoft_Extensions_Logging_ILogger_Storm_Facing_Services_MswGrpcService__" data-uid="Storm.Facing.Services.MswGrpcService.#ctor(Storm.Biz.ManageSecureWorkforces.IMswService,Storm.Biz.Supervisors.ISupervisorService,Storm.Biz.Commons.IUserService,Storm.Biz.Commons.ISourceTypeService,Storm.Biz.AssignLocations.IAssignLocationService,Storm.Biz.BillingSchedules.IBillingScheduleService,Storm.Biz.Companies.ICompanyService,Storm.Biz.Workforces.IWorkforceService,Storm.Biz.Comments.ICommentService,Storm.Biz.Timezone.ITimezoneService,Microsoft.Extensions.Logging.ILogger{Storm.Facing.Services.MswGrpcService})">MswGrpcService(IMswService, ISupervisorService, IUserService, ISourceTypeService, IAssignLocationService, IBillingScheduleService, ICompanyService, IWorkforceService, ICommentService, ITimezoneService, ILogger&lt;MswGrpcService&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MswGrpcService(IMswService mswService, ISupervisorService supervisorService, IUserService userService, ISourceTypeService sourceTypeService, IAssignLocationService assignLocationService, IBillingScheduleService billingScheduleService, ICompanyService companyService, IWorkforceService workforceService, ICommentService commentService, ITimezoneService timezoneService, ILogger&lt;MswGrpcService&gt; logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.ManageSecureWorkforces.IMswService.html">IMswService</a></td>
+        <td><span class="parametername">mswService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Supervisors.ISupervisorService.html">ISupervisorService</a></td>
+        <td><span class="parametername">supervisorService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.IUserService.html">IUserService</a></td>
+        <td><span class="parametername">userService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ISourceTypeService.html">ISourceTypeService</a></td>
+        <td><span class="parametername">sourceTypeService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.AssignLocations.IAssignLocationService.html">IAssignLocationService</a></td>
+        <td><span class="parametername">assignLocationService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.BillingSchedules.IBillingScheduleService.html">IBillingScheduleService</a></td>
+        <td><span class="parametername">billingScheduleService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Companies.ICompanyService.html">ICompanyService</a></td>
+        <td><span class="parametername">companyService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Workforces.IWorkforceService.html">IWorkforceService</a></td>
+        <td><span class="parametername">workforceService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Comments.ICommentService.html">ICommentService</a></td>
+        <td><span class="parametername">commentService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Timezone.ITimezoneService.html">ITimezoneService</a></td>
+        <td><span class="parametername">timezoneService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Storm.Facing.Services.MswGrpcService.html">MswGrpcService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_ApplyBillingSchedules_Storm_Facing_Protos_ApplyBillingSchedulesRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.ApplyBillingSchedules(Storm.Facing.Protos.ApplyBillingSchedulesRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L881">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_ApplyBillingSchedules_" data-uid="Storm.Facing.Services.MswGrpcService.ApplyBillingSchedules*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_ApplyBillingSchedules_Storm_Facing_Protos_ApplyBillingSchedulesRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.ApplyBillingSchedules(Storm.Facing.Protos.ApplyBillingSchedulesRequest,Grpc.Core.ServerCallContext)">ApplyBillingSchedules(ApplyBillingSchedulesRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; ApplyBillingSchedules(ApplyBillingSchedulesRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.ApplyBillingSchedulesRequest.html">ApplyBillingSchedulesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_ApplyBillingSchedules_Storm_Facing_Protos_ApplyBillingSchedulesRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.ApplyBillingSchedules(ApplyBillingSchedulesRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_ApplyCrewsheetTags_Storm_Facing_Protos_ApplyCrewsheetTagsRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.ApplyCrewsheetTags(Storm.Facing.Protos.ApplyCrewsheetTagsRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L622">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_ApplyCrewsheetTags_" data-uid="Storm.Facing.Services.MswGrpcService.ApplyCrewsheetTags*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_ApplyCrewsheetTags_Storm_Facing_Protos_ApplyCrewsheetTagsRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.ApplyCrewsheetTags(Storm.Facing.Protos.ApplyCrewsheetTagsRequest,Grpc.Core.ServerCallContext)">ApplyCrewsheetTags(ApplyCrewsheetTagsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; ApplyCrewsheetTags(ApplyCrewsheetTagsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.ApplyCrewsheetTagsRequest.html">ApplyCrewsheetTagsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_ApplyCrewsheetTags_Storm_Facing_Protos_ApplyCrewsheetTagsRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.ApplyCrewsheetTags(ApplyCrewsheetTagsRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_ApplyRelease_Storm_Facing_Protos_ApplyReleaseRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.ApplyRelease(Storm.Facing.Protos.ApplyReleaseRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L1325">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_ApplyRelease_" data-uid="Storm.Facing.Services.MswGrpcService.ApplyRelease*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_ApplyRelease_Storm_Facing_Protos_ApplyReleaseRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.ApplyRelease(Storm.Facing.Protos.ApplyReleaseRequest,Grpc.Core.ServerCallContext)">ApplyRelease(ApplyReleaseRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; ApplyRelease(ApplyReleaseRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.ApplyReleaseRequest.html">ApplyReleaseRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_ApplyRelease_Storm_Facing_Protos_ApplyReleaseRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.ApplyRelease(ApplyReleaseRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_AssignArrivalDestinations_Storm_Facing_Protos_AssignArrivalDestinationsRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.AssignArrivalDestinations(Storm.Facing.Protos.AssignArrivalDestinationsRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L752">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_AssignArrivalDestinations_" data-uid="Storm.Facing.Services.MswGrpcService.AssignArrivalDestinations*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_AssignArrivalDestinations_Storm_Facing_Protos_AssignArrivalDestinationsRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.AssignArrivalDestinations(Storm.Facing.Protos.AssignArrivalDestinationsRequest,Grpc.Core.ServerCallContext)">AssignArrivalDestinations(AssignArrivalDestinationsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; AssignArrivalDestinations(AssignArrivalDestinationsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.AssignArrivalDestinationsRequest.html">AssignArrivalDestinationsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_AssignArrivalDestinations_Storm_Facing_Protos_AssignArrivalDestinationsRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.AssignArrivalDestinations(AssignArrivalDestinationsRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_AssignRegion_Storm_Facing_Protos_AssignRegionRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.AssignRegion(Storm.Facing.Protos.AssignRegionRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L1431">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_AssignRegion_" data-uid="Storm.Facing.Services.MswGrpcService.AssignRegion*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_AssignRegion_Storm_Facing_Protos_AssignRegionRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.AssignRegion(Storm.Facing.Protos.AssignRegionRequest,Grpc.Core.ServerCallContext)">AssignRegion(AssignRegionRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;AssignRegionResponse&gt; AssignRegion(AssignRegionRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.AssignRegionRequest.html">AssignRegionRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.AssignRegionResponse.html">AssignRegionResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_AssignRegion_Storm_Facing_Protos_AssignRegionRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.AssignRegion(AssignRegionRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_AssignSupervisor_Storm_Facing_Protos_AssignSupervisorRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.AssignSupervisor(Storm.Facing.Protos.AssignSupervisorRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L250">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_AssignSupervisor_" data-uid="Storm.Facing.Services.MswGrpcService.AssignSupervisor*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_AssignSupervisor_Storm_Facing_Protos_AssignSupervisorRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.AssignSupervisor(Storm.Facing.Protos.AssignSupervisorRequest,Grpc.Core.ServerCallContext)">AssignSupervisor(AssignSupervisorRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;AssignSupervisorResponse&gt; AssignSupervisor(AssignSupervisorRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.AssignSupervisorRequest.html">AssignSupervisorRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.AssignSupervisorResponse.html">AssignSupervisorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_AssignSupervisor_Storm_Facing_Protos_AssignSupervisorRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.AssignSupervisor(AssignSupervisorRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_ConfirmAssignRegion_Storm_Facing_Protos_AssignRegionRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.ConfirmAssignRegion(Storm.Facing.Protos.AssignRegionRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L1485">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_ConfirmAssignRegion_" data-uid="Storm.Facing.Services.MswGrpcService.ConfirmAssignRegion*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_ConfirmAssignRegion_Storm_Facing_Protos_AssignRegionRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.ConfirmAssignRegion(Storm.Facing.Protos.AssignRegionRequest,Grpc.Core.ServerCallContext)">ConfirmAssignRegion(AssignRegionRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Response&gt; ConfirmAssignRegion(AssignRegionRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.AssignRegionRequest.html">AssignRegionRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_ConfirmAssignRegion_Storm_Facing_Protos_AssignRegionRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.ConfirmAssignRegion(AssignRegionRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_CreateNote_Storm_Facing_Protos_CreateNoteRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.CreateNote(Storm.Facing.Protos.CreateNoteRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L1197">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_CreateNote_" data-uid="Storm.Facing.Services.MswGrpcService.CreateNote*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_CreateNote_Storm_Facing_Protos_CreateNoteRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.CreateNote(Storm.Facing.Protos.CreateNoteRequest,Grpc.Core.ServerCallContext)">CreateNote(CreateNoteRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;NoteResponse&gt; CreateNote(CreateNoteRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.CreateNoteRequest.html">CreateNoteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.NoteResponse.html">NoteResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_CreateNote_Storm_Facing_Protos_CreateNoteRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.CreateNote(CreateNoteRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetAssignLocationFilters_Storm_Facing_Protos_GetAssignLocationFiltersRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetAssignLocationFilters(Storm.Facing.Protos.GetAssignLocationFiltersRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L519">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetAssignLocationFilters_" data-uid="Storm.Facing.Services.MswGrpcService.GetAssignLocationFilters*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetAssignLocationFilters_Storm_Facing_Protos_GetAssignLocationFiltersRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetAssignLocationFilters(Storm.Facing.Protos.GetAssignLocationFiltersRequest,Grpc.Core.ServerCallContext)">GetAssignLocationFilters(GetAssignLocationFiltersRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetAssignLocationFiltersResponse&gt; GetAssignLocationFilters(GetAssignLocationFiltersRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetAssignLocationFiltersRequest.html">GetAssignLocationFiltersRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetAssignLocationFiltersResponse.html">GetAssignLocationFiltersResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetAssignLocationFilters_Storm_Facing_Protos_GetAssignLocationFiltersRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetAssignLocationFilters(GetAssignLocationFiltersRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetAssignedLocations_Storm_Facing_Protos_GetAssignedLocationsRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetAssignedLocations(Storm.Facing.Protos.GetAssignedLocationsRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L671">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetAssignedLocations_" data-uid="Storm.Facing.Services.MswGrpcService.GetAssignedLocations*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetAssignedLocations_Storm_Facing_Protos_GetAssignedLocationsRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetAssignedLocations(Storm.Facing.Protos.GetAssignedLocationsRequest,Grpc.Core.ServerCallContext)">GetAssignedLocations(GetAssignedLocationsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetAssignedLocationsResponse&gt; GetAssignedLocations(GetAssignedLocationsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetAssignedLocationsRequest.html">GetAssignedLocationsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetAssignedLocationsResponse.html">GetAssignedLocationsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetAssignedLocations_Storm_Facing_Protos_GetAssignedLocationsRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetAssignedLocations(GetAssignedLocationsRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetBillingSchedules_Storm_Facing_Protos_GetBillingSchedulesRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetBillingSchedules(Storm.Facing.Protos.GetBillingSchedulesRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L793">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetBillingSchedules_" data-uid="Storm.Facing.Services.MswGrpcService.GetBillingSchedules*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetBillingSchedules_Storm_Facing_Protos_GetBillingSchedulesRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetBillingSchedules(Storm.Facing.Protos.GetBillingSchedulesRequest,Grpc.Core.ServerCallContext)">GetBillingSchedules(GetBillingSchedulesRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetBillingSchedulesResponse&gt; GetBillingSchedules(GetBillingSchedulesRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetBillingSchedulesRequest.html">GetBillingSchedulesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetBillingSchedulesResponse.html">GetBillingSchedulesResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetBillingSchedules_Storm_Facing_Protos_GetBillingSchedulesRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetBillingSchedules(GetBillingSchedulesRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetCrewsheetsOrgAndMessages_Storm_Facing_Protos_GetCrewsheetsOrgAndMessagesRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetCrewsheetsOrgAndMessages(Storm.Facing.Protos.GetCrewsheetsOrgAndMessagesRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L961">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetCrewsheetsOrgAndMessages_" data-uid="Storm.Facing.Services.MswGrpcService.GetCrewsheetsOrgAndMessages*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetCrewsheetsOrgAndMessages_Storm_Facing_Protos_GetCrewsheetsOrgAndMessagesRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetCrewsheetsOrgAndMessages(Storm.Facing.Protos.GetCrewsheetsOrgAndMessagesRequest,Grpc.Core.ServerCallContext)">GetCrewsheetsOrgAndMessages(GetCrewsheetsOrgAndMessagesRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetCrewsheetsOrgAndMessagesResponse&gt; GetCrewsheetsOrgAndMessages(GetCrewsheetsOrgAndMessagesRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetCrewsheetsOrgAndMessagesRequest.html">GetCrewsheetsOrgAndMessagesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetCrewsheetsOrgAndMessagesResponse.html">GetCrewsheetsOrgAndMessagesResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetCrewsheetsOrgAndMessages_Storm_Facing_Protos_GetCrewsheetsOrgAndMessagesRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetCrewsheetsOrgAndMessages(GetCrewsheetsOrgAndMessagesRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetDisciplines_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetDisciplines(Google.Protobuf.WellKnownTypes.Empty%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L469">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetDisciplines_" data-uid="Storm.Facing.Services.MswGrpcService.GetDisciplines*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetDisciplines_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetDisciplines(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">GetDisciplines(Empty, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetDisciplinesResponse&gt; GetDisciplines(Empty request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Empty</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetDisciplinesResponse.html">GetDisciplinesResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetDisciplines_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_">Msw.MswBase.GetDisciplines(Empty, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetMswWithAdvanceSearch_Storm_Facing_Protos_GetMswWithAdvanceSearchRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetMswWithAdvanceSearch(Storm.Facing.Protos.GetMswWithAdvanceSearchRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L74">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetMswWithAdvanceSearch_" data-uid="Storm.Facing.Services.MswGrpcService.GetMswWithAdvanceSearch*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetMswWithAdvanceSearch_Storm_Facing_Protos_GetMswWithAdvanceSearchRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetMswWithAdvanceSearch(Storm.Facing.Protos.GetMswWithAdvanceSearchRequest,Grpc.Core.ServerCallContext)">GetMswWithAdvanceSearch(GetMswWithAdvanceSearchRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetMswResponse&gt; GetMswWithAdvanceSearch(GetMswWithAdvanceSearchRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetMswWithAdvanceSearchRequest.html">GetMswWithAdvanceSearchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetMswResponse.html">GetMswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetMswWithAdvanceSearch_Storm_Facing_Protos_GetMswWithAdvanceSearchRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetMswWithAdvanceSearch(GetMswWithAdvanceSearchRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetMswWithSmartSearch_Storm_Facing_Protos_GetMswWithSmartSearchRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetMswWithSmartSearch(Storm.Facing.Protos.GetMswWithSmartSearchRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L169">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetMswWithSmartSearch_" data-uid="Storm.Facing.Services.MswGrpcService.GetMswWithSmartSearch*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetMswWithSmartSearch_Storm_Facing_Protos_GetMswWithSmartSearchRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetMswWithSmartSearch(Storm.Facing.Protos.GetMswWithSmartSearchRequest,Grpc.Core.ServerCallContext)">GetMswWithSmartSearch(GetMswWithSmartSearchRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetMswResponse&gt; GetMswWithSmartSearch(GetMswWithSmartSearchRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetMswWithSmartSearchRequest.html">GetMswWithSmartSearchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetMswResponse.html">GetMswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetMswWithSmartSearch_Storm_Facing_Protos_GetMswWithSmartSearchRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetMswWithSmartSearch(GetMswWithSmartSearchRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetNote_Storm_Facing_Protos_GetNoteRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetNote(Storm.Facing.Protos.GetNoteRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L1151">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetNote_" data-uid="Storm.Facing.Services.MswGrpcService.GetNote*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetNote_Storm_Facing_Protos_GetNoteRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetNote(Storm.Facing.Protos.GetNoteRequest,Grpc.Core.ServerCallContext)">GetNote(GetNoteRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;NoteResponse&gt; GetNote(GetNoteRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetNoteRequest.html">GetNoteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.NoteResponse.html">NoteResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetNote_Storm_Facing_Protos_GetNoteRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetNote(GetNoteRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetNotes_Storm_Facing_Protos_GetNotesRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetNotes(Storm.Facing.Protos.GetNotesRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L1101">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetNotes_" data-uid="Storm.Facing.Services.MswGrpcService.GetNotes*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetNotes_Storm_Facing_Protos_GetNotesRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetNotes(Storm.Facing.Protos.GetNotesRequest,Grpc.Core.ServerCallContext)">GetNotes(GetNotesRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetNotesResponse&gt; GetNotes(GetNotesRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetNotesRequest.html">GetNotesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetNotesResponse.html">GetNotesResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetNotes_Storm_Facing_Protos_GetNotesRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetNotes(GetNotesRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetSiteWithAdvanceSearch_Storm_Facing_Protos_GetSiteWithAdvanceSearchRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetSiteWithAdvanceSearch(Storm.Facing.Protos.GetSiteWithAdvanceSearchRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L136">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetSiteWithAdvanceSearch_" data-uid="Storm.Facing.Services.MswGrpcService.GetSiteWithAdvanceSearch*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetSiteWithAdvanceSearch_Storm_Facing_Protos_GetSiteWithAdvanceSearchRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetSiteWithAdvanceSearch(Storm.Facing.Protos.GetSiteWithAdvanceSearchRequest,Grpc.Core.ServerCallContext)">GetSiteWithAdvanceSearch(GetSiteWithAdvanceSearchRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetSiteWithAdvanceSearchResponse&gt; GetSiteWithAdvanceSearch(GetSiteWithAdvanceSearchRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetSiteWithAdvanceSearchRequest.html">GetSiteWithAdvanceSearchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetSiteWithAdvanceSearchResponse.html">GetSiteWithAdvanceSearchResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetSiteWithAdvanceSearch_Storm_Facing_Protos_GetSiteWithAdvanceSearchRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetSiteWithAdvanceSearch(GetSiteWithAdvanceSearchRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetSourceType_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetSourceType(Google.Protobuf.WellKnownTypes.Empty%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L490">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetSourceType_" data-uid="Storm.Facing.Services.MswGrpcService.GetSourceType*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetSourceType_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetSourceType(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">GetSourceType(Empty, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetSourceTypeResponse&gt; GetSourceType(Empty request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Empty</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetSourceTypeResponse.html">GetSourceTypeResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetSourceType_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_">Msw.MswBase.GetSourceType(Empty, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetSummaryData_Storm_Facing_Protos_GetSummaryDataRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetSummaryData(Storm.Facing.Protos.GetSummaryDataRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L824">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetSummaryData_" data-uid="Storm.Facing.Services.MswGrpcService.GetSummaryData*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetSummaryData_Storm_Facing_Protos_GetSummaryDataRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetSummaryData(Storm.Facing.Protos.GetSummaryDataRequest,Grpc.Core.ServerCallContext)">GetSummaryData(GetSummaryDataRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetSummaryDataResponse&gt; GetSummaryData(GetSummaryDataRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetSummaryDataRequest.html">GetSummaryDataRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetSummaryDataResponse.html">GetSummaryDataResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetSummaryData_Storm_Facing_Protos_GetSummaryDataRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetSummaryData(GetSummaryDataRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetSupervisors_Storm_Facing_Protos_GetSupervisorsRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetSupervisors(Storm.Facing.Protos.GetSupervisorsRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L218">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetSupervisors_" data-uid="Storm.Facing.Services.MswGrpcService.GetSupervisors*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetSupervisors_Storm_Facing_Protos_GetSupervisorsRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetSupervisors(Storm.Facing.Protos.GetSupervisorsRequest,Grpc.Core.ServerCallContext)">GetSupervisors(GetSupervisorsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetSupervisorsResponse&gt; GetSupervisors(GetSupervisorsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetSupervisorsRequest.html">GetSupervisorsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetSupervisorsResponse.html">GetSupervisorsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetSupervisors_Storm_Facing_Protos_GetSupervisorsRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetSupervisors(GetSupervisorsRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetUtilitiesToRelease_Storm_Facing_Protos_GetUtilitiesToReleaseRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetUtilitiesToRelease(Storm.Facing.Protos.GetUtilitiesToReleaseRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L705">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetUtilitiesToRelease_" data-uid="Storm.Facing.Services.MswGrpcService.GetUtilitiesToRelease*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetUtilitiesToRelease_Storm_Facing_Protos_GetUtilitiesToReleaseRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetUtilitiesToRelease(Storm.Facing.Protos.GetUtilitiesToReleaseRequest,Grpc.Core.ServerCallContext)">GetUtilitiesToRelease(GetUtilitiesToReleaseRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetUtilitiesToReleaseResponse&gt; GetUtilitiesToRelease(GetUtilitiesToReleaseRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.GetUtilitiesToReleaseRequest.html">GetUtilitiesToReleaseRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetUtilitiesToReleaseResponse.html">GetUtilitiesToReleaseResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetUtilitiesToRelease_Storm_Facing_Protos_GetUtilitiesToReleaseRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.GetUtilitiesToRelease(GetUtilitiesToReleaseRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_GetWorkStatus_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.GetWorkStatus(Google.Protobuf.WellKnownTypes.Empty%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L441">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_GetWorkStatus_" data-uid="Storm.Facing.Services.MswGrpcService.GetWorkStatus*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_GetWorkStatus_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.GetWorkStatus(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">GetWorkStatus(Empty, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetWorkStatusResponse&gt; GetWorkStatus(Empty request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Empty</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.GetWorkStatusResponse.html">GetWorkStatusResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_GetWorkStatus_Google_Protobuf_WellKnownTypes_Empty_Grpc_Core_ServerCallContext_">Msw.MswBase.GetWorkStatus(Empty, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_RemoveAllBillingSchedules_Storm_Facing_Protos_RemoveAllBillingSchedulesRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.RemoveAllBillingSchedules(Storm.Facing.Protos.RemoveAllBillingSchedulesRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L922">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_RemoveAllBillingSchedules_" data-uid="Storm.Facing.Services.MswGrpcService.RemoveAllBillingSchedules*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_RemoveAllBillingSchedules_Storm_Facing_Protos_RemoveAllBillingSchedulesRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.RemoveAllBillingSchedules(Storm.Facing.Protos.RemoveAllBillingSchedulesRequest,Grpc.Core.ServerCallContext)">RemoveAllBillingSchedules(RemoveAllBillingSchedulesRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; RemoveAllBillingSchedules(RemoveAllBillingSchedulesRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.RemoveAllBillingSchedulesRequest.html">RemoveAllBillingSchedulesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_RemoveAllBillingSchedules_Storm_Facing_Protos_RemoveAllBillingSchedulesRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.RemoveAllBillingSchedules(RemoveAllBillingSchedulesRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_RemoveAllCrewsheetTags_Storm_Facing_Protos_RemoveAllCrewsheetTagsRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.RemoveAllCrewsheetTags(Storm.Facing.Protos.RemoveAllCrewsheetTagsRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L656">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_RemoveAllCrewsheetTags_" data-uid="Storm.Facing.Services.MswGrpcService.RemoveAllCrewsheetTags*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_RemoveAllCrewsheetTags_Storm_Facing_Protos_RemoveAllCrewsheetTagsRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.RemoveAllCrewsheetTags(Storm.Facing.Protos.RemoveAllCrewsheetTagsRequest,Grpc.Core.ServerCallContext)">RemoveAllCrewsheetTags(RemoveAllCrewsheetTagsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; RemoveAllCrewsheetTags(RemoveAllCrewsheetTagsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.RemoveAllCrewsheetTagsRequest.html">RemoveAllCrewsheetTagsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_RemoveAllCrewsheetTags_Storm_Facing_Protos_RemoveAllCrewsheetTagsRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.RemoveAllCrewsheetTags(RemoveAllCrewsheetTagsRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_RemoveAllDestination_Storm_Facing_Protos_RemoveAllDestinationRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.RemoveAllDestination(Storm.Facing.Protos.RemoveAllDestinationRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L595">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_RemoveAllDestination_" data-uid="Storm.Facing.Services.MswGrpcService.RemoveAllDestination*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_RemoveAllDestination_Storm_Facing_Protos_RemoveAllDestinationRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.RemoveAllDestination(Storm.Facing.Protos.RemoveAllDestinationRequest,Grpc.Core.ServerCallContext)">RemoveAllDestination(RemoveAllDestinationRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; RemoveAllDestination(RemoveAllDestinationRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.RemoveAllDestinationRequest.html">RemoveAllDestinationRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_RemoveAllDestination_Storm_Facing_Protos_RemoveAllDestinationRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.RemoveAllDestination(RemoveAllDestinationRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_RemoveAllSupervisors_Storm_Facing_Protos_RemoveAllSupervisorsRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.RemoveAllSupervisors(Storm.Facing.Protos.RemoveAllSupervisorsRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L565">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_RemoveAllSupervisors_" data-uid="Storm.Facing.Services.MswGrpcService.RemoveAllSupervisors*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_RemoveAllSupervisors_Storm_Facing_Protos_RemoveAllSupervisorsRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.RemoveAllSupervisors(Storm.Facing.Protos.RemoveAllSupervisorsRequest,Grpc.Core.ServerCallContext)">RemoveAllSupervisors(RemoveAllSupervisorsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; RemoveAllSupervisors(RemoveAllSupervisorsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.RemoveAllSupervisorsRequest.html">RemoveAllSupervisorsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_RemoveAllSupervisors_Storm_Facing_Protos_RemoveAllSupervisorsRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.RemoveAllSupervisors(RemoveAllSupervisorsRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_RemoveCrewsheetTag_Storm_Facing_Protos_RemoveCrewsheetTagRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.RemoveCrewsheetTag(Storm.Facing.Protos.RemoveCrewsheetTagRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L640">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_RemoveCrewsheetTag_" data-uid="Storm.Facing.Services.MswGrpcService.RemoveCrewsheetTag*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_RemoveCrewsheetTag_Storm_Facing_Protos_RemoveCrewsheetTagRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.RemoveCrewsheetTag(Storm.Facing.Protos.RemoveCrewsheetTagRequest,Grpc.Core.ServerCallContext)">RemoveCrewsheetTag(RemoveCrewsheetTagRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; RemoveCrewsheetTag(RemoveCrewsheetTagRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.RemoveCrewsheetTagRequest.html">RemoveCrewsheetTagRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_RemoveCrewsheetTag_Storm_Facing_Protos_RemoveCrewsheetTagRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.RemoveCrewsheetTag(RemoveCrewsheetTagRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_SendCrewsheetMessage_Storm_Facing_Protos_SendCrewsheetMessageRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.SendCrewsheetMessage(Storm.Facing.Protos.SendCrewsheetMessageRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L1045">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_SendCrewsheetMessage_" data-uid="Storm.Facing.Services.MswGrpcService.SendCrewsheetMessage*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_SendCrewsheetMessage_Storm_Facing_Protos_SendCrewsheetMessageRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.SendCrewsheetMessage(Storm.Facing.Protos.SendCrewsheetMessageRequest,Grpc.Core.ServerCallContext)">SendCrewsheetMessage(SendCrewsheetMessageRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;SendCrewsheetMessageResponse&gt; SendCrewsheetMessage(SendCrewsheetMessageRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.SendCrewsheetMessageRequest.html">SendCrewsheetMessageRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.SendCrewsheetMessageResponse.html">SendCrewsheetMessageResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_SendCrewsheetMessage_Storm_Facing_Protos_SendCrewsheetMessageRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.SendCrewsheetMessage(SendCrewsheetMessageRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_UpdateCrewsheetAllMessageIsRead_Storm_Facing_Protos_UpdateCrewsheetAllMessageIsReadRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.UpdateCrewsheetAllMessageIsRead(Storm.Facing.Protos.UpdateCrewsheetAllMessageIsReadRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L1084">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_UpdateCrewsheetAllMessageIsRead_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateCrewsheetAllMessageIsRead*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_UpdateCrewsheetAllMessageIsRead_Storm_Facing_Protos_UpdateCrewsheetAllMessageIsReadRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateCrewsheetAllMessageIsRead(Storm.Facing.Protos.UpdateCrewsheetAllMessageIsReadRequest,Grpc.Core.ServerCallContext)">UpdateCrewsheetAllMessageIsRead(UpdateCrewsheetAllMessageIsReadRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; UpdateCrewsheetAllMessageIsRead(UpdateCrewsheetAllMessageIsReadRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.UpdateCrewsheetAllMessageIsReadRequest.html">UpdateCrewsheetAllMessageIsReadRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_UpdateCrewsheetAllMessageIsRead_Storm_Facing_Protos_UpdateCrewsheetAllMessageIsReadRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.UpdateCrewsheetAllMessageIsRead(UpdateCrewsheetAllMessageIsReadRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_UpdateCrewsheetName_Storm_Facing_Protos_UpdateCrewsheetNameRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.UpdateCrewsheetName(Storm.Facing.Protos.UpdateCrewsheetNameRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L776">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_UpdateCrewsheetName_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateCrewsheetName*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_UpdateCrewsheetName_Storm_Facing_Protos_UpdateCrewsheetNameRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateCrewsheetName(Storm.Facing.Protos.UpdateCrewsheetNameRequest,Grpc.Core.ServerCallContext)">UpdateCrewsheetName(UpdateCrewsheetNameRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; UpdateCrewsheetName(UpdateCrewsheetNameRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.UpdateCrewsheetNameRequest.html">UpdateCrewsheetNameRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_UpdateCrewsheetName_Storm_Facing_Protos_UpdateCrewsheetNameRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.UpdateCrewsheetName(UpdateCrewsheetNameRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_UpdateCurrentLocation_Storm_Facing_Protos_UpdateCurrentLocationRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.UpdateCurrentLocation(Storm.Facing.Protos.UpdateCurrentLocationRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L545">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_UpdateCurrentLocation_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateCurrentLocation*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_UpdateCurrentLocation_Storm_Facing_Protos_UpdateCurrentLocationRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateCurrentLocation(Storm.Facing.Protos.UpdateCurrentLocationRequest,Grpc.Core.ServerCallContext)">UpdateCurrentLocation(UpdateCurrentLocationRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; UpdateCurrentLocation(UpdateCurrentLocationRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.UpdateCurrentLocationRequest.html">UpdateCurrentLocationRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_UpdateCurrentLocation_Storm_Facing_Protos_UpdateCurrentLocationRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.UpdateCurrentLocation(UpdateCurrentLocationRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_UpdateNote_Storm_Facing_Protos_UpdateNoteRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.UpdateNote(Storm.Facing.Protos.UpdateNoteRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L1247">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_UpdateNote_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateNote*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_UpdateNote_Storm_Facing_Protos_UpdateNoteRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateNote(Storm.Facing.Protos.UpdateNoteRequest,Grpc.Core.ServerCallContext)">UpdateNote(UpdateNoteRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;NoteResponse&gt; UpdateNote(UpdateNoteRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.UpdateNoteRequest.html">UpdateNoteRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.NoteResponse.html">NoteResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_UpdateNote_Storm_Facing_Protos_UpdateNoteRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.UpdateNote(UpdateNoteRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_UpdateNotes_Storm_Facing_Protos_UpdateNotesRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.UpdateNotes(Storm.Facing.Protos.UpdateNotesRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L1299">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_UpdateNotes_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateNotes*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_UpdateNotes_Storm_Facing_Protos_UpdateNotesRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateNotes(Storm.Facing.Protos.UpdateNotesRequest,Grpc.Core.ServerCallContext)">UpdateNotes(UpdateNotesRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; UpdateNotes(UpdateNotesRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.UpdateNotesRequest.html">UpdateNotesRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_UpdateNotes_Storm_Facing_Protos_UpdateNotesRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.UpdateNotes(UpdateNotesRequest, ServerCallContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService_UpdateResourcePoolName_Storm_Facing_Protos_UpdateResourcePoolNameRequest_Grpc_Core_ServerCallContext_.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService.UpdateResourcePoolName(Storm.Facing.Protos.UpdateResourcePoolNameRequest%2CGrpc.Core.ServerCallContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L734">View Source</a>
+  </span>
+  <a id="Storm_Facing_Services_MswGrpcService_UpdateResourcePoolName_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateResourcePoolName*"></a>
+  <h4 id="Storm_Facing_Services_MswGrpcService_UpdateResourcePoolName_Storm_Facing_Protos_UpdateResourcePoolNameRequest_Grpc_Core_ServerCallContext_" data-uid="Storm.Facing.Services.MswGrpcService.UpdateResourcePoolName(Storm.Facing.Protos.UpdateResourcePoolNameRequest,Grpc.Core.ServerCallContext)">UpdateResourcePoolName(UpdateResourcePoolNameRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;MswResponse&gt; UpdateResourcePoolName(UpdateResourcePoolNameRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Facing.Protos.UpdateResourcePoolNameRequest.html">UpdateResourcePoolNameRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/42008008599fd671c1175bdaddf165fbac23d357/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Facing.Protos.MswResponse.html">MswResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Storm.Facing.Protos.Msw.MswBase.html#Storm_Facing_Protos_Msw_MswBase_UpdateResourcePoolName_Storm_Facing_Protos_UpdateResourcePoolNameRequest_Grpc_Core_ServerCallContext_">Msw.MswBase.UpdateResourcePoolName(UpdateResourcePoolNameRequest, ServerCallContext)</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Facing_Services_MswGrpcService.md&amp;value=---%0Auid%3A%20Storm.Facing.Services.MswGrpcService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Facing/Services/MswGrpcService.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

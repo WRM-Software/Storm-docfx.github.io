@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class UserRequestValidator | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class UserRequestValidator | Storm Web API Documentation ">
+    
+    <meta name="description" content="Validates user reqs according to business rules">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Biz.Commons.UserRequestValidator">
+
+
+
+  <h1 id="Storm_Biz_Commons_UserRequestValidator" data-uid="Storm.Biz.Commons.UserRequestValidator" class="text-break">Class UserRequestValidator</h1>
+  <div class="markdown level0 summary"><p>Validates user reqs according to business rules</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">UserRequestValidator</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Storm.Biz.Commons.IUserRequestValidator.html">IUserRequestValidator</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Biz.html">Biz</a>.<a class="xref" href="Storm.Biz.Commons.html">Commons</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Biz.dll</h6>
+  <h5 id="Storm_Biz_Commons_UserRequestValidator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserRequestValidator : IUserRequestValidator</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator__ctor_Storm_Biz_Commons_Repositories_IUserDbContext_Storm_Infrastructure_Data_Redis_IRedisCache_Storm_Biz_Commons_Caching_UserCache__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_User__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_UserRole__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_UserOc__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Departments_DbModels_Department__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_Classification__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_StandardClassification__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_Company__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_Discipline__Storm_Infrastructure_Data_IRepository_Storm_Biz_Workforces_DbModels_BucketOrg__Storm_Infrastructure_Data_IRepository_Storm_Biz_Workforces_DbModels_BucketOrgWorkforce__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Workforces_DbModels_BucketInternal__Storm_Biz_Companies_ISharedCompanyService_Storm_Biz_Disciplines_IDisciplineService_Storm_Biz_Commons_ICommonFunctions_Microsoft_Extensions_Logging_ILogger_Storm_Biz_Commons_UserRequestValidator__.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.%23ctor(Storm.Biz.Commons.Repositories.IUserDbContext%2CStorm.Infrastructure.Data.Redis.IRedisCache%7BStorm.Biz.Commons.Caching.UserCache%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Commons.DbModels.User%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Commons.DbModels.UserRole%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Commons.DbModels.UserOc%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Departments.DbModels.Department%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Disciplines.DbModels.Classification%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Disciplines.DbModels.StandardClassification%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Companies.DbModels.Company%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Disciplines.DbModels.Discipline%7D%2CStorm.Infrastructure.Data.IRepository%7BStorm.Biz.Workforces.DbModels.BucketOrg%7D%2CStorm.Infrastructure.Data.IRepository%7BStorm.Biz.Workforces.DbModels.BucketOrgWorkforce%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Workforces.DbModels.BucketInternal%7D%2CStorm.Biz.Companies.ISharedCompanyService%2CStorm.Biz.Disciplines.IDisciplineService%2CStorm.Biz.Commons.ICommonFunctions%2CMicrosoft.Extensions.Logging.ILogger%7BStorm.Biz.Commons.UserRequestValidator%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L47">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator__ctor_" data-uid="Storm.Biz.Commons.UserRequestValidator.#ctor*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator__ctor_Storm_Biz_Commons_Repositories_IUserDbContext_Storm_Infrastructure_Data_Redis_IRedisCache_Storm_Biz_Commons_Caching_UserCache__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_User__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_UserRole__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_UserOc__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Departments_DbModels_Department__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_Classification__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_StandardClassification__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_Company__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Disciplines_DbModels_Discipline__Storm_Infrastructure_Data_IRepository_Storm_Biz_Workforces_DbModels_BucketOrg__Storm_Infrastructure_Data_IRepository_Storm_Biz_Workforces_DbModels_BucketOrgWorkforce__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Workforces_DbModels_BucketInternal__Storm_Biz_Companies_ISharedCompanyService_Storm_Biz_Disciplines_IDisciplineService_Storm_Biz_Commons_ICommonFunctions_Microsoft_Extensions_Logging_ILogger_Storm_Biz_Commons_UserRequestValidator__" data-uid="Storm.Biz.Commons.UserRequestValidator.#ctor(Storm.Biz.Commons.Repositories.IUserDbContext,Storm.Infrastructure.Data.Redis.IRedisCache{Storm.Biz.Commons.Caching.UserCache},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Commons.DbModels.User},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Commons.DbModels.UserRole},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Commons.DbModels.UserOc},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Departments.DbModels.Department},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Disciplines.DbModels.Classification},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Disciplines.DbModels.StandardClassification},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Companies.DbModels.Company},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Disciplines.DbModels.Discipline},Storm.Infrastructure.Data.IRepository{Storm.Biz.Workforces.DbModels.BucketOrg},Storm.Infrastructure.Data.IRepository{Storm.Biz.Workforces.DbModels.BucketOrgWorkforce},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Workforces.DbModels.BucketInternal},Storm.Biz.Companies.ISharedCompanyService,Storm.Biz.Disciplines.IDisciplineService,Storm.Biz.Commons.ICommonFunctions,Microsoft.Extensions.Logging.ILogger{Storm.Biz.Commons.UserRequestValidator})">UserRequestValidator(IUserDbContext, IRedisCache&lt;UserCache&gt;, ISqlRepository&lt;User&gt;, ISqlRepository&lt;UserRole&gt;, ISqlRepository&lt;UserOc&gt;, ISqlRepository&lt;Department&gt;, ISqlRepository&lt;Classification&gt;, ISqlRepository&lt;StandardClassification&gt;, ISqlRepository&lt;Company&gt;, ISqlRepository&lt;Discipline&gt;, IRepository&lt;BucketOrg&gt;, IRepository&lt;BucketOrgWorkforce&gt;, ISqlRepository&lt;BucketInternal&gt;, ISharedCompanyService, IDisciplineService, ICommonFunctions, ILogger&lt;UserRequestValidator&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserRequestValidator(IUserDbContext userDbContext, IRedisCache&lt;UserCache&gt; userCache, ISqlRepository&lt;User&gt; userRepository, ISqlRepository&lt;UserRole&gt; userRoleRepository, ISqlRepository&lt;UserOc&gt; userOcRepository, ISqlRepository&lt;Department&gt; departmentRepository, ISqlRepository&lt;Classification&gt; classificationRepository, ISqlRepository&lt;StandardClassification&gt; standardClassificationRepository, ISqlRepository&lt;Company&gt; companyRepository, ISqlRepository&lt;Discipline&gt; disciplineRepository, IRepository&lt;BucketOrg&gt; bucketOrgRepository, IRepository&lt;BucketOrgWorkforce&gt; bucketOrgWorkforceRepository, ISqlRepository&lt;BucketInternal&gt; bucketInternalRepository, ISharedCompanyService sharedCompanyService, IDisciplineService disciplineService, ICommonFunctions commonFunctions, ILogger&lt;UserRequestValidator&gt; logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Repositories.IUserDbContext.html">IUserDbContext</a></td>
+        <td><span class="parametername">userDbContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IRedisCache</span>&lt;<a class="xref" href="Storm.Biz.Commons.Caching.UserCache.html">UserCache</a>&gt;</td>
+        <td><span class="parametername">userCache</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td><span class="parametername">userRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.UserRole.html">UserRole</a>&gt;</td>
+        <td><span class="parametername">userRoleRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.UserOc.html">UserOc</a>&gt;</td>
+        <td><span class="parametername">userOcRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Departments.DbModels.Department.html">Department</a>&gt;</td>
+        <td><span class="parametername">departmentRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Disciplines.DbModels.Classification.html">Classification</a>&gt;</td>
+        <td><span class="parametername">classificationRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Disciplines.DbModels.StandardClassification.html">StandardClassification</a>&gt;</td>
+        <td><span class="parametername">standardClassificationRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Companies.DbModels.Company.html">Company</a>&gt;</td>
+        <td><span class="parametername">companyRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Disciplines.DbModels.Discipline.html">Discipline</a>&gt;</td>
+        <td><span class="parametername">disciplineRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IRepository</span>&lt;<a class="xref" href="Storm.Biz.Workforces.DbModels.BucketOrg.html">BucketOrg</a>&gt;</td>
+        <td><span class="parametername">bucketOrgRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IRepository</span>&lt;<a class="xref" href="Storm.Biz.Workforces.DbModels.BucketOrgWorkforce.html">BucketOrgWorkforce</a>&gt;</td>
+        <td><span class="parametername">bucketOrgWorkforceRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Workforces.DbModels.BucketInternal.html">BucketInternal</a>&gt;</td>
+        <td><span class="parametername">bucketInternalRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Companies.ISharedCompanyService.html">ISharedCompanyService</a></td>
+        <td><span class="parametername">sharedCompanyService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Disciplines.IDisciplineService.html">IDisciplineService</a></td>
+        <td><span class="parametername">disciplineService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ICommonFunctions.html">ICommonFunctions</a></td>
+        <td><span class="parametername">commonFunctions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Storm.Biz.Commons.UserRequestValidator.html">UserRequestValidator</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_CheckClassificationAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.CheckClassificationAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L622">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_CheckClassificationAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.CheckClassificationAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_CheckClassificationAsync_System_String_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.CheckClassificationAsync(System.String,System.String,System.String)">CheckClassificationAsync(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Checks if classification exists and is valid for the given company and discipline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; CheckClassificationAsync(string companyId, string disciplineId, string classificationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">disciplineId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">classificationId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_FindDuplicateUserAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.FindDuplicateUserAsync(Storm.Biz.Commons.Models.CreateUserRequest%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L981">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_FindDuplicateUserAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.FindDuplicateUserAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_FindDuplicateUserAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.FindDuplicateUserAsync(Storm.Biz.Commons.Models.CreateUserRequest,System.String)">FindDuplicateUserAsync(CreateUserRequest, string)</h4>
+  <div class="markdown level1 summary"><p>Finds duplicate user by email or name/lastname</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;User?&gt; FindDuplicateUserAsync(CreateUserRequest req, string companyId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_FindDuplicateUserWithIdAsync_Storm_Biz_Commons_Models_UpdateUserRequest_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.FindDuplicateUserWithIdAsync(Storm.Biz.Commons.Models.UpdateUserRequest%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L998">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_FindDuplicateUserWithIdAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.FindDuplicateUserWithIdAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_FindDuplicateUserWithIdAsync_Storm_Biz_Commons_Models_UpdateUserRequest_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.FindDuplicateUserWithIdAsync(Storm.Biz.Commons.Models.UpdateUserRequest,System.String)">FindDuplicateUserWithIdAsync(UpdateUserRequest, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;User?&gt; FindDuplicateUserWithIdAsync(UpdateUserRequest req, string companyId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.UpdateUserRequest.html">UpdateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_GetAllOperatingCompanyByCompanyIdAsync_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.GetAllOperatingCompanyByCompanyIdAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L604">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_GetAllOperatingCompanyByCompanyIdAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.GetAllOperatingCompanyByCompanyIdAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_GetAllOperatingCompanyByCompanyIdAsync_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.GetAllOperatingCompanyByCompanyIdAsync(System.String)">GetAllOperatingCompanyByCompanyIdAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Gets all operating companies by company ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;IEnumerable&lt;Company&gt;&gt; GetAllOperatingCompanyByCompanyIdAsync(string companyId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Storm.Biz.Companies.DbModels.Company.html">Company</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_GetUserValidateAsync_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.GetUserValidateAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L653">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_GetUserValidateAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.GetUserValidateAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_GetUserValidateAsync_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.GetUserValidateAsync(System.String)">GetUserValidateAsync(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;User?&gt; GetUserValidateAsync(string userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_HasPermissionToAccessUserAsync_Storm_Biz_Commons_DbModels_User_Storm_Biz_Commons_Models_Request_Storm_Biz_Commons_Models_GetUserInformationResponse_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.HasPermissionToAccessUserAsync(Storm.Biz.Commons.DbModels.User%2CStorm.Biz.Commons.Models.Request%2CStorm.Biz.Commons.Models.GetUserInformationResponse)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L524">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_HasPermissionToAccessUserAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.HasPermissionToAccessUserAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_HasPermissionToAccessUserAsync_Storm_Biz_Commons_DbModels_User_Storm_Biz_Commons_Models_Request_Storm_Biz_Commons_Models_GetUserInformationResponse_" data-uid="Storm.Biz.Commons.UserRequestValidator.HasPermissionToAccessUserAsync(Storm.Biz.Commons.DbModels.User,Storm.Biz.Commons.Models.Request,Storm.Biz.Commons.Models.GetUserInformationResponse)">HasPermissionToAccessUserAsync(User, Request, GetUserInformationResponse)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; HasPermissionToAccessUserAsync(User user, Request req, GetUserInformationResponse userInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.Request.html">Request</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.GetUserInformationResponse.html">GetUserInformationResponse</a></td>
+        <td><span class="parametername">userInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_IsCompanyMatch_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.IsCompanyMatch(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L1055">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_IsCompanyMatch_" data-uid="Storm.Biz.Commons.UserRequestValidator.IsCompanyMatch*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_IsCompanyMatch_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.IsCompanyMatch(System.String,System.String)">IsCompanyMatch(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsCompanyMatch(string companyParam, string companyLogin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyParam</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyLogin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_IsEmailDuplicateAsync_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.IsEmailDuplicateAsync(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L1038">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_IsEmailDuplicateAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.IsEmailDuplicateAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_IsEmailDuplicateAsync_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.IsEmailDuplicateAsync(System.String,System.String)">IsEmailDuplicateAsync(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; IsEmailDuplicateAsync(string email, string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">email</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_LogAndCreateErrorResponse_System_String_System_String_Storm_Biz_Commons_Domain_StatusCode_System_Object_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.LogAndCreateErrorResponse(System.String%2CSystem.String%2CStorm.Biz.Commons.Domain.StatusCode%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L842">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_LogAndCreateErrorResponse_" data-uid="Storm.Biz.Commons.UserRequestValidator.LogAndCreateErrorResponse*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_LogAndCreateErrorResponse_System_String_System_String_Storm_Biz_Commons_Domain_StatusCode_System_Object_" data-uid="Storm.Biz.Commons.UserRequestValidator.LogAndCreateErrorResponse(System.String,System.String,Storm.Biz.Commons.Domain.StatusCode,System.Object)">LogAndCreateErrorResponse(string, string, StatusCode, object?)</h4>
+  <div class="markdown level1 summary"><p>Logs a warning and creates an error response</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual RequestValidatorResponse LogAndCreateErrorResponse(string methodName, string errorMessage, Domain.StatusCode statusCode, object? request = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">errorMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Domain.html">Domain</a>.<a class="xref" href="Storm.Biz.Commons.Domain.StatusCode.html">StatusCode</a></td>
+        <td><span class="parametername">statusCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateAnyUsersFromQueryMissing_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__System_Collections_Generic_List_System_String__.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateAnyUsersFromQueryMissing(System.Collections.Generic.List%7BStorm.Biz.Commons.DbModels.User%7D%2CSystem.Collections.Generic.List%7BSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L1199">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateAnyUsersFromQueryMissing_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateAnyUsersFromQueryMissing*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateAnyUsersFromQueryMissing_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__System_Collections_Generic_List_System_String__" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateAnyUsersFromQueryMissing(System.Collections.Generic.List{Storm.Biz.Commons.DbModels.User},System.Collections.Generic.List{System.String})">ValidateAnyUsersFromQueryMissing(List&lt;User&gt;, List&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual RequestValidatorResponse ValidateAnyUsersFromQueryMissing(List&lt;User&gt; users, List&lt;string&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td><span class="parametername">users</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateArchiveUsersPermission_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__System_String_Storm_Biz_Commons_Models_GetUserInformationResponse_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateArchiveUsersPermission(System.Collections.Generic.List%7BStorm.Biz.Commons.DbModels.User%7D%2CSystem.String%2CStorm.Biz.Commons.Models.GetUserInformationResponse%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L787">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateArchiveUsersPermission_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateArchiveUsersPermission*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateArchiveUsersPermission_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__System_String_Storm_Biz_Commons_Models_GetUserInformationResponse_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateArchiveUsersPermission(System.Collections.Generic.List{Storm.Biz.Commons.DbModels.User},System.String,Storm.Biz.Commons.Models.GetUserInformationResponse,System.String)">ValidateArchiveUsersPermission(List&lt;User&gt;, string, GetUserInformationResponse, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateArchiveUsersPermission(List&lt;User&gt; users, string companyLoginId, GetUserInformationResponse userInfo, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td><span class="parametername">users</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyLoginId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.GetUserInformationResponse.html">GetUserInformationResponse</a></td>
+        <td><span class="parametername">userInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateArchiveUsersQuery_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__System_Collections_Generic_List_System_String__System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateArchiveUsersQuery(System.Collections.Generic.List%7BStorm.Biz.Commons.DbModels.User%7D%2CSystem.Collections.Generic.List%7BSystem.String%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L764">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateArchiveUsersQuery_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateArchiveUsersQuery*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateArchiveUsersQuery_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__System_Collections_Generic_List_System_String__System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateArchiveUsersQuery(System.Collections.Generic.List{Storm.Biz.Commons.DbModels.User},System.Collections.Generic.List{System.String},System.String)">ValidateArchiveUsersQuery(List&lt;User&gt;, List&lt;string&gt;, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestValidatorResponse ValidateArchiveUsersQuery(List&lt;User&gt; users, List&lt;string&gt; ids, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td><span class="parametername">users</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateChangeClassificationAsync_Storm_Biz_Commons_Models_UpdateUserRequest_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateChangeClassificationAsync(Storm.Biz.Commons.Models.UpdateUserRequest%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L558">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateChangeClassificationAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateChangeClassificationAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateChangeClassificationAsync_Storm_Biz_Commons_Models_UpdateUserRequest_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateChangeClassificationAsync(Storm.Biz.Commons.Models.UpdateUserRequest,System.String)">ValidateChangeClassificationAsync(UpdateUserRequest, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateChangeClassificationAsync(UpdateUserRequest req, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.UpdateUserRequest.html">UpdateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateChangeManagingDisciplineAsync_Storm_Biz_Commons_Models_UpdateUserRequest_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateChangeManagingDisciplineAsync(Storm.Biz.Commons.Models.UpdateUserRequest%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L576">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateChangeManagingDisciplineAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateChangeManagingDisciplineAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateChangeManagingDisciplineAsync_Storm_Biz_Commons_Models_UpdateUserRequest_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateChangeManagingDisciplineAsync(Storm.Biz.Commons.Models.UpdateUserRequest,System.String)">ValidateChangeManagingDisciplineAsync(UpdateUserRequest, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateChangeManagingDisciplineAsync(UpdateUserRequest req, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.UpdateUserRequest.html">UpdateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateClassificationAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateClassificationAsync(Storm.Biz.Commons.Models.CreateUserRequest%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L359">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateClassificationAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateClassificationAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateClassificationAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateClassificationAsync(Storm.Biz.Commons.Models.CreateUserRequest,System.String,System.String)">ValidateClassificationAsync(CreateUserRequest, string, string)</h4>
+  <div class="markdown level1 summary"><p>Validates classification settings in the user req</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateClassificationAsync(CreateUserRequest req, string companyId, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateContractorPermission_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateContractorPermission(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L1072">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateContractorPermission_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateContractorPermission*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateContractorPermission_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateContractorPermission(System.String,System.String)">ValidateContractorPermission(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual RequestValidatorResponse ValidateContractorPermission(string companyParamId, string companyLoginId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyParamId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyLoginId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateContractorsPermission_System_String_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateContractorsPermission(System.String%2CSystem.Collections.Generic.List%7BStorm.Biz.Commons.DbModels.User%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L1089">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateContractorsPermission_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateContractorsPermission*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateContractorsPermission_System_String_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateContractorsPermission(System.String,System.Collections.Generic.List{Storm.Biz.Commons.DbModels.User})">ValidateContractorsPermission(string, List&lt;User&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual RequestValidatorResponse ValidateContractorsPermission(string companyLoginId, List&lt;User&gt; users)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyLoginId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td><span class="parametername">users</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateCreateDuplicateAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateCreateDuplicateAsync(Storm.Biz.Commons.Models.CreateUserRequest%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L406">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateCreateDuplicateAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateCreateDuplicateAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateCreateDuplicateAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateCreateDuplicateAsync(Storm.Biz.Commons.Models.CreateUserRequest,System.String,System.String)">ValidateCreateDuplicateAsync(CreateUserRequest, string, string)</h4>
+  <div class="markdown level1 summary"><p>Validates for duplicate users in the system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateCreateDuplicateAsync(CreateUserRequest req, string companyId, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateCreateDuplicateInternalAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateCreateDuplicateInternalAsync(Storm.Biz.Commons.Models.CreateUserRequest%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L421">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateCreateDuplicateInternalAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateCreateDuplicateInternalAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateCreateDuplicateInternalAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateCreateDuplicateInternalAsync(Storm.Biz.Commons.Models.CreateUserRequest,System.String,System.String)">ValidateCreateDuplicateInternalAsync(CreateUserRequest, string, string)</h4>
+  <div class="markdown level1 summary"><p>Internal helper method to validate duplicate users</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;RequestValidatorResponse&gt; ValidateCreateDuplicateInternalAsync(CreateUserRequest req, string companyId, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateDepartmentAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateDepartmentAsync(Storm.Biz.Commons.Models.CreateUserRequest%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L272">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateDepartmentAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateDepartmentAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateDepartmentAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateDepartmentAsync(Storm.Biz.Commons.Models.CreateUserRequest,System.String,System.String)">ValidateDepartmentAsync(CreateUserRequest, string, string)</h4>
+  <div class="markdown level1 summary"><p>Validates department settings in the user req</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateDepartmentAsync(CreateUserRequest req, string companyId, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateFieldLengths_Storm_Biz_Commons_Models_CreateUserRequest_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateFieldLengths(Storm.Biz.Commons.Models.CreateUserRequest%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L103">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateFieldLengths_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateFieldLengths*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateFieldLengths_Storm_Biz_Commons_Models_CreateUserRequest_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateFieldLengths(Storm.Biz.Commons.Models.CreateUserRequest,System.String)">ValidateFieldLengths(CreateUserRequest, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestValidatorResponse ValidateFieldLengths(CreateUserRequest req, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateFieldResource_Storm_Biz_Commons_Models_CreateUserRequest_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateFieldResource(Storm.Biz.Commons.Models.CreateUserRequest%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L150">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateFieldResource_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateFieldResource*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateFieldResource_Storm_Biz_Commons_Models_CreateUserRequest_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateFieldResource(Storm.Biz.Commons.Models.CreateUserRequest,System.String)">ValidateFieldResource(CreateUserRequest, string)</h4>
+  <div class="markdown level1 summary"><p>Validates field resource settings in the user req</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestValidatorResponse ValidateFieldResource(CreateUserRequest req, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateManageDisciplineAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateManageDisciplineAsync(Storm.Biz.Commons.Models.CreateUserRequest%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L231">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateManageDisciplineAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateManageDisciplineAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateManageDisciplineAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateManageDisciplineAsync(Storm.Biz.Commons.Models.CreateUserRequest,System.String,System.String)">ValidateManageDisciplineAsync(CreateUserRequest, string, string)</h4>
+  <div class="markdown level1 summary"><p>Validates manage discipline settings in the user req</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateManageDisciplineAsync(CreateUserRequest req, string companyId, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompaniesAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompaniesAsync(System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L934">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompaniesAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompaniesAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompaniesAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompaniesAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.String)">ValidateOperatingCompaniesAsync(string, IEnumerable&lt;string&gt;, IEnumerable&lt;string&gt;, string)</h4>
+  <div class="markdown level1 summary"><p>Validates operating companies</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;RequestValidatorResponse&gt; ValidateOperatingCompaniesAsync(string companyId, IEnumerable&lt;string&gt; operatingCompanyIds, IEnumerable&lt;string&gt; selectedOperatingCompanyIds, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">operatingCompanyIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">selectedOperatingCompanyIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompaniesPermission_System_String_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompaniesPermission(System.String%2CSystem.Collections.Generic.List%7BStorm.Biz.Commons.DbModels.User%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L1122">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompaniesPermission_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompaniesPermission*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompaniesPermission_System_String_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompaniesPermission(System.String,System.Collections.Generic.List{Storm.Biz.Commons.DbModels.User})">ValidateOperatingCompaniesPermission(string, List&lt;User&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual RequestValidatorResponse ValidateOperatingCompaniesPermission(string companyLoginId, List&lt;User&gt; users)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyLoginId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td><span class="parametername">users</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompanyAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompanyAsync(Storm.Biz.Commons.Models.CreateUserRequest%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L193">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompanyAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompanyAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompanyAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompanyAsync(Storm.Biz.Commons.Models.CreateUserRequest,System.String,System.String)">ValidateOperatingCompanyAsync(CreateUserRequest, string, string)</h4>
+  <div class="markdown level1 summary"><p>Validates operating company settings in the user req</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateOperatingCompanyAsync(CreateUserRequest req, string companyId, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompanyPermission_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompanyPermission(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L1105">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompanyPermission_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompanyPermission*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateOperatingCompanyPermission_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateOperatingCompanyPermission(System.String,System.String)">ValidateOperatingCompanyPermission(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual RequestValidatorResponse ValidateOperatingCompanyPermission(string companyLoginId, string companyParamId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyLoginId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyParamId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidatePermission_Storm_Biz_Commons_Models_GetUserInformationResponse_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidatePermission(Storm.Biz.Commons.Models.GetUserInformationResponse%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L88">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidatePermission_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidatePermission*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidatePermission_Storm_Biz_Commons_Models_GetUserInformationResponse_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidatePermission(Storm.Biz.Commons.Models.GetUserInformationResponse,System.String)">ValidatePermission(GetUserInformationResponse, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestValidatorResponse ValidatePermission(GetUserInformationResponse userInfo, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.GetUserInformationResponse.html">GetUserInformationResponse</a></td>
+        <td><span class="parametername">userInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateRequestParameters_System_Object_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateRequestParameters(System.Object%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L874">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateRequestParameters_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateRequestParameters*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateRequestParameters_System_Object_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateRequestParameters(System.Object,System.String)">ValidateRequestParameters(object, string)</h4>
+  <div class="markdown level1 summary"><p>Validates req parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ValidateRequestParameters(object req, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateRequestParametersWithCompanyId_System_Object_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateRequestParametersWithCompanyId(System.Object%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L887">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateRequestParametersWithCompanyId_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateRequestParametersWithCompanyId*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateRequestParametersWithCompanyId_System_Object_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateRequestParametersWithCompanyId(System.Object,System.String,System.String)">ValidateRequestParametersWithCompanyId(object, string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ValidateRequestParametersWithCompanyId(object req, string companyId, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateRequiredCompany_Storm_Biz_Commons_Models_CreateUserRequest_Storm_Biz_Commons_Models_GetUserInformationResponse_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateRequiredCompany(Storm.Biz.Commons.Models.CreateUserRequest%2CStorm.Biz.Commons.Models.GetUserInformationResponse%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L175">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateRequiredCompany_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateRequiredCompany*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateRequiredCompany_Storm_Biz_Commons_Models_CreateUserRequest_Storm_Biz_Commons_Models_GetUserInformationResponse_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateRequiredCompany(Storm.Biz.Commons.Models.CreateUserRequest,Storm.Biz.Commons.Models.GetUserInformationResponse,System.String)">ValidateRequiredCompany(CreateUserRequest, GetUserInformationResponse, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestValidatorResponse ValidateRequiredCompany(CreateUserRequest req, GetUserInformationResponse userInfo, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.GetUserInformationResponse.html">GetUserInformationResponse</a></td>
+        <td><span class="parametername">userInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateUnarchiveUserInputDuplicate_Storm_Biz_Commons_DbModels_User_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateUnarchiveUserInputDuplicate(Storm.Biz.Commons.DbModels.User%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L697">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateUnarchiveUserInputDuplicate_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUnarchiveUserInputDuplicate*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateUnarchiveUserInputDuplicate_Storm_Biz_Commons_DbModels_User_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUnarchiveUserInputDuplicate(Storm.Biz.Commons.DbModels.User,System.String)">ValidateUnarchiveUserInputDuplicate(User, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateUnarchiveUserInputDuplicate(User user, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateUnarchiveUserPermission_Storm_Biz_Commons_DbModels_User_System_String_Storm_Biz_Commons_Models_GetUserInformationResponse_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateUnarchiveUserPermission(Storm.Biz.Commons.DbModels.User%2CSystem.String%2CStorm.Biz.Commons.Models.GetUserInformationResponse%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L715">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateUnarchiveUserPermission_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUnarchiveUserPermission*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateUnarchiveUserPermission_Storm_Biz_Commons_DbModels_User_System_String_Storm_Biz_Commons_Models_GetUserInformationResponse_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUnarchiveUserPermission(Storm.Biz.Commons.DbModels.User,System.String,Storm.Biz.Commons.Models.GetUserInformationResponse,System.String)">ValidateUnarchiveUserPermission(User, string, GetUserInformationResponse, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateUnarchiveUserPermission(User user, string companyLoginId, GetUserInformationResponse userInfo, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyLoginId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.GetUserInformationResponse.html">GetUserInformationResponse</a></td>
+        <td><span class="parametername">userInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateUnarchiveUserQuery_Storm_Biz_Commons_DbModels_User_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateUnarchiveUserQuery(Storm.Biz.Commons.DbModels.User%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L676">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateUnarchiveUserQuery_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUnarchiveUserQuery*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateUnarchiveUserQuery_Storm_Biz_Commons_DbModels_User_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUnarchiveUserQuery(Storm.Biz.Commons.DbModels.User,System.String)">ValidateUnarchiveUserQuery(User, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestValidatorResponse ValidateUnarchiveUserQuery(User user, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateUpdateDuplicateAsync_Storm_Biz_Commons_Models_UpdateUserRequest_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateUpdateDuplicateAsync(Storm.Biz.Commons.Models.UpdateUserRequest%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L412">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateUpdateDuplicateAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUpdateDuplicateAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateUpdateDuplicateAsync_Storm_Biz_Commons_Models_UpdateUserRequest_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUpdateDuplicateAsync(Storm.Biz.Commons.Models.UpdateUserRequest,System.String,System.String)">ValidateUpdateDuplicateAsync(UpdateUserRequest, string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateUpdateDuplicateAsync(UpdateUserRequest req, string companyId, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.UpdateUserRequest.html">UpdateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateUpdateDuplicateInternalAsync_Storm_Biz_Commons_Models_UpdateUserRequest_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateUpdateDuplicateInternalAsync(Storm.Biz.Commons.Models.UpdateUserRequest%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L454">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateUpdateDuplicateInternalAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUpdateDuplicateInternalAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateUpdateDuplicateInternalAsync_Storm_Biz_Commons_Models_UpdateUserRequest_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUpdateDuplicateInternalAsync(Storm.Biz.Commons.Models.UpdateUserRequest,System.String,System.String)">ValidateUpdateDuplicateInternalAsync(UpdateUserRequest, string, string)</h4>
+  <div class="markdown level1 summary"><p>Internal helper method to validate duplicate users</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;RequestValidatorResponse&gt; ValidateUpdateDuplicateInternalAsync(UpdateUserRequest req, string companyId, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.UpdateUserRequest.html">UpdateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateUserAlreadyArchived_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateUserAlreadyArchived(System.Collections.Generic.List%7BStorm.Biz.Commons.DbModels.User%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L1218">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateUserAlreadyArchived_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUserAlreadyArchived*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateUserAlreadyArchived_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUserAlreadyArchived(System.Collections.Generic.List{Storm.Biz.Commons.DbModels.User})">ValidateUserAlreadyArchived(List&lt;User&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual RequestValidatorResponse ValidateUserAlreadyArchived(List&lt;User&gt; users)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td><span class="parametername">users</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateUserAsync_Storm_Biz_Commons_Models_UpdateUserRequest_Storm_Biz_Commons_Models_GetUserInformationResponse_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateUserAsync(Storm.Biz.Commons.Models.UpdateUserRequest%2CStorm.Biz.Commons.Models.GetUserInformationResponse%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L487">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateUserAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUserAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateUserAsync_Storm_Biz_Commons_Models_UpdateUserRequest_Storm_Biz_Commons_Models_GetUserInformationResponse_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUserAsync(Storm.Biz.Commons.Models.UpdateUserRequest,Storm.Biz.Commons.Models.GetUserInformationResponse,System.String)">ValidateUserAsync(UpdateUserRequest, GetUserInformationResponse, string)</h4>
+  <div class="markdown level1 summary"><p>Validates for users in the system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateUserAsync(UpdateUserRequest req, GetUserInformationResponse userInfo, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.UpdateUserRequest.html">UpdateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.GetUserInformationResponse.html">GetUserInformationResponse</a></td>
+        <td><span class="parametername">userInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateUserResourcePoolAsync_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateUserResourcePoolAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L1017">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateUserResourcePoolAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUserResourcePoolAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateUserResourcePoolAsync_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUserResourcePoolAsync(System.String)">ValidateUserResourcePoolAsync(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; ValidateUserResourcePoolAsync(string userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateUserRoleAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateUserRoleAsync(Storm.Biz.Commons.Models.CreateUserRequest%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L318">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateUserRoleAsync_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUserRoleAsync*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateUserRoleAsync_Storm_Biz_Commons_Models_CreateUserRequest_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUserRoleAsync(Storm.Biz.Commons.Models.CreateUserRequest,System.String,System.String)">ValidateUserRoleAsync(CreateUserRequest, string, string)</h4>
+  <div class="markdown level1 summary"><p>Validates user role settings in the user req</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RequestValidatorResponse&gt; ValidateUserRoleAsync(CreateUserRequest req, string companyId, string methodName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.Models.CreateUserRequest.html">CreateUserRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">methodName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateUtilitiesPermission_System_String_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateUtilitiesPermission(System.String%2CSystem.Collections.Generic.List%7BStorm.Biz.Commons.DbModels.User%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L1163">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateUtilitiesPermission_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUtilitiesPermission*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateUtilitiesPermission_System_String_System_Collections_Generic_List_Storm_Biz_Commons_DbModels_User__" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUtilitiesPermission(System.String,System.Collections.Generic.List{Storm.Biz.Commons.DbModels.User})">ValidateUtilitiesPermission(string, List&lt;User&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;RequestValidatorResponse&gt; ValidateUtilitiesPermission(string companyLoginId, List&lt;User&gt; users)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyLoginId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td><span class="parametername">users</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator_ValidateUtilityPermission_System_String_System_String_.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator.ValidateUtilityPermission(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L1138">View Source</a>
+  </span>
+  <a id="Storm_Biz_Commons_UserRequestValidator_ValidateUtilityPermission_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUtilityPermission*"></a>
+  <h4 id="Storm_Biz_Commons_UserRequestValidator_ValidateUtilityPermission_System_String_System_String_" data-uid="Storm.Biz.Commons.UserRequestValidator.ValidateUtilityPermission(System.String,System.String)">ValidateUtilityPermission(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;RequestValidatorResponse&gt; ValidateUtilityPermission(string companyLoginId, string companyParamId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyLoginId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyParamId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.RequestValidatorResponse.html">RequestValidatorResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Storm.Biz.Commons.IUserRequestValidator.html">IUserRequestValidator</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Commons_UserRequestValidator.md&amp;value=---%0Auid%3A%20Storm.Biz.Commons.UserRequestValidator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Commons/UserRequestValidator.cs/#L24" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class EventService | Storm Web API Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class EventService | Storm Web API Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Storm Web API Documentation">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Storm.Biz.Events.EventService">
+
+
+
+  <h1 id="Storm_Biz_Events_EventService" data-uid="Storm.Biz.Events.EventService" class="text-break">Class EventService</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">EventService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Storm.Biz.Events.IEventService.html">IEventService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Storm.html">Storm</a>.<a class="xref" href="Storm.Biz.html">Biz</a>.<a class="xref" href="Storm.Biz.Events.html">Events</a></h6>
+  <h6><strong>Assembly</strong>: Storm.Biz.dll</h6>
+  <h5 id="Storm_Biz_Events_EventService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EventService : IEventService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService__ctor_Storm_Infrastructure_Services_IDateTimeService_Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_EventType__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_User__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_Event__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_EventStatus__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_EventOc__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Workforces_DbModels_BucketCrewsheetInfo__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Workforces_DbModels_BucketOrg__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Workforces_DbModels_BucketOrgWorkforce__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Assignments_DbModels_CrewsheetAssignment__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_Company__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_MobileMode__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_LodgingResourceDefaultRoomType__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Assignments_DbModels_CrewsheetAssignmentSupervisor__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_Crewsheet__Storm_Biz_ManageSecureWorkforces_Repositories_RecalculateByBucketDbContext_Storm_Biz_ManageSecureWorkforces_Repositories_RecalculateByCrewsheetDbContext_Storm_Biz_Commons_IUserService_Storm_Biz_Commons_ISharedUserService_Storm_Biz_Assignments_IAssignmentService_Storm_Biz_Commons_IGatewayAuthenService_Storm_Biz_Workforces_IWorkforceService_Microsoft_Extensions_Configuration_IConfiguration_StackExchange_Redis_IDatabase_Storm_Biz_ManageSecureWorkforces_ISharedMswService_Storm_Biz_Supervisors_ISupervisorService_Storm_Biz_Commons_IImportResourcePoolHistoricalService_Storm_Biz_Hotels_IHotelService_Storm_Biz_Timezone_ITimezoneService_Microsoft_Extensions_Logging_ILogger_Storm_Biz_Events_EventService__Storm_Biz_Contents_IContentRouter_Microsoft_Extensions_Options_IOptions_Storm_Biz_Commons_Options_RealtimeUpdateOptions__.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService.%23ctor(Storm.Infrastructure.Services.IDateTimeService%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Events.DbModels.EventType%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Commons.DbModels.User%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Events.DbModels.Event%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Events.DbModels.EventStatus%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Events.DbModels.EventOc%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Workforces.DbModels.BucketCrewsheetInfo%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Workforces.DbModels.BucketOrg%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Workforces.DbModels.BucketOrgWorkforce%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Assignments.DbModels.CrewsheetAssignment%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Companies.DbModels.Company%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Commons.DbModels.MobileMode%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Events.DbModels.LodgingResourceDefaultRoomType%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.Assignments.DbModels.CrewsheetAssignmentSupervisor%7D%2CStorm.Infrastructure.Data.Sql.ISqlRepository%7BStorm.Biz.ManageSecureWorkforces.DbModels.Crewsheet%7D%2CStorm.Biz.ManageSecureWorkforces.Repositories.RecalculateByBucketDbContext%2CStorm.Biz.ManageSecureWorkforces.Repositories.RecalculateByCrewsheetDbContext%2CStorm.Biz.Commons.IUserService%2CStorm.Biz.Commons.ISharedUserService%2CStorm.Biz.Assignments.IAssignmentService%2CStorm.Biz.Commons.IGatewayAuthenService%2CStorm.Biz.Workforces.IWorkforceService%2CMicrosoft.Extensions.Configuration.IConfiguration%2CStackExchange.Redis.IDatabase%2CStorm.Biz.ManageSecureWorkforces.ISharedMswService%2CStorm.Biz.Supervisors.ISupervisorService%2CStorm.Biz.Commons.IImportResourcePoolHistoricalService%2CStorm.Biz.Hotels.IHotelService%2CStorm.Biz.Timezone.ITimezoneService%2CMicrosoft.Extensions.Logging.ILogger%7BStorm.Biz.Events.EventService%7D%2CStorm.Biz.Contents.IContentRouter%2CMicrosoft.Extensions.Options.IOptions%7BStorm.Biz.Commons.Options.RealtimeUpdateOptions%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L82">View Source</a>
+  </span>
+  <a id="Storm_Biz_Events_EventService__ctor_" data-uid="Storm.Biz.Events.EventService.#ctor*"></a>
+  <h4 id="Storm_Biz_Events_EventService__ctor_Storm_Infrastructure_Services_IDateTimeService_Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_EventType__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_User__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_Event__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_EventStatus__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_EventOc__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Workforces_DbModels_BucketCrewsheetInfo__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Workforces_DbModels_BucketOrg__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Workforces_DbModels_BucketOrgWorkforce__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Assignments_DbModels_CrewsheetAssignment__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Companies_DbModels_Company__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Commons_DbModels_MobileMode__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Events_DbModels_LodgingResourceDefaultRoomType__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_Assignments_DbModels_CrewsheetAssignmentSupervisor__Storm_Infrastructure_Data_Sql_ISqlRepository_Storm_Biz_ManageSecureWorkforces_DbModels_Crewsheet__Storm_Biz_ManageSecureWorkforces_Repositories_RecalculateByBucketDbContext_Storm_Biz_ManageSecureWorkforces_Repositories_RecalculateByCrewsheetDbContext_Storm_Biz_Commons_IUserService_Storm_Biz_Commons_ISharedUserService_Storm_Biz_Assignments_IAssignmentService_Storm_Biz_Commons_IGatewayAuthenService_Storm_Biz_Workforces_IWorkforceService_Microsoft_Extensions_Configuration_IConfiguration_StackExchange_Redis_IDatabase_Storm_Biz_ManageSecureWorkforces_ISharedMswService_Storm_Biz_Supervisors_ISupervisorService_Storm_Biz_Commons_IImportResourcePoolHistoricalService_Storm_Biz_Hotels_IHotelService_Storm_Biz_Timezone_ITimezoneService_Microsoft_Extensions_Logging_ILogger_Storm_Biz_Events_EventService__Storm_Biz_Contents_IContentRouter_Microsoft_Extensions_Options_IOptions_Storm_Biz_Commons_Options_RealtimeUpdateOptions__" data-uid="Storm.Biz.Events.EventService.#ctor(Storm.Infrastructure.Services.IDateTimeService,Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Events.DbModels.EventType},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Commons.DbModels.User},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Events.DbModels.Event},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Events.DbModels.EventStatus},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Events.DbModels.EventOc},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Workforces.DbModels.BucketCrewsheetInfo},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Workforces.DbModels.BucketOrg},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Workforces.DbModels.BucketOrgWorkforce},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Assignments.DbModels.CrewsheetAssignment},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Companies.DbModels.Company},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Commons.DbModels.MobileMode},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Events.DbModels.LodgingResourceDefaultRoomType},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.Assignments.DbModels.CrewsheetAssignmentSupervisor},Storm.Infrastructure.Data.Sql.ISqlRepository{Storm.Biz.ManageSecureWorkforces.DbModels.Crewsheet},Storm.Biz.ManageSecureWorkforces.Repositories.RecalculateByBucketDbContext,Storm.Biz.ManageSecureWorkforces.Repositories.RecalculateByCrewsheetDbContext,Storm.Biz.Commons.IUserService,Storm.Biz.Commons.ISharedUserService,Storm.Biz.Assignments.IAssignmentService,Storm.Biz.Commons.IGatewayAuthenService,Storm.Biz.Workforces.IWorkforceService,Microsoft.Extensions.Configuration.IConfiguration,StackExchange.Redis.IDatabase,Storm.Biz.ManageSecureWorkforces.ISharedMswService,Storm.Biz.Supervisors.ISupervisorService,Storm.Biz.Commons.IImportResourcePoolHistoricalService,Storm.Biz.Hotels.IHotelService,Storm.Biz.Timezone.ITimezoneService,Microsoft.Extensions.Logging.ILogger{Storm.Biz.Events.EventService},Storm.Biz.Contents.IContentRouter,Microsoft.Extensions.Options.IOptions{Storm.Biz.Commons.Options.RealtimeUpdateOptions})">EventService(IDateTimeService, ISqlRepository&lt;EventType&gt;, ISqlRepository&lt;User&gt;, ISqlRepository&lt;Event&gt;, ISqlRepository&lt;EventStatus&gt;, ISqlRepository&lt;EventOc&gt;, ISqlRepository&lt;BucketCrewsheetInfo&gt;, ISqlRepository&lt;BucketOrg&gt;, ISqlRepository&lt;BucketOrgWorkforce&gt;, ISqlRepository&lt;CrewsheetAssignment&gt;, ISqlRepository&lt;Company&gt;, ISqlRepository&lt;MobileMode&gt;, ISqlRepository&lt;LodgingResourceDefaultRoomType&gt;, ISqlRepository&lt;CrewsheetAssignmentSupervisor&gt;, ISqlRepository&lt;Crewsheet&gt;, RecalculateByBucketDbContext, RecalculateByCrewsheetDbContext, IUserService, ISharedUserService, IAssignmentService, IGatewayAuthenService, IWorkforceService, IConfiguration, IDatabase, ISharedMswService, ISupervisorService, IImportResourcePoolHistoricalService, IHotelService, ITimezoneService, ILogger&lt;EventService&gt;, IContentRouter, IOptions&lt;RealtimeUpdateOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventService(IDateTimeService dateTimeService, ISqlRepository&lt;EventType&gt; eventTypeSqlRepository, ISqlRepository&lt;User&gt; userSqlRepository, ISqlRepository&lt;Event&gt; eventRepository, ISqlRepository&lt;EventStatus&gt; eventStatusRepository, ISqlRepository&lt;EventOc&gt; eventOcRepository, ISqlRepository&lt;BucketCrewsheetInfo&gt; bucketCrewsheetInfoRepository, ISqlRepository&lt;BucketOrg&gt; bucketOrgRepository, ISqlRepository&lt;BucketOrgWorkforce&gt; bucketOrgWorkforceRepository, ISqlRepository&lt;CrewsheetAssignment&gt; crewsheetAssignmentRepository, ISqlRepository&lt;Company&gt; companyRepository, ISqlRepository&lt;MobileMode&gt; mobileModeRepository, ISqlRepository&lt;LodgingResourceDefaultRoomType&gt; lodgingResourceDefaultRoomTypeRepository, ISqlRepository&lt;CrewsheetAssignmentSupervisor&gt; crewsheetAssignmentSupervisorRepository, ISqlRepository&lt;Crewsheet&gt; crewsheetRepository, RecalculateByBucketDbContext recalculateByBucketDbContext, RecalculateByCrewsheetDbContext recalculateByCrewsheetDbContext, IUserService userService, ISharedUserService sharedUserService, IAssignmentService assignmentService, IGatewayAuthenService gatewayAuthenService, IWorkforceService workforceService, IConfiguration configuration, IDatabase redisDatabase, ISharedMswService sharedMswService, ISupervisorService supervisorService, IImportResourcePoolHistoricalService importResourcePoolHistoricalService, IHotelService hotelService, ITimezoneService timezoneService, ILogger&lt;EventService&gt; logger, IContentRouter contentRouter, IOptions&lt;RealtimeUpdateOptions&gt; realtimeOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDateTimeService</span></td>
+        <td><span class="parametername">dateTimeService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Events.DbModels.EventType.html">EventType</a>&gt;</td>
+        <td><span class="parametername">eventTypeSqlRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.User.html">User</a>&gt;</td>
+        <td><span class="parametername">userSqlRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Events.DbModels.Event.html">Event</a>&gt;</td>
+        <td><span class="parametername">eventRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Events.DbModels.EventStatus.html">EventStatus</a>&gt;</td>
+        <td><span class="parametername">eventStatusRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Events.DbModels.EventOc.html">EventOc</a>&gt;</td>
+        <td><span class="parametername">eventOcRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Workforces.DbModels.BucketCrewsheetInfo.html">BucketCrewsheetInfo</a>&gt;</td>
+        <td><span class="parametername">bucketCrewsheetInfoRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Workforces.DbModels.BucketOrg.html">BucketOrg</a>&gt;</td>
+        <td><span class="parametername">bucketOrgRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Workforces.DbModels.BucketOrgWorkforce.html">BucketOrgWorkforce</a>&gt;</td>
+        <td><span class="parametername">bucketOrgWorkforceRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Assignments.DbModels.CrewsheetAssignment.html">CrewsheetAssignment</a>&gt;</td>
+        <td><span class="parametername">crewsheetAssignmentRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Companies.DbModels.Company.html">Company</a>&gt;</td>
+        <td><span class="parametername">companyRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Commons.DbModels.MobileMode.html">MobileMode</a>&gt;</td>
+        <td><span class="parametername">mobileModeRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Events.DbModels.LodgingResourceDefaultRoomType.html">LodgingResourceDefaultRoomType</a>&gt;</td>
+        <td><span class="parametername">lodgingResourceDefaultRoomTypeRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.Assignments.DbModels.CrewsheetAssignmentSupervisor.html">CrewsheetAssignmentSupervisor</a>&gt;</td>
+        <td><span class="parametername">crewsheetAssignmentSupervisorRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ISqlRepository</span>&lt;<a class="xref" href="Storm.Biz.ManageSecureWorkforces.DbModels.Crewsheet.html">Crewsheet</a>&gt;</td>
+        <td><span class="parametername">crewsheetRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.ManageSecureWorkforces.Repositories.RecalculateByBucketDbContext.html">RecalculateByBucketDbContext</a></td>
+        <td><span class="parametername">recalculateByBucketDbContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.ManageSecureWorkforces.Repositories.RecalculateByCrewsheetDbContext.html">RecalculateByCrewsheetDbContext</a></td>
+        <td><span class="parametername">recalculateByCrewsheetDbContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.IUserService.html">IUserService</a></td>
+        <td><span class="parametername">userService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.ISharedUserService.html">ISharedUserService</a></td>
+        <td><span class="parametername">sharedUserService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Assignments.IAssignmentService.html">IAssignmentService</a></td>
+        <td><span class="parametername">assignmentService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.IGatewayAuthenService.html">IGatewayAuthenService</a></td>
+        <td><span class="parametername">gatewayAuthenService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Workforces.IWorkforceService.html">IWorkforceService</a></td>
+        <td><span class="parametername">workforceService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDatabase</span></td>
+        <td><span class="parametername">redisDatabase</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.ManageSecureWorkforces.ISharedMswService.html">ISharedMswService</a></td>
+        <td><span class="parametername">sharedMswService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Supervisors.ISupervisorService.html">ISupervisorService</a></td>
+        <td><span class="parametername">supervisorService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Commons.IImportResourcePoolHistoricalService.html">IImportResourcePoolHistoricalService</a></td>
+        <td><span class="parametername">importResourcePoolHistoricalService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Hotels.IHotelService.html">IHotelService</a></td>
+        <td><span class="parametername">hotelService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Timezone.ITimezoneService.html">ITimezoneService</a></td>
+        <td><span class="parametername">timezoneService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Storm.Biz.Events.EventService.html">EventService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Contents.IContentRouter.html">IContentRouter</a></td>
+        <td><span class="parametername">contentRouter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="Storm.Biz.Commons.Options.RealtimeUpdateOptions.html">RealtimeUpdateOptions</a>&gt;</td>
+        <td><span class="parametername">realtimeOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService_ApplyEventsAsync_Storm_Biz_Events_Models_ApplyEventRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService.ApplyEventsAsync(Storm.Biz.Events.Models.ApplyEventRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L331">View Source</a>
+  </span>
+  <a id="Storm_Biz_Events_EventService_ApplyEventsAsync_" data-uid="Storm.Biz.Events.EventService.ApplyEventsAsync*"></a>
+  <h4 id="Storm_Biz_Events_EventService_ApplyEventsAsync_Storm_Biz_Events_Models_ApplyEventRequest_" data-uid="Storm.Biz.Events.EventService.ApplyEventsAsync(Storm.Biz.Events.Models.ApplyEventRequest)">ApplyEventsAsync(ApplyEventRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&gt; ApplyEventsAsync(ApplyEventRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Events.Models.ApplyEventRequest.html">ApplyEventRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult.html">ExecutionResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService_ClearAndSetRedisCacheAssignEventAsync_Storm_Biz_Events_Models__x_ClearAndSetRedisCacheAssignEventRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService.ClearAndSetRedisCacheAssignEventAsync(Storm.Biz.Events.Models._x.ClearAndSetRedisCacheAssignEventRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L603">View Source</a>
+  </span>
+  <a id="Storm_Biz_Events_EventService_ClearAndSetRedisCacheAssignEventAsync_" data-uid="Storm.Biz.Events.EventService.ClearAndSetRedisCacheAssignEventAsync*"></a>
+  <h4 id="Storm_Biz_Events_EventService_ClearAndSetRedisCacheAssignEventAsync_Storm_Biz_Events_Models__x_ClearAndSetRedisCacheAssignEventRequest_" data-uid="Storm.Biz.Events.EventService.ClearAndSetRedisCacheAssignEventAsync(Storm.Biz.Events.Models._x.ClearAndSetRedisCacheAssignEventRequest)">ClearAndSetRedisCacheAssignEventAsync(ClearAndSetRedisCacheAssignEventRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ClearAndSetRedisCacheAssignEventAsync(ClearAndSetRedisCacheAssignEventRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Events.Models._x.ClearAndSetRedisCacheAssignEventRequest.html">ClearAndSetRedisCacheAssignEventRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService_CreateEventTypeAsync_Storm_Biz_Events_Models_CreateEventTypeRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService.CreateEventTypeAsync(Storm.Biz.Events.Models.CreateEventTypeRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L177">View Source</a>
+  </span>
+  <a id="Storm_Biz_Events_EventService_CreateEventTypeAsync_" data-uid="Storm.Biz.Events.EventService.CreateEventTypeAsync*"></a>
+  <h4 id="Storm_Biz_Events_EventService_CreateEventTypeAsync_Storm_Biz_Events_Models_CreateEventTypeRequest_" data-uid="Storm.Biz.Events.EventService.CreateEventTypeAsync(Storm.Biz.Events.Models.CreateEventTypeRequest)">CreateEventTypeAsync(CreateEventTypeRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&gt; CreateEventTypeAsync(CreateEventTypeRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Events.Models.CreateEventTypeRequest.html">CreateEventTypeRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult.html">ExecutionResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService_DeleteEventTypeAsync_Storm_Biz_Events_Models_DeleteEventTypeRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService.DeleteEventTypeAsync(Storm.Biz.Events.Models.DeleteEventTypeRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L250">View Source</a>
+  </span>
+  <a id="Storm_Biz_Events_EventService_DeleteEventTypeAsync_" data-uid="Storm.Biz.Events.EventService.DeleteEventTypeAsync*"></a>
+  <h4 id="Storm_Biz_Events_EventService_DeleteEventTypeAsync_Storm_Biz_Events_Models_DeleteEventTypeRequest_" data-uid="Storm.Biz.Events.EventService.DeleteEventTypeAsync(Storm.Biz.Events.Models.DeleteEventTypeRequest)">DeleteEventTypeAsync(DeleteEventTypeRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&gt; DeleteEventTypeAsync(DeleteEventTypeRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Events.Models.DeleteEventTypeRequest.html">DeleteEventTypeRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult.html">ExecutionResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService_GetActiveEventsAsync_Storm_Biz_Events_Models_GetActiveEventsRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService.GetActiveEventsAsync(Storm.Biz.Events.Models.GetActiveEventsRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L277">View Source</a>
+  </span>
+  <a id="Storm_Biz_Events_EventService_GetActiveEventsAsync_" data-uid="Storm.Biz.Events.EventService.GetActiveEventsAsync*"></a>
+  <h4 id="Storm_Biz_Events_EventService_GetActiveEventsAsync_Storm_Biz_Events_Models_GetActiveEventsRequest_" data-uid="Storm.Biz.Events.EventService.GetActiveEventsAsync(Storm.Biz.Events.Models.GetActiveEventsRequest)">GetActiveEventsAsync(GetActiveEventsRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&lt;GetActiveEventsResponse?&gt;&gt; GetActiveEventsAsync(GetActiveEventsRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Events.Models.GetActiveEventsRequest.html">GetActiveEventsRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult-1.html">ExecutionResult</a>&lt;<a class="xref" href="Storm.Biz.Events.Models.GetActiveEventsResponse.html">GetActiveEventsResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService_GetDefaultEventAsync_Storm_Biz_Events_Models_GetDefaultEventRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService.GetDefaultEventAsync(Storm.Biz.Events.Models.GetDefaultEventRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L1065">View Source</a>
+  </span>
+  <a id="Storm_Biz_Events_EventService_GetDefaultEventAsync_" data-uid="Storm.Biz.Events.EventService.GetDefaultEventAsync*"></a>
+  <h4 id="Storm_Biz_Events_EventService_GetDefaultEventAsync_Storm_Biz_Events_Models_GetDefaultEventRequest_" data-uid="Storm.Biz.Events.EventService.GetDefaultEventAsync(Storm.Biz.Events.Models.GetDefaultEventRequest)">GetDefaultEventAsync(GetDefaultEventRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DefaultEvent&gt; GetDefaultEventAsync(GetDefaultEventRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Events.Models.GetDefaultEventRequest.html">GetDefaultEventRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Events.Models._x.DefaultEvent.html">DefaultEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService_GetEventType_Storm_Biz_Events_Models_GetEventTypeRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService.GetEventType(Storm.Biz.Events.Models.GetEventTypeRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L150">View Source</a>
+  </span>
+  <a id="Storm_Biz_Events_EventService_GetEventType_" data-uid="Storm.Biz.Events.EventService.GetEventType*"></a>
+  <h4 id="Storm_Biz_Events_EventService_GetEventType_Storm_Biz_Events_Models_GetEventTypeRequest_" data-uid="Storm.Biz.Events.EventService.GetEventType(Storm.Biz.Events.Models.GetEventTypeRequest)">GetEventType(GetEventTypeRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&lt;EventType?&gt;&gt; GetEventType(GetEventTypeRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Events.Models.GetEventTypeRequest.html">GetEventTypeRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult-1.html">ExecutionResult</a>&lt;<a class="xref" href="Storm.Biz.Events.DbModels.EventType.html">EventType</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService_ImportReleasedLogProcessAsync_System_Collections_Generic_List_Storm_Biz_Workforces_Models__x_ReleasedLogModel__System_String_System_String_System_String_System_String_System_String_System_DateTime_.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService.ImportReleasedLogProcessAsync(System.Collections.Generic.List%7BStorm.Biz.Workforces.Models._x.ReleasedLogModel%7D%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.DateTime)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L575">View Source</a>
+  </span>
+  <a id="Storm_Biz_Events_EventService_ImportReleasedLogProcessAsync_" data-uid="Storm.Biz.Events.EventService.ImportReleasedLogProcessAsync*"></a>
+  <h4 id="Storm_Biz_Events_EventService_ImportReleasedLogProcessAsync_System_Collections_Generic_List_Storm_Biz_Workforces_Models__x_ReleasedLogModel__System_String_System_String_System_String_System_String_System_String_System_DateTime_" data-uid="Storm.Biz.Events.EventService.ImportReleasedLogProcessAsync(System.Collections.Generic.List{Storm.Biz.Workforces.Models._x.ReleasedLogModel},System.String,System.String,System.String,System.String,System.String,System.DateTime)">ImportReleasedLogProcessAsync(List&lt;ReleasedLogModel&gt;, string, string, string, string, string, DateTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; ImportReleasedLogProcessAsync(List&lt;ReleasedLogModel&gt; releaseLogs, string selectedCompanyId, string companyId, string userId, string accessToken, string eventId, DateTime localDateTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Storm.Biz.Workforces.Models._x.ReleasedLogModel.html">ReleasedLogModel</a>&gt;</td>
+        <td><span class="parametername">releaseLogs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">selectedCompanyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">companyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">localDateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService_RemoveAllEventsAsync_Storm_Biz_Events_Models_RemoveAllEventsRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService.RemoveAllEventsAsync(Storm.Biz.Events.Models.RemoveAllEventsRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L714">View Source</a>
+  </span>
+  <a id="Storm_Biz_Events_EventService_RemoveAllEventsAsync_" data-uid="Storm.Biz.Events.EventService.RemoveAllEventsAsync*"></a>
+  <h4 id="Storm_Biz_Events_EventService_RemoveAllEventsAsync_Storm_Biz_Events_Models_RemoveAllEventsRequest_" data-uid="Storm.Biz.Events.EventService.RemoveAllEventsAsync(Storm.Biz.Events.Models.RemoveAllEventsRequest)">RemoveAllEventsAsync(RemoveAllEventsRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&gt; RemoveAllEventsAsync(RemoveAllEventsRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Events.Models.RemoveAllEventsRequest.html">RemoveAllEventsRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult.html">ExecutionResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService_UpdateEventTypeAsync_Storm_Biz_Events_Models_UpdateEventTypeRequest_.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService.UpdateEventTypeAsync(Storm.Biz.Events.Models.UpdateEventTypeRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L213">View Source</a>
+  </span>
+  <a id="Storm_Biz_Events_EventService_UpdateEventTypeAsync_" data-uid="Storm.Biz.Events.EventService.UpdateEventTypeAsync*"></a>
+  <h4 id="Storm_Biz_Events_EventService_UpdateEventTypeAsync_Storm_Biz_Events_Models_UpdateEventTypeRequest_" data-uid="Storm.Biz.Events.EventService.UpdateEventTypeAsync(Storm.Biz.Events.Models.UpdateEventTypeRequest)">UpdateEventTypeAsync(UpdateEventTypeRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ExecutionResult&gt; UpdateEventTypeAsync(UpdateEventTypeRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Storm.Biz.Events.Models.UpdateEventTypeRequest.html">UpdateEventTypeRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Storm.Biz.Commons.Models.ExecutionResult.html">ExecutionResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Storm.Biz.Events.IEventService.html">IEventService</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_DeserializeJson__2_System_Object_Microsoft_Extensions_Logging_ILogger___0__">JsonSerializerExtensions.DeserializeJson&lt;S, T&gt;(object, ILogger&lt;S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Storm.Helper.JsonSerializerExtensions.html#Storm_Helper_JsonSerializerExtensions_TryDeserialize__2_System_Object_Microsoft_Extensions_Logging_ILogger___0____1__">JsonSerializerExtensions.TryDeserialize&lt;S, T&gt;(object, ILogger&lt;S&gt;, out T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/new/main.SM-9386/apiSpec/new?filename=Storm_Biz_Events_EventService.md&amp;value=---%0Auid%3A%20Storm.Biz.Events.EventService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WRM-Software/Storm-web/blob/main.SM-9386/rebirth/src/Storm.Biz/Biz/Events/EventService.cs/#L45" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
